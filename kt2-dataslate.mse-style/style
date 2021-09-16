@@ -15,16 +15,25 @@ card height:	525
 card dpi:		150
 
 init script:
-	w := 375
-	h := 525
+	w:= 375
+	h:= 525
 
 card style:
-	killteam:
-		left: 		0
-		right: 		w
+	fireteam:
+		left: 		20
+		width: 		335
 		top:		10
-		height:		20
-		alignment:	center
+		height:		25
+		alignment:	center middle
 		font:
 			weight:		bold
 			size:		16
+	killteam:
+		left:		20
+		width:		{ w - 40 }
+		top:		35
+		height:		20
+		alignment:	center middle
+		font:
+			weight:		bold
+			size:		14

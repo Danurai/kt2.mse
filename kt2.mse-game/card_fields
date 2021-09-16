@@ -1,5 +1,5 @@
 card field:
-	type:   text
+	type:   choice
 	name:   killteam
 	choice: Space Marine
 	choice: Asuryani
