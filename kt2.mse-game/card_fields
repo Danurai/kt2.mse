@@ -1,0 +1,17 @@
+card field:
+	type:   text
+	name:   killteam
+	choice: Space Marine
+	choice: Asuryani
+	choice: Harlequins
+
+card field:
+	type:   choice
+	name:   fireteam
+	choice: Assault Intercessor
+	choice: Tactical Marine
+	choice: Guardian Defender
+	choice: Storm Guardian
+	choice: Ranger
+	choice: Dire Avenger
+	choice: Player

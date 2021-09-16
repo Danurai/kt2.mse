@@ -1,0 +1,30 @@
+mse version:	2.0.0
+short name:		KT2Style
+full name:		Data Cards
+#icon:			icon.png
+position hint:	00
+version:		0.1
+
+# Dependencies
+depends on:		KT2.mse-game 0.1
+
+#  Stylesheet
+game:			KT2
+card width:		375
+card height:	525
+card dpi:		150
+
+init script:
+	w := 375
+	h := 525
+
+card style:
+	killteam:
+		left: 		0
+		right: 		w
+		top:		10
+		height:		20
+		alignment:	center
+		font:
+			weight:		bold
+			size:		16
