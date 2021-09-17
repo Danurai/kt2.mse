@@ -1,0 +1,121 @@
+extra card style:
+	ft_text:
+		top: 			10
+		left: 		25
+		width:  	{ w - 50 }
+		height:		40
+		z index: 	5
+		alignment: center middle stretch-overflow
+		font:
+			name:		{ hfont }
+			color: 	{ styling.Title_Colour }
+			size: 	22
+			max stretch: 0.1
+	kt_text:
+		top: 			50
+		left: 		25
+		width:  	{ w - 50 }
+		height:		20
+		z index: 	5
+		alignment: center middle stretch-overflow
+		font:
+			name:		{ hfont }
+			color: 	rgb(43,12,0)
+			size: 	14
+			max stretch: 0.1
+	stats_bg:
+		top:			0
+		left:			25
+		width:		{ w - 50 }
+		height:		{ 3 * ( w - 50 ) / 4 }
+		mask:			mask-tri.png
+		z index:	0
+	sbg1:
+		left:			0
+		width:		{ w }
+		top:			150
+		height:		55
+		z index:	0
+		mask:			{ crop("mask-tri.png", width: 1000, height: 1000 * (55 / (w - 10)), offset_x:0, offset_y:0) }
+	sbg2:
+		left:			45
+		width:		{ w - 90 }
+		top:			210
+		height:		55
+		z index:	0
+		mask:			{ crop("mask-tri.png", width: 1000, height: (1000 * (55 / (w - 90))), offset_x:0, offset_y:0) }
+	sbg3:
+		left:			85
+		width:		{ w - 170 }
+		top:			270
+		height:		55
+		z index:	0
+		mask:			{ crop("mask-tri.png", width: 1000, height: (1000 * (55 / (w - 170))), offset_x:0, offset_y:0) }
+
+	weapon head bg:
+		left:			0
+		width:		{ w }
+		top:			340
+		height:		30
+		z index:	0
+		mask:			{ crop("mask-tri.png", width: 1000, height: (1000 * (30 / w)), offset_x:0, offset_y:0) }
+	weapon head name:
+		left:			50
+		width:		100
+		top:			340
+		height:		30
+		z index:	1
+		alignment: left middle
+		font:
+			name:			{ hfont }
+			size:			14
+	weapon head a:
+		left:			200
+		width:		25
+		top:			340
+		height:		30
+		z index:	1
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			size:			14
+	weapon head wsbs:
+		left:			225
+		width:		50
+		top:			340
+		height:		30
+		z index:	1
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			size:			14
+	weapon head d:
+		left:			275
+		width:		45
+		top:			340
+		height:		30
+		z index:	1
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			size:			14
+	weapon head sa:
+		left:			320
+		width:		100
+		top:			340
+		height:		30
+		z index:	1
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			size:			14
+	weapon head i:
+		left:			420
+		width:		100
+		top:			340
+		height:		30
+		z index:	1
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			size:			14

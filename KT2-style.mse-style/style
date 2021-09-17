@@ -1,0 +1,46 @@
+mse version:  2.1.2
+short name:   Op Data Slate
+full name:    Operative Data Slate
+version:      2021-09-01
+game:					KT2
+depends on:		KT2.mse-game 2021-09-01
+
+# Oversized card: 5" x 7" // 89mm x 129mm // 525px x 750px @150ppi
+card width:		525
+card height:	750
+card dpi:			150
+
+init script:
+	w := 525
+	h := 750
+	hfont := "Oswald"
+	bfont := "Roboto"
+
+	stat_font_size := 56
+	stat_box_height := 75
+	stat_box_width := 50
+
+include file:	kt2-extra-fields.mse
+include file: kt2-extra-style.mse
+include file: kt2-style.mse
+
+styling field:
+	type:			color
+	name: 		Title Colour
+	initial: 	rgb(43,12,0)
+	choice:
+		name:		Orange
+		color:	rgb(255,128,0)
+	choice: 	
+		name: 	Brown
+		color: 	rgb(43,12,0)
+styling field:
+	type:			color
+	name:			Stats Colour
+	initial: 	rgb(255,128,0)
+	choice:
+		name:		Orange
+		color:	rgb(255,128,0)
+	choice: 	
+		name: 	Brown
+		color: 	rgb(43,12,0)
