@@ -1,0 +1,30 @@
+extra card field:
+	type:       color
+	name:       border0
+	initial:		rgb(0,0,0)
+	editable:		false
+	save value: false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				border1
+	default:		styling.Primary_Colour
+	script:     styling.Primary_Colour
+	editable:		false
+	save value:	false
+	show statistics:	false
+extra card field:
+	type:				color
+	name:				ftbg
+	initial:		rgb(0,0,0);
+	editable:		false
+	save value:	false
+	show statistics: false
+
+extra card field:
+	type:				text
+	name:				ft_text
+	save value: false
+	editable: 	false
+	script:			to_upper(card.fireteamop)
+	show statistics: false

@@ -1,0 +1,274 @@
+# 3.5" x 5" @150ppi 
+# 525 x 750
+
+card style:
+	fireteamop:
+		top: 			10
+		left: 		0
+		width:  	{ w }
+		height:		40
+		z index: 	10
+		render style: hidden
+	
+	killteam:
+		top:			50
+		left:			0
+		width:		{ w }
+		height: 	20
+		z index:	10
+		render style: hidden
+	
+	art:
+		top:		0
+		left:		35
+		width:	{ w - 70 }
+		height: { 3 * ( w - 70 ) / 4 }
+		z index: 5
+		mask:		mask-tri.png
+
+# Statblock 
+	stat m:
+		left:			50
+		top:			135
+		width:		{ stat_box_width }
+		height:		{ stat_box_height }
+		z index:	10
+		alignment: center middle
+		font:
+			name:		{ hfont }
+			size:		{ stat_font_size }
+			color:	{ styling.Title_Colour }
+	stat df:
+		left:			90
+		top:			195
+		width:		{ stat_box_width }
+		height:		{ stat_box_height }
+		z index:	10
+		alignment: center middle
+		font:
+			name:		{ hfont }
+			size:		{ stat_font_size }
+			color:	{ styling.Title_Colour }
+	stat sv:
+		left:			130
+		top:			255
+		width:		{ stat_box_width }
+		height:		{ stat_box_height }
+		z index:	10
+		alignment: center middle
+		font:
+			name:		{ hfont }
+			size:		{ stat_font_size }
+			color:	{ styling.Title_Colour }
+			
+	stat apl:
+		right:		{ w - 54 }
+		top:			135
+		width:		{ stat_box_width }
+		height:		{ stat_box_height }
+		z index:	10
+		alignment: center middle
+		font:
+			name:		{ hfont }
+			size:		{ stat_font_size }
+			color:	{ styling.Title_Colour }
+	stat ga:
+		right:		{ w - 92 }
+		top:			195
+		width:		{ stat_box_width }
+		height:		{ stat_box_height }
+		z index:	10
+		alignment: center middle
+		font:
+			name:		{ hfont }
+			size:		{ stat_font_size }
+			color:	{ styling.Title_Colour }
+	stat w:
+		right:		{ w - 130 }
+		top:			255
+		width:		{ stat_box_width }
+		height:		{ stat_box_height }
+		z index:	10
+		alignment: center middle
+		font:
+			name:		{ hfont }
+			size:		{ stat_font_size }
+			color:	{ styling.Title_Colour }
+
+	w1type:
+		left:			{ w_left }
+		top:			{ w_top + 5 }
+		width:		{ 20  }
+		height:		{ w_height - 10 }
+		render style: image
+		choice images:
+			Ranged: 			/kt2-common.mse-include/resource/marksman.png
+			Ranged Ammo: 	/kt2-common.mse-include/resource/marksman.png
+			Combat: 			/kt2-common.mse-include/resource/combat.png
+		z index:	10
+	w1name:
+		left:			{ w_left + get_w_left(id: 1) }
+		top:			{ w_top }
+		width:		{ if card.w1type == "Ranged Ammo" then get_w_left(id: 8) - w_width[0] else w_width[1] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	left middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w1a:
+		visible:	{ card.w1type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 2) }
+		top:			{ w_top }
+		width:		{ w_width[2] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w1bsws:
+		visible:	{ card.w1type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 3) }
+		top:			{ w_top }
+		width:		{ w_width[3] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w1dmg:
+		visible:	{ card.w1type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 4) }
+		top:			{ w_top }
+		width:		{ w_width[4] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w1crit:
+		visible:	{ card.w1type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 5) }
+		top:			{ w_top }
+		width:		{ w_width[5] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w1sr:
+		visible:	{ card.w1type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 6) }
+		top:			{ w_top }
+		width:		{ w_width[6] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w1i:
+		visible:	{ card.w1type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 7) }
+		top:			{ w_top }
+		width:		{ w_width[7] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+
+	w2type:
+		visible:	{ card.w1name != "" }
+		left:			{ w_left }
+		top:			{ w_top + w_height + 5 }
+		width:		{ 20  }
+		height:		{ w_height - 10 }
+		render style: image
+		choice images:
+			Ranged: 			/kt2-common.mse-include/resource/marksman.png
+			Ranged Ammo: 	/kt2-common.mse-include/resource/marksman.png
+			Combat: 			/kt2-common.mse-include/resource/combat.png
+		z index:	10
+	w2name:
+		visible:	{ card.w1name != "" }
+		left:			{ w_left + get_w_left(id: 1) }
+		top:			{ w_top + w_height }
+		width:		{ if card.w2type == "Ranged Ammo" then get_w_left(id: 8) - w_width[0] else w_width[1] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	left middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w2a:
+		visible:	{ card.w1name != "" and card.w2type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 2) }
+		top:			{ w_top + w_height }
+		width:		{ w_width[2] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w2bsws:
+		visible:	{ card.w1name != "" and card.w2type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 3) }
+		top:			{ w_top + w_height }
+		width:		{ w_width[3] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w2dmg:
+		visible:	{ card.w1name != "" and card.w2type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 4) }
+		top:			{ w_top + w_height }
+		width:		{ w_width[4] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w2crit:
+		visible:	{ card.w1name != "" and card.w2type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 5) }
+		top:			{ w_top + w_height }
+		width:		{ w_width[5] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w2sr:
+		visible:	{ card.w1name != "" and card.w2type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 6) }
+		top:			{ w_top + w_height }
+		width:		{ w_width[6] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
+	w2i:
+		visible:	{ card.w1name != "" and card.w2type != "Ranged Ammo" }
+		left:			{ w_left + get_w_left(id: 7) }
+		top:			{ w_top + w_height }
+		width:		{ w_width[7] }
+		height:		{ w_height }
+		z index:	10
+		alignment:	center middle shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			14
