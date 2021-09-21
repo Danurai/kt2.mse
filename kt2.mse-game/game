@@ -2,8 +2,8 @@ mse version: 	  2.0.0
 short name: 	  KT2
 full name: 		  Kill Team 2 DataSlates
 icon: 			    
-position hint:	01
-version: 		    2021-09-01
+position hint:	  01
+version: 		  2021-09-01
 
 init script: include file: script
 

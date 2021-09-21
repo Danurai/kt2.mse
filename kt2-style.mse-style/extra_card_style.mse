@@ -23,12 +23,14 @@ extra card style:
 		bottom:				{ h }
 		z index:			2
 		mask:					mask.png
+
 	ftbg:
 		left:					30
 		top:					38
 		width:				407
 		height:				142
 		z index:			1
+
 	artbg:
 		left:					350
 		top:					32
@@ -36,6 +38,7 @@ extra card style:
 		height:				149
 		mask:					tri_mask.png
 		z index:			2
+		
 	ft_text:
 		left:					45
 		top:					45
@@ -44,9 +47,10 @@ extra card style:
 		z index:			10
 		alignment:		centre middle shrink if-overflow
 		font:
-			name:			{ hfont }
-			color:		rgb(240,240,240)
-			size:			18
+			name:					{ hfont }
+			weight:				bold
+			color:				rgb(240,240,240)
+			size:					18
 
 	watermark:
 		left:			155
@@ -66,6 +70,7 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		black
 			size:			16
 	moverng:
@@ -84,6 +89,7 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		black
 			size:			16
 	statlbl ga:
@@ -95,6 +101,7 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		black
 			size:			16
 	statlbl df:
@@ -106,6 +113,7 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		black
 			size:			16
 	statlbl sv:
@@ -117,6 +125,7 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		black
 			size:			16
 	statlbl w:
@@ -128,5 +137,6 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		black
 			size:			16

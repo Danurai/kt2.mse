@@ -1,8 +1,0 @@
-card style:
-	fireteamop:
-		left:					45
-		top:					60
-		width:				310
-		height:				30
-		z index:			10
-		render style: hidden
