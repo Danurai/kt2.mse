@@ -1,0 +1,132 @@
+extra card style:
+	border0:
+		left:         0
+		width:        { w }
+		top:          0
+		height:       { h }
+		left width:   1
+		right width:  1
+		top width:    1
+		bottom width: 1
+		z index:			99
+	cardbg:
+		left:					17
+		width:				715
+		top:					56
+		height:				432
+		z index:			1
+		mask:					bg_mask.png
+	border1:
+		left:					0
+		right:				{ w }
+		top:					0
+		bottom:				{ h }
+		z index:			2
+		mask:					mask.png
+	ftbg:
+		left:					30
+		top:					38
+		width:				407
+		height:				142
+		z index:			1
+	artbg:
+		left:					350
+		top:					32
+		width:				173
+		height:				149
+		mask:					tri_mask.png
+		z index:			2
+	ft_text:
+		left:					45
+		top:					45
+		width:				310
+		height:				30
+		z index:			10
+		alignment:		centre middle shrink if-overflow
+		font:
+			name:			{ hfont }
+			color:		rgb(240,240,240)
+			size:			18
+
+	watermark:
+		left:			155
+		width:		440
+		top:			185
+		height:		330
+		render style:	image
+		z index:	2
+		image:	{ set_alpha( alpha: 0.05, "/kt2-common.mse-include/resource/logo.png" ) }
+
+	statlbl m:
+		left:			518
+		width:		30
+		top:			40
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	moverng:
+		left:			533
+		top:			80
+		width:		20
+		height:		20
+		z index:	9
+		default:			rng2.png
+	statlbl apl:
+		left:			576
+		width:		60
+		top:			40
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	statlbl ga:
+		left:			649
+		width:		60
+		top:			40
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	statlbl df:
+		left:			478
+		width:		30
+		top:			110
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	statlbl sv:
+		left:			536
+		width:		60
+		top:			110
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	statlbl w:
+		left:			609
+		width:		60
+		top:			110
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16

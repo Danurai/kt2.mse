@@ -5,5 +5,6 @@ icon:
 position hint:	01
 version: 		    2021-09-01
 
-include file:   kt2-fields.mse
+init script: include file: script
 
+include file:   card_fields.mse

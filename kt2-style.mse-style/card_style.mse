@@ -1,0 +1,118 @@
+card style:
+
+	fireteamop:
+		left:					45
+		top:					50
+		width:				310
+		height:				30
+		z index:			10
+		render style: hidden
+	
+	killteam:
+		left:					35
+		top:					475
+		width:				500
+		height:				25
+		z index:			10
+		render style:	hidden
+
+	killteamtags:
+		left:				35
+		top:				475
+		height:			25
+		width:			500
+		alignment:	middle shrink if-overflow
+		z index:		9
+		font:
+			name:				{ hfont }
+			color:			black
+			size:				10
+
+	info:
+		left:					45
+		top:					80
+		width:				310
+		height:				90
+		z index:			10
+		alignment:		left top shrink if-overflow
+		font:
+			name:					{ bfont }
+			italic name:	{ bfonti }
+			style:				italic
+			size:					10
+			scale down to:	8
+			color:				white
+	art:
+		left:					350
+		top:					32
+		width:				173
+		height:				149
+		mask:					{ if styling.Use_Art_Transparency == "No" then "tri_mask.png" else "art_mask_1.png" }
+		z index:			9
+
+	stat m:
+		left:					508
+		top:					75
+		width:				30
+		height:				30
+		z index:			10
+		alignment:	center middle
+		font:
+			name:					{ hfont }
+			color:				black
+			size:					16
+	stat apl:
+		left:			576
+		width:		60
+		top:			75
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	stat ga:
+		left:			649
+		width:		60
+		top:			75
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	stat df:
+		left:			478
+		width:		30
+		top:			145
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	stat sv:
+		left:			536
+		width:		60
+		top:			145
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16
+	stat w:
+		left:			609
+		width:		60
+		top:			145
+		height:		30
+		z index:	10
+		alignment:	center middle
+		font:
+			name:			{ hfont }
+			color:		black
+			size:			16

@@ -1,0 +1,102 @@
+extra card field:
+	type:       color
+	name:       border0
+	initial:		rgb(0,0,0)
+	editable:		false
+	save value: false
+	show statistics: false
+extra card field:
+	type:       color
+	name:       cardbg
+	initial:		rgb(225,227,226)
+	editable:		false
+	save value: false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				border1
+	default:		styling.Primary_Colour
+	script:     styling.Primary_Colour
+	editable:		false
+	save value:	false
+	show statistics:	false
+extra card field:
+	type:				color
+	name:				artbg
+	initial:		rgb(255,255,255)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				ftbg
+	initial:		rgb(0,0,0);
+	editable:		false
+	save value:	false
+	show statistics: false
+
+extra card field:
+	type:				text
+	name:				ft_text
+	save value: false
+	editable: 	false
+	script:			to_upper(card.fireteamop)
+	show statistics: false
+
+extra card field:
+	type:				choice
+	name:				watermark
+	save value:	false
+	editable:		false
+	show statistics: false
+	choice:			watermark
+
+# Stats
+extra card field:
+	type:				text
+	name:				statlbl m
+	script:			"M"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				image
+	name:				moverng
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				statlbl ga
+	script:			"GA"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				statlbl apl
+	script:			"APL"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				statlbl df
+	script:			"DF"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				statlbl sv
+	script:			"SV"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				statlbl w
+	script:			"W"
+	save value:	false
+	editable:		false
+	show statistics: false
