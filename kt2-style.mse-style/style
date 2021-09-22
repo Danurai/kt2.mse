@@ -16,7 +16,6 @@ init script:
 	h := 525
 	hfont := "Oswald"
 	bfont := "Roboto"
-	bfonti := "Roboto Italic"
 
 styling field:
 	type:		text
@@ -32,6 +31,20 @@ styling field:
 	choice: 	
 		name: 	Brown
 		color: 	rgb(43,12,0)
+
+styling field:
+	type:		color
+	name:		Secondary Colour
+	initial:	rgb(43,12,0)
+	choice:
+		name:		Dark Orange Brown
+		color:	rgb(43,12,0)
+	choice:
+		name:		Black
+		color:	black
+	choice:
+		name:		Orange
+		color:	rgb(222,86,39)
 
 styling field:
 	type:			choice

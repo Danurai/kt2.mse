@@ -36,6 +36,7 @@ card field:
 	type:					choice
 	name:					fireteamop
 	description:	Operative Fire Team and Role
+	card list visible: true
 	choice:
 		name: Assault Intercessor
 		choice: (Warrior)
@@ -128,16 +129,18 @@ card field:
 	name:			w1a
 	show statistics: false
 card field:
-	type:			text
+	type:			choice
 	name:			w1bsws
 	show statistics: false
+	initial:	3+
+	choice:		2+
+	choice:		3+
+	choice:		4+
+	choice:		5+
+	choice:		6+
 card field:
 	type:			text
 	name:			w1dmg
-	show statistics: false
-card field:
-	type:			text
-	name:			w1crit
 	show statistics: false
 card field:
 	type:			text
@@ -174,9 +177,15 @@ card field:
 	name:			w2a
 	show statistics: false
 card field:
-	type:			text
+	type:			choice
 	name:			w2bsws
 	show statistics: false
+	initial:	3+
+	choice:		2+
+	choice:		3+
+	choice:		4+
+	choice:		5+
+	choice:		6+
 card field:
 	type:			text
 	name:			w2dmg
@@ -245,3 +254,20 @@ card field:
 	name:			actions
 	description:	Operative Actions
 	show statistics: false
+
+card field:
+	type:		boolean
+	name:		skill combat
+	description:	Can learn Combat skills
+card field:
+	type:		boolean
+	name:		skill staunch
+	description:	Can learn Staunch skills
+card field:
+	type:		boolean
+	name:		skill marksman
+	description:	Can learn Marksman skills
+card field:
+	type:		boolean
+	name:		skill scout
+	description:	Can learn Scout skills

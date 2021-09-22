@@ -60,8 +60,9 @@ extra card field:
 	editable:		false
 	show statistics: false
 extra card field:
-	type:				image
+	type:				text
 	name:				moverng
+	script:			"2"
 	save value:	false
 	editable:		false
 	show statistics: false
@@ -99,4 +100,119 @@ extra card field:
 	script:			"W"
 	save value:	false
 	editable:		false
+	show statistics: false
+
+extra card field:
+	type:				color
+	name:				weaponheaderbg
+	initial:		rgb(140,140,140)
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				weapontblbgr2
+	initial:		rgb(200,200,200)
+	save value:	false
+	editable:		false
+	show statistics: false
+
+extra card field:
+	type:				text
+	name:				weaponheader name
+	script:			"NAME"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				weaponheader a
+	script:			"A"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				weaponheader bsws
+	script:			"BS/WS"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				weaponheader d
+	script:			"D"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				weaponheader sr
+	script:			"SR"
+	save value:	false
+	editable:		false
+	show statistics: false
+extra card field:
+	type:				text
+	name:				weaponheader i
+	script:			"!"
+	save value:	false
+	editable:		false
+	show statistics: false
+
+extra card field:
+	type:				color
+	name:				combat bg1
+	initial:		rgb(222,86,39)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				combat bg2
+	initial:		rgb(140,140,140)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				staunch bg1
+	initial:		rgb(222,86,39)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				staunch bg2
+	initial:		rgb(140,140,140)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				marksman bg1
+	initial:		rgb(222,86,39)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				marksman bg2
+	initial:		rgb(140,140,140)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				scout bg1
+	initial:		rgb(222,86,39)
+	editable:		false
+	save value:	false
+	show statistics: false
+extra card field:
+	type:				color
+	name:				scout bg2
+	initial:		rgb(140,140,140)
+	editable:		false
+	save value:	false
 	show statistics: false

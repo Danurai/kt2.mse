@@ -11,7 +11,7 @@ card style:
 	killteam:
 		left:					35
 		top:					475
-		width:				500
+		width:				510
 		height:				25
 		z index:			10
 		render style:	hidden
@@ -20,13 +20,16 @@ card style:
 		left:				35
 		top:				475
 		height:			25
-		width:			500
+		width:			510
 		alignment:	middle shrink if-overflow
 		z index:		9
 		font:
 			name:				{ hfont }
-			color:			black
+			weight:			bold
+			color:			{ styling.Secondary_Colour }
 			size:				10
+		symbol font:
+			name:				kt2
 
 	info:
 		left:					45
@@ -37,7 +40,6 @@ card style:
 		alignment:		left top shrink if-overflow
 		font:
 			name:					{ bfont }
-			italic name:	{ bfonti }
 			style:				italic
 			size:					10
 			scale down to:	8
@@ -50,6 +52,7 @@ card style:
 		mask:					{ if styling.Use_Art_Transparency == "No" then "tri_mask.png" else "art_mask_1.png" }
 		z index:			9
 
+################################################################################# Statblock
 	stat m:
 		left:					508
 		top:					75
@@ -58,9 +61,10 @@ card style:
 		z index:			10
 		alignment:	center middle
 		font:
-			name:					{ hfont }
-			color:				black
-			size:					16
+			name:			{ hfont }
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
+			size:			16
 	stat apl:
 		left:			576
 		width:		60
@@ -70,7 +74,8 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	stat ga:
 		left:			649
@@ -81,7 +86,8 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	stat df:
 		left:			478
@@ -92,7 +98,8 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	stat sv:
 		left:			536
@@ -103,7 +110,8 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	stat w:
 		left:			609
@@ -114,5 +122,204 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
+
+
+################################################################################# Weapons
+	w1type:
+		left:			35
+		width:		19
+		top:			217
+		height:		19
+		z index:	10
+		render style:	image
+		choice images:
+			Ranged:				/kt2-common.mse-include/resource/marksman.png
+			Ranged Ammo:	/kt2-common.mse-include/resource/marksman.png
+			Combat:				/kt2-common.mse-include/resource/combat1.png
+	w1name:
+		left:			{ wpn_cell_left(1) }
+		width:		{ wpn_cell_width[1] }
+		top:			{ wpn_cell_top(0) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle left shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w1a:
+		left:			{ wpn_cell_left(2) }
+		width:		{ wpn_cell_width[2] }
+		top:			{ wpn_cell_top(0) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w1bsws:
+		left:			{ wpn_cell_left(3) }
+		width:		{ wpn_cell_width[3] }
+		top:			{ wpn_cell_top(0) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w1dmg:
+		left:			{ wpn_cell_left(4) }
+		width:		{ wpn_cell_width[4] }
+		top:			{ wpn_cell_top(0) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w1sr:
+		left:			{ wpn_cell_left(5) }
+		width:		{ wpn_cell_width[5] }
+		top:			{ wpn_cell_top(0) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w1i:
+		left:			{ wpn_cell_left(6) }
+		width:		{ wpn_cell_width[6] }
+		top:			{ wpn_cell_top(0) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+
+	w2type:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			35
+		width:		19
+		top:			{ wpn_cell_top(1) + 2 }
+		height:		19
+		z index:	10
+		render style:	image
+		choice images:
+			Ranged:				/kt2-common.mse-include/resource/marksman.png
+			Ranged Ammo:	/kt2-common.mse-include/resource/marksman.png
+			Combat:				/kt2-common.mse-include/resource/combat1.png
+	w2name:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			{ wpn_cell_left(1) }
+		width:		{ wpn_cell_width[1] }
+		top:			{ wpn_cell_top(1) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle left shrink if-overflow
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w2a:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			{ wpn_cell_left(2) }
+		width:		{ wpn_cell_width[2] }
+		top:			{ wpn_cell_top(1) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w2bsws:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			{ wpn_cell_left(3) }
+		width:		{ wpn_cell_width[3] }
+		top:			{ wpn_cell_top(1) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w2dmg:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			{ wpn_cell_left(4) }
+		width:		{ wpn_cell_width[4] }
+		top:			{ wpn_cell_top(1) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w2sr:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			{ wpn_cell_left(5) }
+		width:		{ wpn_cell_width[5] }
+		top:			{ wpn_cell_top(1) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+	w2i:
+		visible:	{ wpn_cell_visible(row: 2) }
+		left:			{ wpn_cell_left(6) }
+		width:		{ wpn_cell_width[6] }
+		top:			{ wpn_cell_top(1) }
+		height:		{ wpn_cell_height }
+		z index:	10
+		alignment: middle center
+		font:
+			name:			{ bfont }
+			size:			{ wpn_cell_font_size }
+
+
+
+
+
+	skill combat:
+		left:			565
+		top:			486
+		width:		26
+		height:		26
+		z index:	10
+		render style:	image
+		choice images:
+			yes:			/kt2-common.mse-include/resource/combat1.png
+			no:				{ invert_image("/kt2-common.mse-include/resource/combat1.png") }
+	skill staunch:
+		left:			604
+		top:			466
+		width:		24
+		height:		32
+		z index:	10
+		render style:	image
+		choice images:
+			yes:			/kt2-common.mse-include/resource/staunch1.png
+			no:				{ invert_image("/kt2-common.mse-include/resource/staunch1.png") }
+	skill marksman:
+		left:			642
+		top:			487
+		width:		24
+		height:		24
+		z index:	10
+		render style:	image
+		choice images:
+			yes:			/kt2-common.mse-include/resource/marksman1.png
+			no:				{ invert_image("/kt2-common.mse-include/resource/marksman1.png") }
+	skill scout:
+		left:			679
+		top:			467
+		width:		26
+		height:		32
+		z index:	10
+		render style:	image
+		choice images:
+			yes:			/kt2-common.mse-include/resource/scout1.png
+			no:				{ invert_image("/kt2-common.mse-include/resource/scout1.png") }

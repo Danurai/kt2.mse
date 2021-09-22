@@ -45,6 +45,7 @@ extra card style:
 		alignment:		centre middle shrink if-overflow
 		font:
 			name:			{ hfont }
+			weight:		bold
 			color:		rgb(240,240,240)
 			size:			18
 
@@ -66,7 +67,8 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	moverng:
 		left:			533
@@ -74,7 +76,11 @@ extra card style:
 		width:		20
 		height:		20
 		z index:	9
-		default:			rng2.png
+		always symbol:	true
+		symbol font:
+			name:			kt2
+			size:			16
+
 	statlbl apl:
 		left:			576
 		width:		60
@@ -84,7 +90,8 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	statlbl ga:
 		left:			649
@@ -95,7 +102,8 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	statlbl df:
 		left:			478
@@ -106,7 +114,8 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	statlbl sv:
 		left:			536
@@ -117,7 +126,8 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
 	statlbl w:
 		left:			609
@@ -128,5 +138,149 @@ extra card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			color:		black
+			weight:		bold
+			color:		{ styling.Secondary_Colour }
 			size:			16
+
+	weaponheaderbg:
+		left:			30
+		width:		690
+		top:			190
+		height:		25
+		z index:	3
+	weapontblbgr2:
+		visible:	{ card.w2name != "" }
+		left:			30
+		width:		690
+		top:			{ wpn_cell_top(1) }
+		height:		25
+		z index:	3
+
+
+	weaponheader name:
+		left:			{ wpn_cell_left(1) }
+		width:		{ wpn_cell_width[1] }
+		top:			189
+		height:		25
+		z index:	10
+		alignment: left middle
+		font:
+			name:			{ hfont }
+			weight:		bold
+			size:			12
+	weaponheader a:
+		left:			{ wpn_cell_left(2) }
+		width:		{ wpn_cell_width[2] }
+		top:			189
+		height:		25
+		z index:	10
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			weight:		bold
+			size:			12
+	weaponheader bsws:
+		left:			{ wpn_cell_left(3) }
+		width:		{ wpn_cell_width[3] }
+		top:			189
+		height:		25
+		z index:	10
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			weight:		bold
+			size:			12
+	weaponheader d:
+		left:			{ wpn_cell_left(4) }
+		width:		{ wpn_cell_width[4] }
+		top:			189
+		height:		25
+		z index:	10
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			weight:		bold
+			size:			12
+	weaponheader sr:
+		left:			{ wpn_cell_left(5) }
+		width:		{ wpn_cell_width[5] }
+		top:			189
+		height:		25
+		z index:	10
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			weight:		bold
+			size:			12
+	weaponheader i:
+		left:			{ wpn_cell_left(6) }
+		width:		{ wpn_cell_width[6] }
+		top:			189
+		height:		25
+		z index:	10
+		alignment: center middle
+		font:
+			name:			{ hfont }
+			weight:		bold
+			size:			12
+
+	combat bg1:
+		left:			548
+		top:			460
+		width:		60
+		height:		55
+		z index:	8
+		mask:			{flip_vertical("tri_mask.png") }
+	combat bg2:
+		visible:	{ card.skill_combat == "no" }
+		left:			552
+		top:			465
+		width:		52
+		height:		48
+		z index:	9
+		mask:			{flip_vertical("tri_mask.png") }
+	staunch bg1:
+		left:			586
+		top:			460
+		width:		60
+		height:		55
+		z index:	8
+		mask:			tri_mask.png
+	staunch bg2:
+		visible:	{ card.skill_staunch == "no" }
+		left:			590
+		top:			463
+		width:		52
+		height:		48
+		z index:	9
+		mask:			tri_mask.png
+	marksman bg1:
+		left:			624
+		top:			460
+		width:		60
+		height:		55
+		z index:	8
+		mask:			{flip_vertical("tri_mask.png") }
+	marksman bg2:
+		visible:	{ card.skill_marksman == "no" }
+		left:			628
+		top:			465
+		width:		52
+		height:		48
+		z index:	9
+		mask:			{flip_vertical("tri_mask.png") }
+	scout bg1:
+		left:			662
+		top:			460
+		width:		60
+		height:		55
+		z index:	9
+		mask:			tri_mask.png
+	scout bg2:
+		visible:	{ card.skill_scout == "no" }
+		left:			666
+		top:			463
+		width:		52
+		height:		48
+		z index:	9
+		mask:			tri_mask.png

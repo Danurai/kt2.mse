@@ -1,0 +1,18 @@
+mse version:		2.1.2
+short name:			kt2_symbols
+icon:						skull.png
+version:				2021-09-01
+
+image font size:	325
+horizontal space:	2
+vertical space:		0
+
+symbol:
+	code:		s
+	image:	skull.png
+symbol:
+	code:		S
+	image:	skullo.png
+symbol:
+	code:		2
+	image:	rng2.png
