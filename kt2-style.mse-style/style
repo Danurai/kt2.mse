@@ -1,46 +1,45 @@
-mse version:  2.1.2
-short name:   Op Data Slate
-full name:    Operative Data Slate
-version:      2021-09-01
-game:					KT2
-depends on:		KT2.mse-game 2021-09-01
+mse version:	2.1.2
+short name:		Data Card
+full name:		Operative Data Card
+version:			2021-09-01
+game:					kt2
+depends on:		kt2.mse-game 2021-09-01
+depends on:		kt2-common.mse-include 2021-09-01
 
 # Oversized card: 5" x 7" // 89mm x 129mm // 525px x 750px @150ppi
-card width:		525
-card height:	750
+card width:		750
+card height:	525
 card dpi:			150
 
 init script:
-	w := 525
-	h := 750
+	w := 750
+	h := 525
 	hfont := "Oswald"
 	bfont := "Roboto"
-
-	stat_font_size := 56
-	stat_box_height := 75
-	stat_box_width := 50
-
-include file:	kt2-extra-fields.mse
-include file: kt2-extra-style.mse
-include file: kt2-style.mse
+	bfonti := "Roboto Italic"
 
 styling field:
-	type:			color
-	name: 		Title Colour
-	initial: 	rgb(43,12,0)
+	type:		text
+	name:		Chapter
+
+styling field:
+	type:		color
+	name:		Primary Colour
+	initial: 	rgb(222,86,39)
 	choice:
 		name:		Orange
-		color:	rgb(255,128,0)
+		color: 	rgb(222,86,39)
 	choice: 	
 		name: 	Brown
 		color: 	rgb(43,12,0)
+
 styling field:
-	type:			color
-	name:			Stats Colour
-	initial: 	rgb(255,128,0)
-	choice:
-		name:		Orange
-		color:	rgb(255,128,0)
-	choice: 	
-		name: 	Brown
-		color: 	rgb(43,12,0)
+	type:			choice
+	name:			Use Art Transparency
+	initial:	No
+	choice:		Yes
+	choice:		No
+
+include file: card_style.mse
+include file:	extra_card_fields.mse
+include file:	extra_card_style.mse

@@ -25,7 +25,6 @@ card style:
 		z index:		9
 		font:
 			name:				{ hfont }
-			weight:			bold
 			color:			black
 			size:				10
 
@@ -38,6 +37,7 @@ card style:
 		alignment:		left top shrink if-overflow
 		font:
 			name:					{ bfont }
+			italic name:	{ bfonti }
 			style:				italic
 			size:					10
 			scale down to:	8
@@ -58,10 +58,9 @@ card style:
 		z index:			10
 		alignment:	center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		black
-			size:			16
+			name:					{ hfont }
+			color:				black
+			size:					16
 	stat apl:
 		left:			576
 		width:		60
@@ -71,7 +70,6 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			weight:		bold
 			color:		black
 			size:			16
 	stat ga:
@@ -83,7 +81,6 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			weight:		bold
 			color:		black
 			size:			16
 	stat df:
@@ -95,7 +92,6 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			weight:		bold
 			color:		black
 			size:			16
 	stat sv:
@@ -107,7 +103,6 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			weight:		bold
 			color:		black
 			size:			16
 	stat w:
@@ -119,6 +114,5 @@ card style:
 		alignment:	center middle
 		font:
 			name:			{ hfont }
-			weight:		bold
 			color:		black
 			size:			16
