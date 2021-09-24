@@ -3,6 +3,7 @@ short name:		Data Card
 full name:		Operative Data Card
 version:			2021-09-01
 game:					kt2
+icon:         card_sample.png
 depends on:		kt2.mse-game 2021-09-01
 depends on:		kt2-common.mse-include 2021-09-01
 
