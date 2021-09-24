@@ -14,5 +14,14 @@ symbol:
 	code:		S
 	image:	skullo.png
 symbol:
+	code:		1
+	image:	rng1.png
+symbol:
 	code:		2
 	image:	rng2.png
+symbol:
+	code:		3
+	image:	rng3.png
+symbol:
+	code:		6
+	image:	rng6.png

@@ -1,0 +1,152 @@
+mse version:			2.1.2
+short name:				Default
+full name:				Default Style
+version:					2021-09-01
+game:							kt2cards
+icon:
+depends on:				kt2cards.mse-game
+
+# 41mm x 63mm (1.6" x 2.48") @150ppi = 5.903ppmm
+card width:				242
+card height:			372
+card dpi:					150
+
+init script:
+	w := 242
+	h := 372
+	fontname := { if input == "Equipment" then "Courier New" else "Oswald" }
+
+card style:
+	type:
+		left:			10
+		width:		{ w - 105 }
+		top:			10
+		height:		25
+		z index:	10
+		render style:	hidden
+	effect:
+		left:			{w - 95 }
+		width:		20
+		top:			10
+		height:		25
+		z index:	10
+		font:
+			name:	Arial
+	cost:
+		left:			{ w - 75 }
+		width:		65
+		top:			10
+		height:		25
+		z index:	10
+		render style: hidden
+	name:
+		left:		10
+		width:	{ w - 20 }
+		top:		40
+		height:	25
+		alignment: center middle shrink if-overflow
+		font:
+			name:	{ fontname(card.type) }
+			size: 18
+			weight: bold
+	rule:
+		left:		10
+		width:	{ w - 20 }
+		top:		70
+		height:	{ h - 100 }
+		alignment:	top left shrink if-overflow
+		symbol font:
+			name:		kt2.mse-symbol-font
+		font:
+			name:		Arial
+			size:		12
+			scale down to:	4
+	wpn_sr:	
+		visible:	{ card.effect == "Attack" }
+		left:		10
+		width:	{ w - 20 }
+		top:		{ h - 110 }
+		height:	25
+		alignment: middle center shrink if-overflow
+		font:
+			name:		Arial
+			size:		12
+		symbol font:
+			name:		kt2.mse-symbol-font
+	wpn_i:	
+		visible:	{ card.effect == "Attack" }
+		left:		10
+		width:	{ w - 20 }
+		top:		{ h - 60 }
+		height:	25
+		alignment: middle center shrink if-overflow
+		font:
+			name:		Arial
+			size:		12
+		symbol font:
+			name:		kt2.mse-symbol-font
+	restriction:
+		left:		5
+		width:	{ w - 10 }
+		top:		{ h - 30 }
+		height:	20
+		alignment: left middle shrink if-overflow
+		symbol font:
+			name:		kt2.mse-symbol-font
+			size:		12
+		font:
+			name:		Oswald
+			weight:	bold
+			size:		12
+
+extra card field:
+	type:				color
+	name:				background
+	editable:		false
+	save value:	false
+	show statistics:	false
+	script:			if card.type == "Equipment" then rgb(0,0,100) else if card.type == "Strategic Ploy" then rgb(120,120,120) else rgb(0,0,0)
+extra card field:
+	type:		text
+	name:		type_caps
+	editable:		false
+	save value:	false
+	show statistics: false
+	script:	to_upper(card.type)
+extra card field:
+	type:		text
+	name:		cost_caps
+	save value:	false
+	show statistics: false
+	script:	if card.type == "Equipment" then "[{card.cost} EP]" else "{card.cost} AP"
+
+extra card style:
+	background:
+		left:			5
+		width:		{ w - 10 }
+		top:			8
+		height:		29
+	type_caps:
+		left:			10
+		width:		{ w - 65 }
+		top:			10
+		height:		25
+		alignment: left middle
+		z index:	1
+		font:
+			name:			Oswald
+			size: 		14
+			weight: 	bold
+			color:		white
+	cost_caps:
+		left:			{ w - 75 }
+		width:		65
+		top:			10
+		height:		25
+		z index:	1
+		alignment: right middle
+		font:
+			name:			{ fontname(card.type) }
+			size:			14
+			weight:		bold
+			color:		white
