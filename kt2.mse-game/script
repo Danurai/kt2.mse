@@ -1,5 +1,3 @@
-alert := "This is a test"
-
 faction_tags := [
   "Space Marines": "Space Marine, Imperium, Adeptus Astartes, \<chapter>"
   "Craftworlds": "Craftworld, Aeldari, Asuryani, \<craftworld>"
@@ -9,49 +7,75 @@ faction_tags := [
 get_tags := {
   ftags := to_upper(faction_tags[ card.killteam ])
   add_leader := if card.leader == "yes" and not contains(card.fireteamop, match: "Leader") then ", LEADER, " else ", "
-  if card.chapter != "" then ftags := replace( match: "\<CHAPTER>", replace: to_upper(card.chapter), ftags )
+  if card.chapter != "" then ftags := replace( match: "\<\\w+>", replace: to_upper(card.chapter), ftags )
   replace( match: "^(.+?)\\," replace: "<color:rgb(222,86,39)>\\1</color><sym>S</sym>,", ftags )
     + add_leader
     + replace(match: "(.+)\\s\\((.+)\\)", replace: "\\1, \\2", to_upper(card.fireteamop) )
 }
 
+# Weapon table arrangement
+
+wpn_cell_font_size := 11
 wpn_cell_width := [60, 190, 30, 50, 30, 180, 180]
-wpn_cell_height := 20
+
+wpn_type_list := {
+  [card.w1type,card.w2type,card.w3type,card.w4type,card.w5type,card.w6type,card.w7type,card.w8type,card.w9type,card.w10type,card.w11type,card.w12type,card.w13type,card.w14type,card.w15type,card.w16type,card.w17type,card.w18type,card.w19type,card.w20type][input]
+}
+wpn_name_list := {
+  [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name,card.w6name,card.w7name,card.w8name,card.w9name,card.w10name,card.w11name,card.w12name,card.w13name,card.w14name,card.w15name,card.w16name,card.w17name,card.w18name,card.w19name,card.w20name][input]
+}
+wpn_name_widths := {
+  [card_style.w1name.content_width,card_style.w2name.content_width,card_style.w3name.content_width,card_style.w4name.content_width,card_style.w5name.content_width,card_style.w6name.content_width,card_style.w7name.content_width,card_style.w8name.content_width,card_style.w9name.content_width,card_style.w10name.content_width,card_style.w11name.content_width,card_style.w12name.content_width,card_style.w13name.content_width,card_style.w14name.content_width,card_style.w15name.content_width,card_style.w16name.content_width,card_style.w17name.content_width,card_style.w18name.content_width,card_style.w19name.content_width,card_style.w20name.content_width][input]
+}
+
+
+wpn_tn_visible := {
+  is_selected := contains(card.wpntblshow, match: (input + 1) )
+  is_selected
+}
+wpn_cell_visible := {
+  hasammo := wpn_type_list(input) == "Ranged Ammo"
+  hasname := wpn_name_list(input) != ""
+  is_selected := contains(card.wpntblshow, match: (input + 1) )
+  hasname and is_selected and not hasammo
+}
 wpn_cell_left := {
-  # input: column
   left := 0
   for x from 0 to (input - 1) do left := left + wpn_cell_width[x]
   left
 }
-wpn_cell_top := {
-  215 + ( wpn_cell_height * input )
-}
-wpn_cell_font_size := 11
-wpn_info_visible := {
-  [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name,card.w6name,card.w7name,card.w8name,card.w9name][input-1] != ""
-}
-wpn_cell_visible := {
-  hasammo := [card.w1type,card.w2type,card.w3type,card.w4type,card.w5type,card.w6type,card.w7type,card.w8type,card.w9type,card.w10type][input] == "Ranged Ammo"
-  hasname := [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name,card.w6name,card.w7name,card.w8name,card.w9name,card.w10name][input] != ""
-  not hasammo and hasname
-}
-
-wpn_stripe_visible := {
-  [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name][input-1] != "" and contains(card.wpntblstripes, match: input)
-}
-
+# for "Ranged Ammo" weapons
 wpn_info_left := {
-  wpn_name_width:= [card_style.w1name.content_width, card_style.w2name.content_width, card_style.w3name.content_width, card_style.w4name.content_width, card_style.w5name.content_width][input]
-  wpn_cell_left(input+1) + wpn_name_width + 5
+  wpn_cell_left(1) + wpn_name_widths(input) + 5
 }
 wpn_info_width := {
   w - 50 - wpn_info_left(input)
 }
+wpn_info_visible := {
+  wpnvisible := wpn_tn_visible(input)
+  hasammo := wpn_type_list(input) == "Ranged Ammo"
+  hasammo and wpnvisible
+}
+
+wpn_cell_top := {
+  show_wpn_list := (for each x in split_text(match: ", ", card.wpntblshow) do [to_int(x)])
+  idx := position(of: (input + 1), in: show_wpn_list)
+  215 + ( wpn_cell_height * idx )
+}
+wpn_cell_height := 20
+
+wpn_stripe_visible := {
+  contains(card.wpntblstripes, match: input) and length(split_text(match: ", ", card.wpntblshow)) >= input
+}
+wpn_stripe_top := {
+  215 + ( wpn_cell_height * input )
+}
+
 
 # Abilities & unique actions
 aua_top := {
-  numw := length(filter_list([card.w1name,card.w2name,card.w3name,card.w4name,card.w5name], filter := { input != ""} ))
-  wpn_cell_top(numw) + 50
+  numw := length(split_text(match: ", ", card.wpntblshow))
+  215 + (wpn_cell_height * numw) + 50
 }
 aua_header_top := { 
   aua_top() - 25 
