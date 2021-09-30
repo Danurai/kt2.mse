@@ -68,82 +68,133 @@
 				}
 			]
 		},
-		"equipment": [{
+		"equipment": [
+			{
 				"name": "Auxiliary Grenade Launcher",
-				"cost":	1,
-				"restriction": ["Intercessor"],
+				"cost": 1,
+				"restriction": [
+					"Intercessor"
+				],
 				"ability": {
 					"text": "Frag and krak grenades the operative is equipped with can be selected for use twice, instead of once. Each time the operative performs a *Shoot* action, if a frag or krak grename is selected as the renaged weapon, an auxiliary grenade launcher can also be selected. If it is, for that action's shooting attack(s), frag or krak grenades are treated as not having the Rng [6] and Indirect special rules."
 				}
-			},{
+			},
+			{
 				"name": "Helix Gauntlet",
 				"cost": 2,
-				"restriction": ["Infiltrator Warrior"],
+				"restriction": [
+					"Infiltrator Warrior"
+				],
 				"text": "[[Infiltrator Warrior]] operative only. The operative gains the [[Medic]] keyword and can perform the following action during the battle:",
 				"action": {
 					"cost": 1,
 					"text": "Select one friendly [[SPACE MARINE]] operative Visible to and within [1] of this operative. That operative regains 2D3 lost wounds. This operative cannot perform this action while within Engagement Range of enemy operatives."
 				}
-			},{
+			},
+			{
 				"name": "Smoke Grenade",
 				"cost": 3,
-				"restriction": ["Incursor", "Infiltrator", "Reiver", "Scout"],
+				"restriction": [
+					"Incursor",
+					"Infiltrator",
+					"Reiver",
+					"Scout"
+				],
 				"text": "[[Incursor]], [[Infiltrator]], [[Reiver]] or [[Scout]] operative only. The operative can perform the following action during the battle:",
 				"action": {
 					"cost": 1,
 					"text": "Place the center of one Smoke token on a point within [6] of this operative. That token creates an area of smoke with a [2] radius and unlimited upward height (but not below) measured from the centre of that token. Until the end of the Turning Point, an operative is not Visible if a Cover line drawn to it crosses an area of smoke. This operative can only perform this action once, and cannot perform this action while within Engagement Range of enemy operatives."
 				}
-			},{
+			},
+			{
 				"name": "Haywire Mine",
 				"cost": 3,
-				"restriction": ["Incursor Warrior"],
-				"text":  ""
-			},{
+				"restriction": [
+					"Incursor Warrior"
+				],
+				"text": ""
+			},
+			{
 				"name": "Shock Grenade",
 				"cost": 3,
-				"restriction": ["Reiver"],
+				"restriction": [
+					"Reiver"
+				],
 				"text": "[[Revier]] operative only. The operative can perform the following action during the battle:"
-			},{
+			},
+			{
 				"name": "Frag Grenade",
 				"cost": 2,
 				"type": "ranged",
 				"weapon": {
-					"a": 4, "bsws": 3, "d": [2,3], "sr": ["Rng [6]", "Limited", "Blast [2]", "Indirect"]
+					"a": 4,
+					"bsws": 3,
+					"d": [
+						2,
+						3
+					],
+					"sr": [
+						"Rng [6]",
+						"Limited",
+						"Blast [2]",
+						"Indirect"
+					]
 				}
-			},{
+			},
+			{
 				"name": "Krak Grenade",
 				"cost": 3,
 				"type": "ranged",
 				"weapon": {
-					"a": 4, "bsws": 3, "d": [4,5], "sr": ["Rng [6]", "Limited", "AP1", "Indirect"]
+					"a": 4,
+					"bsws": 3,
+					"d": [
+						4,
+						5
+					],
+					"sr": [
+						"Rng [6]",
+						"Limited",
+						"AP1",
+						"Indirect"
+					]
 				}
-			},{
+			},
+			{
 				"name": "Purity Seal",
 				"cost": 3,
 				"ability": {
 					"text": "Once per battle, when this operative is fighting in combat, making a shooting attack, or a shooting attack is being made against it, you can use the Command Re-roll Tactical Ploy (see the Kill Team Core Book) withour spending any CP."
 				}
-			},{
+			},
+			{
 				"name": "Suspensor System",
 				"cost": 3,
-				"ability":{
+				"ability": {
 					"text": "The Heavy special rule of ranged weapons the operative is equiped with is treated differently. Instead, an operative cannot move more than 3 [2] in the same activation in which it performs a *Shoot* action with any of those ranged weapons."
 				}
-			},{
+			},
+			{
 				"name": "Grapnel Launcher",
 				"cost": 1,
-				"restriction": ["Reiver"],
+				"restriction": [
+					"Reiver"
+				],
 				"ability": {
 					"text": ""
 				}
-			},{
+			},
+			{
 				"name": "Grav-Chute",
 				"cost": 2,
-				"restriction": ["Reiver"],
+				"restriction": [
+					"Reiver"
+				],
 				"ability": {
 					"text": ""
 				}
-			},{
+			},
+			{
 				"name": "Auspex",
 				"cost": 3,
 				"text": "The operative can perform the following action during the battle:",
@@ -151,7 +202,8 @@
 					"cost": 2,
 					"text": "Select one friendly [[Space Marine]] operative within [3] of and Visible to this operative. Until the end of the Turning Point, that operative's ranged weapons are treated as having the No Cover special rule. This operative cannot perform this action while within Engagement Range of enemy operatives."
 				}
-		}]
+			}
+		]
 	},
 	{
 		"id": "craftworlds",
@@ -176,12 +228,10 @@
 					{
 						"role": "Warrior",
 						"base": true,
-						"info": "Guardians are agile citizen-soldiers...",
+						"art": "eldarguardian.jpg",
+						"info": "Guardians are agile citizen-soldiers, trained for war to defend their craftworld in times of dire need. Guardian Defenders often serve as support troops, unleashing a withering hail of fire from their shuriken catapults at any foe they encounter.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -204,7 +254,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 3,
@@ -220,20 +270,17 @@
 						"uniqueactions": [],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					},
 					{
 						"role": "Heavy Gunner",
 						"ktlimit": 1,
-						"info": "Guardian Defenders are also expected to man heavy weapons platforms...",
+						"info": "Guardian Defenders are also expected to man heavy weapons platforms, guiding the hovering constructs forward. The operators of these weapons are always seeking new targets, ensuring their aims are true and that they are always on the move.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -256,7 +303,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 3,
@@ -278,13 +325,14 @@
 						],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					},
 					{
 						"role": "Heavy Weapon Platform",
+						"art": "heavyweaponplatform.jpg",
 						"equipment": {
 							"options": [
 								[
@@ -300,10 +348,7 @@
 						"ktlimit": 1,
 						"info": "Antigrav heavy weapons platforms can be equipped with a wide range of support weapons, ranging from vicious shuriken cannon to devastating bright lances.",
 						"stats": {
-							"m": [
-								2,
-								2
-							],
+							"m": 2,
 							"apl": 0,
 							"ga": 1,
 							"df": 3,
@@ -420,9 +465,9 @@
 						],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": false,
-							"move": false
+							"staunch": false,
+							"marksman": false,
+							"scout": false
 						}
 					},
 					{
@@ -430,10 +475,7 @@
 						"leader": true,
 						"info": "Those Aldari who lead Guardian Defender squads are expected to ensure their wards are expert combatants and experienced tacticians. It is a testament to the skill of the Asuryani that even their civilians can engage an enemy force and emerge victorious.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -456,7 +498,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 2,
@@ -472,9 +514,9 @@
 						"uniqueactions": [],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					}
 				]
@@ -492,10 +534,7 @@
 						"base": true,
 						"info": "In the most desperate of circumstances, the strategic needs of the craftworld will call for a group of its citizen-soldiers to deploy as Storm Guardians - warrior specifically armed to fight in the maelstrom of close combat.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -520,7 +559,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Storm Guardian Blades",
 								"a": 4,
 								"bsws": 3,
@@ -532,9 +571,9 @@
 						],
 						"skills": {
 							"combat": true,
-							"defense": false,
-							"ranged": false,
-							"move": true
+							"staunch": false,
+							"marksman": false,
+							"scout": true
 						}
 					},
 					{
@@ -553,10 +592,7 @@
 						},
 						"info": "Storm Guardians often bolster their short-ranged firepower with fusion guns and flamers, allowing their teams to better adapt to the ever-changing realities of the battlefield. They ensure the team's survival in the face of the most dire or numerous enemies.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -597,7 +633,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 3,
@@ -611,9 +647,9 @@
 						],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					},
 					{
@@ -621,10 +657,7 @@
 						"leader": true,
 						"info": "Storm Guardians fight with all the grace and skill of their kind, guided by experienced leaders.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -649,7 +682,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Storm Guardian Blades",
 								"a": 4,
 								"bsws": 2,
@@ -661,9 +694,9 @@
 						],
 						"skills": {
 							"combat": true,
-							"defense": false,
-							"ranged": false,
-							"move": true
+							"staunch": false,
+							"marksman": false,
+							"scout": true
 						}
 					}
 				]
@@ -681,10 +714,7 @@
 						"base": true,
 						"info": "Clad in long camoflaging cloaks, Rangers are unapparelled scouts and expert marksmen.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -726,7 +756,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 3,
@@ -744,9 +774,9 @@
 						],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					},
 					{
@@ -754,10 +784,7 @@
 						"leader": true,
 						"info": "Rangers are outcasts, who have left their craftworld by choice or necessity.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -800,7 +827,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 2,
@@ -818,9 +845,9 @@
 						],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					}
 				]
@@ -842,10 +869,7 @@
 						"base": true,
 						"info": "Dire Avengers are experts at wielding their Avenger catapults, which unleash a flurry of monomolecular shuriken with every burst of fire. They have an uncanny knack of knowing when to launch lightning-fast assaults or fall back to draw the enemy into a killing zone.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -870,7 +894,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 3,
@@ -895,9 +919,9 @@
 						],
 						"skills": {
 							"combat": false,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					},
 					{
@@ -905,10 +929,7 @@
 						"info": "Dire Avenger Exarchs are masters of their Aspect shrines, deadly warriors wholly consumed by the practice of war. Whether they go to the field carrying a long diresword or a pair of shuriken catapults, few can stand against them and live.",
 						"leader": true,
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -990,7 +1011,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Diresword",
 								"a": 4,
 								"bsws": 2,
@@ -1006,7 +1027,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Fists",
 								"a": 3,
 								"bsws": 2,
@@ -1018,7 +1039,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Power weapon",
 								"a": 4,
 								"bsws": 2,
@@ -1055,9 +1076,9 @@
 						],
 						"skills": {
 							"combat": true,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					}
 				]
@@ -1115,7 +1136,7 @@
 				"restriction": [
 					"Dire Avenger"
 				],
-				"type": "melee",
+				"type": "combat",
 				"weapon": {
 					"name": "Weaponised Panoply",
 					"a": 3,
@@ -1326,7 +1347,7 @@
 	},
 	{
 		"id": "harlequins",
-		"name": "Harlequins",
+		"name": "Harlequins", 	
 		"killteamname": "Troupe",
 		"labels": [
 			"Troupe",
@@ -1362,10 +1383,7 @@
 						},
 						"info": "Harlequin Players perform with breathtaking skill, whether their stage is a wraithbone-and-glass amphitheatre bathed in crystalline light or the firelit hell of the battlefield. They tumble, sprint and leap, every trigger squeeze and blade slash bringing orchestrated death to the enemy.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 3,
 							"ga": 1,
 							"df": 3,
@@ -1390,7 +1408,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's blade",
 								"a": 5,
 								"bsws": 3,
@@ -1404,7 +1422,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's caress",
 								"a": 5,
 								"bsws": 4,
@@ -1416,7 +1434,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's embrace",
 								"a": 5,
 								"bsws": 3,
@@ -1430,7 +1448,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's kiss",
 								"a": 5,
 								"bsws": 3,
@@ -1455,9 +1473,9 @@
 						"uniqueactions": [],
 						"skills": {
 							"combat": true,
-							"defense": false,
-							"ranged": false,
-							"move": true
+							"staunch": false,
+							"marksman": false,
+							"scout": true
 						}
 					},
 					{
@@ -1478,10 +1496,7 @@
 						},
 						"info": "Some Harelquins wield esoteric and destructive ranged weapons. These include the fusion pistol, which can reduce heavily armoured warriors to molten slop, or neuro disruptors, whic fire beams of energy capable of burning away nervous tissue in an agonising instant.",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 3,
 							"ga": 1,
 							"df": 3,
@@ -1524,7 +1539,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's blade",
 								"a": 5,
 								"bsws": 3,
@@ -1538,7 +1553,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's caress",
 								"a": 5,
 								"bsws": 4,
@@ -1550,7 +1565,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's embrace",
 								"a": 5,
 								"bsws": 3,
@@ -1564,7 +1579,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's kiss",
 								"a": 5,
 								"bsws": 3,
@@ -1589,9 +1604,9 @@
 						"uniqueactions": [],
 						"skills": {
 							"combat": true,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					},
 					{
@@ -1615,10 +1630,7 @@
 						},
 						"info": "",
 						"stats": {
-							"m": [
-								3,
-								2
-							],
+							"m": 3,
 							"apl": 2,
 							"ga": 1,
 							"df": 3,
@@ -1677,7 +1689,7 @@
 								]
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's blade",
 								"a": 5,
 								"bsws": 2,
@@ -1691,7 +1703,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's caress",
 								"a": 5,
 								"bsws": 3,
@@ -1703,7 +1715,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's embrace",
 								"a": 5,
 								"bsws": 2,
@@ -1717,7 +1729,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Harlequin's kiss",
 								"a": 5,
 								"bsws": 2,
@@ -1729,7 +1741,7 @@
 								"i": []
 							},
 							{
-								"type": "melee",
+								"type": "combat",
 								"name": "Power weapon",
 								"a": 5,
 								"bsws": 2,
@@ -1756,9 +1768,9 @@
 						"uniqueactions": [],
 						"skills": {
 							"combat": true,
-							"defense": false,
-							"ranged": true,
-							"move": true
+							"staunch": false,
+							"marksman": true,
+							"scout": true
 						}
 					}
 				]
