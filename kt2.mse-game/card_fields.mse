@@ -1,56 +1,60 @@
 card field:
-	type:					image
-	name:					art
-	description:	Operative Art
+	type:								image
+	name:								art
+	description:				Operative Art
 
 card field:
-	type:					choice
-	name:					killteam
-	description:	Kill Team Faction - Select one to set the tags
-	choice: Space Marines
-	choice:	Asuryani
-	choice: Harlequins
+	type:								choice
+	name:								killteam
+	description:				Kill Team Faction - Select one to set the tags
+	choice:	Space Marines
+	choice:	Craftworlds
+	choice:	Harlequins
 
 card field:
-	type:					text
-	name:					chapter
-	description:	Space Marine <Chapter> or equivalent
-	script:				styling.Chapter
+	type:								text
+	name:								chapter
+	description:				Space Marine <Chapter> or equivalent
+	script:							styling.Chapter
 
 card field:
-	type:				text
-	name:				killteamtags
-	save value:	false
-	editable:		false
-	script:			get_tags()
-	show statistics: false
+	type:								text
+	name:								killteamtags
+	editable:						false
+	show_statistics:		false
+	script:							get_tags()
 
 card field:
-	type:					text
-	name:					info
-	multi line:		true
-	description:	Operative Flavour text
-	show statistics: false
+	type:								text
+	name:								info
+	description:				Operative Flavour text
+	show_statistics:		false
+	multi_line:					true
+	card_list_allow:		false
 
 card field:
-	type:					choice
-	name:					fireteamop
-	description:	Operative Fire Team and Role
-	card list visible: true
+	type:								choice
+	name:								fireteamop
+	description:				Operative Fire Team and Role
+	identifying:				true
+	show_statistics:		false
+	card_list_visible:	true
+	card_list_name:			Operative
+	card_list_column:		1
 	choice:
 		name: Assault Intercessor
 		choice: (Warrior)
 		choice: (Leader)
 	choice:
-		name:	Tactical Marine
-		choice:	(Warrior)
+		name: Tactical Marine
+		choice: (Warrior)
 		choice: (Gunner)
 		choice: (Heavy Gunner)
-		choice:	(Leader)
+		choice: (Sergeant)
 	choice:
-		name:	Guardian Defender
+		name: Guardian Defender
 		choice: (Warrior)
-		choice:	(Heavy Gunner)
+		choice: (Heavy Gunner)
 		choice: (Heavy Weapon Platform)
 		choice: (Leader)
 	choice:
@@ -72,202 +76,1375 @@ card field:
 		choice: (Gunner)
 		choice: (Leader)
 
-# Stats
 card field:
-	type:					choice
-	name:					stat m
-	description:	Movement Limit
-	choice:				-
-	choice:				1
-	choice:				2
-	choice:				3
-	choice:				4
-card field:
-	type:					text
-	name:					stat ga
-	description:	Group Activation Number
-card field:
-	type:					text
-	name:					stat apl
-	description:	Action Point Limit
-card field:
-	type:					text
-	name:					stat df
-	description:	Defence
-card field:
-	type:					choice
-	name:					stat sv
-	description:	Save
-	choice:				2+
-	choice:				3+
-	choice:				4+
-	choice:				5+
-	choice:				6+
-card field:
-	type:					text
-	name:					stat w
-	description:	Wounds
-
-#attacks
-card field:
-	type:			choice
-	name:			w1type
-	choice:		None
-	choice:				
-		name:					Ranged
-		group choice:	Ranged
-		choice:				Ammo
-	choice:		Combat
-	choice:		Ammo
-	show statistics: false
-card field:
-	type:			text
-	name:			w1name
-	show statistics: false
-card field:
-	type:			text
-	name:			w1a
-	show statistics: false
-card field:
-	type:			choice
-	name:			w1bsws
-	show statistics: false
-	initial:	3+
-	choice:		2+
-	choice:		3+
-	choice:		4+
-	choice:		5+
-	choice:		6+
-card field:
-	type:			text
-	name:			w1dmg
-	show statistics: false
-card field:
-	type:			text
-	name:			w1sr
-	show statistics: false
-card field:
-	type:			text
-	name:			w1i
-	show statistics: false
+	type:								choice
+	name:								stat_m
+	description:				Movement Limit
+	card_list_visible:	true
+	card_list_name:			M
+	card_list_column:		2
+	choice:	-
+	choice:	1
+	choice:	2
+	choice:	3
+	choice:	4
 
 card field:
-	type:			text
-	name:			abilities
-	description:	Operative Abilities
-	show statistics: false
-	
-card field:
-	type:			choice
-	name:			w2type
-	choice:		None
-	choice:				
-		name:					Ranged
-		group choice:	Ranged
-		choice:				Ammo
-	choice:		Combat
-	choice:		Ammo
-	show statistics: false
-card field:
-	type:			text
-	name:			w2name
-	show statistics: false
-card field:
-	type:			text
-	name:			w2a
-	show statistics: false
-card field:
-	type:			choice
-	name:			w2bsws
-	show statistics: false
-	initial:	3+
-	choice:		2+
-	choice:		3+
-	choice:		4+
-	choice:		5+
-	choice:		6+
-card field:
-	type:			text
-	name:			w2dmg
-	show statistics: false
-card field:
-	type:			text
-	name:			w2crit
-	show statistics: false
-card field:
-	type:			text
-	name:			w2sr
-	show statistics: false
-card field:
-	type:			text
-	name:			w2i
-	show statistics: false
+	type:								text
+	name:								stat_ga
+	description:				Group Activation Number
+	card_list_visible:	true
+	card_list_name:			GA
+	card_list_column:		3
 
 card field:
-	type:			choice
-	name:			w3type
-	choice:		None
-	choice:				
-		name:					Ranged
-		group choice:	Ranged
-		choice:				Ammo
-	choice:		Combat
-	choice:		Ammo
-	show statistics: false
-card field:
-	type:			text
-	name:			w3name
-	show statistics: false
-card field:
-	type:			text
-	name:			w3a
-	show statistics: false
-card field:
-	type:			text
-	name:			w3bsws
-	show statistics: false
-card field:
-	type:			text
-	name:			w3dmg
-	show statistics: false
-card field:
-	type:			text
-	name:			w3crit
-	show statistics: false
-card field:
-	type:			text
-	name:			w3sr
-	show statistics: false
-card field:
-	type:			text
-	name:			w3i
-	show statistics: false
+	type:								text
+	name:								stat_apl
+	description:				Action Point Limit
+	card_list_visible:	true
+	card_list_name:			APL
+	card_list_column:		4
 
 card field:
-	type:			text
-	name:			abilities
-	description:	Operative Abilities
-	show statistics: false
+	type:								text
+	name:								stat_df
+	description:				Defence
+	card_list_visible:	true
+	card_list_name:			DF
+	card_list_column:		5
 
 card field:
-	type:			text
-	name:			actions
-	description:	Operative Actions
-	show statistics: false
+	type:								choice
+	name:								stat_sv
+	description:				Save
+	card_list_visible:	true
+	card_list_name:			SV
+	card_list_column:		6
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
 
 card field:
-	type:		boolean
-	name:		skill combat
-	description:	Can learn Combat skills
+	type:								text
+	name:								stat_w
+	description:				Wounds
+	card_list_visible:	true
+	card_list_name:			W
+	card_list_column:		7
+
 card field:
-	type:		boolean
-	name:		skill staunch
-	description:	Can learn Staunch skills
+	type:								boolean
+	name:								leader
+	description:				Fire Team Leader
+	card_list_visible:	true
+	card_list_name:			Leader
+	card_list_column:		8
+	initial:						no
+
 card field:
-	type:		boolean
-	name:		skill marksman
-	description:	Can learn Marksman skills
+	type:								text
+	name:								abilities
+	description:				Operative Abilities
+	show_statistics:		false
+	multi_line:					true
+	card_list_allow:		false
+
 card field:
-	type:		boolean
-	name:		skill scout
-	description:	Can learn Scout skills
+	type:								text
+	name:								actions
+	description:				Operative Actions
+	show_statistics:		false
+	multi_line:					true
+	card_list_allow:		false
+
+card field:
+	type:								boolean
+	name:								skill_combat
+	description:				Can learn Combat skills
+	show_statistics:		false
+	card_list_name:			Combat
+
+card field:
+	type:								boolean
+	name:								skill_staunch
+	description:				Can learn Staunch skills
+	show_statistics:		false
+	card_list_name:			Staunch
+
+card field:
+	type:								boolean
+	name:								skill_marksman
+	description:				Can learn Marksman skills
+	show_statistics:		false
+	card_list_name:			Marksman
+
+card field:
+	type:								boolean
+	name:								skill_scout
+	description:				Can learn Scout skills
+	show_statistics:		false
+	card_list_name:			Scout
+
+card field:
+	type:								multiple choice
+	name:								wpntblshow
+	description:				Select the weapons to display
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						1,2,3,4,5
+	choice:	1
+	choice:	2
+	choice:	3
+	choice:	4
+	choice:	5
+	choice:	6
+	choice:	7
+	choice:	8
+	choice:	9
+	choice:	10
+	choice:	11
+	choice:	12
+	choice:	13
+	choice:	14
+	choice:	15
+	choice:	16
+	choice:	17
+	choice:	18
+	choice:	19
+	choice:	20
+
+card field:
+	type:								multiple choice
+	name:								wpntblstripes
+	description:				Rows to show background stripes
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						2,4
+	choice:	1
+	choice:	2
+	choice:	3
+	choice:	4
+	choice:	5
+
+card field:
+	type:								choice
+	name:								w1type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w1name
+	description:				Weapon #1 Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w1a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w1bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w1dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w1sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w1i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w2type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w2name
+	description:				Weapon #2 Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w2a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w2bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w2dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w2sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w2i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w3type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w3name
+	description:				Weapon #3 Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w3a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w3bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w3dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w3sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w3i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w4type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w4name
+	description:				Weapon #4 Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w4a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w4bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w4dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w4sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w4i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w5type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w5name
+	description:				Weapon #5 Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w5a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w5bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w5dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w5sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w5i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w6type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w6name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w6a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w6bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w6dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w6sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w6i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w7type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w7name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w7a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w7bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w7dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w7sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w7i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w8type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w8name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w8a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w8bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w8dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w8sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w8i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w9type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w9name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w9a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w9bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w9dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w9sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w9i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w10type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w10name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w10a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w10bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w10dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w10sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w10i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w11type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w11name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w11a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w11bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w11dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w11sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w11i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w12type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w12name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w12a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w12bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w12dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w12sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w12i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w13type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w13name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w13a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w13bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w13dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w13sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w13i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w14type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w14name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w14a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w14bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w14dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w14sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w14i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w15type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w15name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w15a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w15bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w15dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w15sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w15i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w16type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w16name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w16a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w16bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w16dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w16sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w16i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w17type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w17name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w17a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w17bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w17dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w17sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w17i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w18type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w18name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w18a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w18bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w18dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w18sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w18i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w19type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w19name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w19a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w19bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w19dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w19sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w19i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w20type
+	description:				Weapon Type
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	-
+	choice:
+		name: Ranged
+		group choice: Ranged
+		choice: Ammo
+	choice:	Combat
+	choice:	Ammo
+
+card field:
+	type:								text
+	name:								w20name
+	description:				Weapon Name
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w20a
+	description:				Attack Characteristic
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								choice
+	name:								w20bsws
+	description:				Ballistic/Weapon Skill
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	2+
+	choice:	3+
+	choice:	4+
+	choice:	5+
+	choice:	6+
+
+card field:
+	type:								text
+	name:								w20dmg
+	description:				Damage (Standard/Critical)
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w20sr
+	description:				Special rules
+	show_statistics:		false
+	card_list_allow:		false
+
+card field:
+	type:								text
+	name:								w20i
+	description:				Critical hit rules
+	show_statistics:		false
+	card_list_allow:		false
+

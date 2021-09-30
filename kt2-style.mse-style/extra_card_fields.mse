@@ -241,7 +241,7 @@ extra card field:
 	script:							"!"
 
 extra card field:
-	type:								info
+	type:								text
 	name:								ab_header
 	editable:						false
 	save_value:					false
@@ -250,13 +250,31 @@ extra card field:
 	script:							"ABILITIES"
 
 extra card field:
-	type:								info
+	type:								text
 	name:								ua_header
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
 	script:							"UNIQUE ACTIONS"
+
+extra card field:
+	type:								color
+	name:								ab_header_bg
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(140,140,140)
+
+extra card field:
+	type:								color
+	name:								ua_header_bg
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(140,140,140)
 
 extra card field:
 	type:								color
@@ -369,6 +387,141 @@ extra card field:
 extra card field:
 	type:								text
 	name:								w5info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w6info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w7info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w8info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w9info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w10info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w11info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w12info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w13info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w14info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w15info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w16info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w17info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w18info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w19info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w20info
 	editable:						false
 	save_value:					false
 	show_statistics:		false

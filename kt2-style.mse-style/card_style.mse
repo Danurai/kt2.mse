@@ -23,7 +23,7 @@ card style:
 		z_index:						9
 		alignment:					middle shrink if-overflow
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	10
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -38,7 +38,7 @@ card style:
 		z_index:						10
 		alignment:					left top shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	10
 			style:	italic
 			color:	white
@@ -68,7 +68,7 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -81,7 +81,7 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -94,7 +94,7 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -107,7 +107,7 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -120,7 +120,7 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -133,7 +133,7 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -146,7 +146,7 @@ card style:
 		z_index:						10
 		alignment:					left top shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	12
 			scale_down_to:	8.0
 		symbol_font:
@@ -160,7 +160,7 @@ card style:
 		z_index:						10
 		alignment:					left top shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	12
 			scale_down_to:	8.0
 		symbol_font:
@@ -210,20 +210,29 @@ card style:
 			yes:  /kt2-common.mse-include/resource/scout1.png
 			no:   { invert_image("/kt2-common.mse-include/resource/scout1.png") }
 
-	wpntblstripes:
+	wpntblshow:
 		left:								30
 		width:							30
 		top:								190
+		height:							25
+		z_index:						99
+		render_style:				hidden
+
+	wpntblstripes:
+		left:								0
+		width:							30
+		top:								215
 		height:							25
 		z_index:						10
 		render_style:				hidden
 
 	w1type:
+		visible:						{ wpn_tn_visible(0) }
 		left:								35
 		width:							{ wpn_cell_height - 4 }
 		top:								{ wpn_cell_top(0) + 2 }
 		height:							{ wpn_cell_height - 4 }
-		z_index:						10
+		z_index:						50
 		render_style:				image
 		choice images:
 			Ranged:	      /kt2-common.mse-include/resource/ranged.png
@@ -231,14 +240,15 @@ card style:
 			Combat:       /kt2-common.mse-include/resource/combat1.png
 
 	w1name:
+		visible:						{ wpn_tn_visible(0) }
 		left:								{ wpn_cell_left(1) }
 		width:							{ wpn_cell_width[1] }
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						50
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w1a:
@@ -247,10 +257,10 @@ card style:
 		width:							{ wpn_cell_width[2] }
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						50
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w1bsws:
@@ -259,10 +269,10 @@ card style:
 		width:							{ wpn_cell_width[3] }
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						50
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w1dmg:
@@ -271,10 +281,10 @@ card style:
 		width:							{ wpn_cell_width[4] }
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						50
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w1sr:
@@ -283,10 +293,10 @@ card style:
 		width:							{ wpn_cell_width[5] }
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						50
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
@@ -297,21 +307,21 @@ card style:
 		width:							{ wpn_cell_width[6] }
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						50
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
 
 	w2type:
-		visible:						{ wpn_info_visible(1) }
+		visible:						{ wpn_tn_visible(1) }
 		left:								35
 		width:							{ wpn_cell_height - 4 }
 		top:								{ wpn_cell_top(1) + 2 }
 		height:							{ wpn_cell_height - 4 }
-		z_index:						10
+		z_index:						49
 		render_style:				image
 		choice images:
 			Ranged:	      /kt2-common.mse-include/resource/ranged.png
@@ -319,15 +329,15 @@ card style:
 			Combat:       /kt2-common.mse-include/resource/combat1.png
 
 	w2name:
-		visible:						{ wpn_info_visible(1) }
+		visible:						{ wpn_tn_visible(1) }
 		left:								{ wpn_cell_left(1) }
 		width:							{ wpn_cell_width[1] }
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						49
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w2a:
@@ -336,10 +346,10 @@ card style:
 		width:							{ wpn_cell_width[2] }
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						49
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w2bsws:
@@ -348,10 +358,10 @@ card style:
 		width:							{ wpn_cell_width[3] }
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						49
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w2dmg:
@@ -360,10 +370,10 @@ card style:
 		width:							{ wpn_cell_width[4] }
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						49
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w2sr:
@@ -372,10 +382,10 @@ card style:
 		width:							{ wpn_cell_width[5] }
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						49
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
@@ -386,21 +396,21 @@ card style:
 		width:							{ wpn_cell_width[6] }
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						49
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
 
 	w3type:
-		visible:						{ wpn_info_visible(2) }
+		visible:						{ wpn_tn_visible(2) }
 		left:								35
 		width:							{ wpn_cell_height - 4 }
 		top:								{ wpn_cell_top(2) + 2 }
 		height:							{ wpn_cell_height - 4 }
-		z_index:						10
+		z_index:						48
 		render_style:				image
 		choice images:
 			Ranged:	      /kt2-common.mse-include/resource/ranged.png
@@ -408,15 +418,15 @@ card style:
 			Combat:       /kt2-common.mse-include/resource/combat1.png
 
 	w3name:
-		visible:						{ wpn_info_visible(2) }
+		visible:						{ wpn_tn_visible(2) }
 		left:								{ wpn_cell_left(1) }
 		width:							{ wpn_cell_width[1] }
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						48
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w3a:
@@ -425,10 +435,10 @@ card style:
 		width:							{ wpn_cell_width[2] }
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						48
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w3bsws:
@@ -437,10 +447,10 @@ card style:
 		width:							{ wpn_cell_width[3] }
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						48
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w3dmg:
@@ -449,10 +459,10 @@ card style:
 		width:							{ wpn_cell_width[4] }
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						48
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w3sr:
@@ -461,10 +471,10 @@ card style:
 		width:							{ wpn_cell_width[5] }
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						48
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
@@ -475,21 +485,21 @@ card style:
 		width:							{ wpn_cell_width[6] }
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						48
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
 
 	w4type:
-		visible:						{ wpn_info_visible(3) }
+		visible:						{ wpn_tn_visible(3) }
 		left:								35
 		width:							{ wpn_cell_height - 4 }
 		top:								{ wpn_cell_top(3) + 2 }
 		height:							{ wpn_cell_height - 4 }
-		z_index:						10
+		z_index:						47
 		render_style:				image
 		choice images:
 			Ranged:	      /kt2-common.mse-include/resource/ranged.png
@@ -497,15 +507,15 @@ card style:
 			Combat:       /kt2-common.mse-include/resource/combat1.png
 
 	w4name:
-		visible:						{ wpn_info_visible(3) }
+		visible:						{ wpn_tn_visible(3) }
 		left:								{ wpn_cell_left(1) }
 		width:							{ wpn_cell_width[1] }
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						47
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w4a:
@@ -514,10 +524,10 @@ card style:
 		width:							{ wpn_cell_width[2] }
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						47
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w4bsws:
@@ -526,10 +536,10 @@ card style:
 		width:							{ wpn_cell_width[3] }
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						47
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w4dmg:
@@ -538,10 +548,10 @@ card style:
 		width:							{ wpn_cell_width[4] }
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						47
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w4sr:
@@ -550,10 +560,10 @@ card style:
 		width:							{ wpn_cell_width[5] }
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						47
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
@@ -564,21 +574,21 @@ card style:
 		width:							{ wpn_cell_width[6] }
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						47
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
 
 	w5type:
-		visible:						{ wpn_info_visible(4) }
+		visible:						{ wpn_tn_visible(4) }
 		left:								35
 		width:							{ wpn_cell_height - 4 }
 		top:								{ wpn_cell_top(4) + 2 }
 		height:							{ wpn_cell_height - 4 }
-		z_index:						10
+		z_index:						46
 		render_style:				image
 		choice images:
 			Ranged:	      /kt2-common.mse-include/resource/ranged.png
@@ -586,15 +596,15 @@ card style:
 			Combat:       /kt2-common.mse-include/resource/combat1.png
 
 	w5name:
-		visible:						{ wpn_info_visible(4) }
+		visible:						{ wpn_tn_visible(4) }
 		left:								{ wpn_cell_left(1) }
 		width:							{ wpn_cell_width[1] }
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						46
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w5a:
@@ -603,10 +613,10 @@ card style:
 		width:							{ wpn_cell_width[2] }
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						46
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w5bsws:
@@ -615,10 +625,10 @@ card style:
 		width:							{ wpn_cell_width[3] }
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						46
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w5dmg:
@@ -627,10 +637,10 @@ card style:
 		width:							{ wpn_cell_width[4] }
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						46
 		alignment:					center middle
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 
 	w5sr:
@@ -639,10 +649,10 @@ card style:
 		width:							{ wpn_cell_width[5] }
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						46
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2
@@ -653,10 +663,1345 @@ card style:
 		width:							{ wpn_cell_width[6] }
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						10
+		z_index:						46
 		alignment:					center middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w6type:
+		visible:						{ wpn_tn_visible(5) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(5) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						45
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w6name:
+		visible:						{ wpn_tn_visible(5) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						45
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w6a:
+		visible:						{ wpn_cell_visible(5) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						45
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w6bsws:
+		visible:						{ wpn_cell_visible(5) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						45
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w6dmg:
+		visible:						{ wpn_cell_visible(5) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						45
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w6sr:
+		visible:						{ wpn_cell_visible(5) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						45
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w6i:
+		visible:						{ wpn_cell_visible(5) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						45
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w7type:
+		visible:						{ wpn_tn_visible(6) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(6) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						44
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w7name:
+		visible:						{ wpn_tn_visible(6) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						44
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w7a:
+		visible:						{ wpn_cell_visible(6) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						44
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w7bsws:
+		visible:						{ wpn_cell_visible(6) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						44
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w7dmg:
+		visible:						{ wpn_cell_visible(6) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						44
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w7sr:
+		visible:						{ wpn_cell_visible(6) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						44
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w7i:
+		visible:						{ wpn_cell_visible(6) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						44
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w8type:
+		visible:						{ wpn_tn_visible(7) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(7) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						43
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w8name:
+		visible:						{ wpn_tn_visible(7) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						43
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w8a:
+		visible:						{ wpn_cell_visible(7) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						43
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w8bsws:
+		visible:						{ wpn_cell_visible(7) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						43
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w8dmg:
+		visible:						{ wpn_cell_visible(7) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						43
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w8sr:
+		visible:						{ wpn_cell_visible(7) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						43
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w8i:
+		visible:						{ wpn_cell_visible(7) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						43
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w9type:
+		visible:						{ wpn_tn_visible(8) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(8) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						42
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w9name:
+		visible:						{ wpn_tn_visible(8) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						42
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w9a:
+		visible:						{ wpn_cell_visible(8) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						42
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w9bsws:
+		visible:						{ wpn_cell_visible(8) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						42
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w9dmg:
+		visible:						{ wpn_cell_visible(8) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						42
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w9sr:
+		visible:						{ wpn_cell_visible(8) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						42
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w9i:
+		visible:						{ wpn_cell_visible(8) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						42
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w10type:
+		visible:						{ wpn_tn_visible(9) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(9) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						41
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w10name:
+		visible:						{ wpn_tn_visible(9) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						41
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w10a:
+		visible:						{ wpn_cell_visible(9) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						41
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w10bsws:
+		visible:						{ wpn_cell_visible(9) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						41
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w10dmg:
+		visible:						{ wpn_cell_visible(9) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						41
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w10sr:
+		visible:						{ wpn_cell_visible(9) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						41
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w10i:
+		visible:						{ wpn_cell_visible(9) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						41
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w11type:
+		visible:						{ wpn_tn_visible(10) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(10) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						40
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w11name:
+		visible:						{ wpn_tn_visible(10) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						40
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w11a:
+		visible:						{ wpn_cell_visible(10) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						40
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w11bsws:
+		visible:						{ wpn_cell_visible(10) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						40
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w11dmg:
+		visible:						{ wpn_cell_visible(10) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						40
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w11sr:
+		visible:						{ wpn_cell_visible(10) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						40
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w11i:
+		visible:						{ wpn_cell_visible(10) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						40
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w12type:
+		visible:						{ wpn_tn_visible(11) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(11) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						39
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w12name:
+		visible:						{ wpn_tn_visible(11) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						39
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w12a:
+		visible:						{ wpn_cell_visible(11) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						39
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w12bsws:
+		visible:						{ wpn_cell_visible(11) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						39
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w12dmg:
+		visible:						{ wpn_cell_visible(11) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						39
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w12sr:
+		visible:						{ wpn_cell_visible(11) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						39
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w12i:
+		visible:						{ wpn_cell_visible(11) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						39
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w13type:
+		visible:						{ wpn_tn_visible(12) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(12) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						38
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w13name:
+		visible:						{ wpn_tn_visible(12) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						38
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w13a:
+		visible:						{ wpn_cell_visible(12) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						38
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w13bsws:
+		visible:						{ wpn_cell_visible(12) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						38
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w13dmg:
+		visible:						{ wpn_cell_visible(12) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						38
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w13sr:
+		visible:						{ wpn_cell_visible(12) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						38
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w13i:
+		visible:						{ wpn_cell_visible(12) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						38
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w14type:
+		visible:						{ wpn_tn_visible(13) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(13) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						37
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w14name:
+		visible:						{ wpn_tn_visible(13) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						37
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w14a:
+		visible:						{ wpn_cell_visible(13) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						37
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w14bsws:
+		visible:						{ wpn_cell_visible(13) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						37
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w14dmg:
+		visible:						{ wpn_cell_visible(13) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						37
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w14sr:
+		visible:						{ wpn_cell_visible(13) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						37
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w14i:
+		visible:						{ wpn_cell_visible(13) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						37
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w15type:
+		visible:						{ wpn_tn_visible(14) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(14) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						36
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w15name:
+		visible:						{ wpn_tn_visible(14) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						36
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w15a:
+		visible:						{ wpn_cell_visible(14) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						36
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w15bsws:
+		visible:						{ wpn_cell_visible(14) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						36
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w15dmg:
+		visible:						{ wpn_cell_visible(14) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						36
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w15sr:
+		visible:						{ wpn_cell_visible(14) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						36
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w15i:
+		visible:						{ wpn_cell_visible(14) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						36
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w16type:
+		visible:						{ wpn_tn_visible(15) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(15) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						35
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w16name:
+		visible:						{ wpn_tn_visible(15) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						35
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w16a:
+		visible:						{ wpn_cell_visible(15) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						35
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w16bsws:
+		visible:						{ wpn_cell_visible(15) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						35
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w16dmg:
+		visible:						{ wpn_cell_visible(15) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						35
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w16sr:
+		visible:						{ wpn_cell_visible(15) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						35
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w16i:
+		visible:						{ wpn_cell_visible(15) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						35
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w17type:
+		visible:						{ wpn_tn_visible(16) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(16) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						34
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w17name:
+		visible:						{ wpn_tn_visible(16) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						34
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w17a:
+		visible:						{ wpn_cell_visible(16) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						34
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w17bsws:
+		visible:						{ wpn_cell_visible(16) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						34
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w17dmg:
+		visible:						{ wpn_cell_visible(16) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						34
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w17sr:
+		visible:						{ wpn_cell_visible(16) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						34
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w17i:
+		visible:						{ wpn_cell_visible(16) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						34
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w18type:
+		visible:						{ wpn_tn_visible(17) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(17) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						33
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w18name:
+		visible:						{ wpn_tn_visible(17) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						33
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w18a:
+		visible:						{ wpn_cell_visible(17) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						33
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w18bsws:
+		visible:						{ wpn_cell_visible(17) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						33
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w18dmg:
+		visible:						{ wpn_cell_visible(17) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						33
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w18sr:
+		visible:						{ wpn_cell_visible(17) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						33
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w18i:
+		visible:						{ wpn_cell_visible(17) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						33
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w19type:
+		visible:						{ wpn_tn_visible(18) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(18) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						32
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w19name:
+		visible:						{ wpn_tn_visible(18) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						32
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w19a:
+		visible:						{ wpn_cell_visible(18) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						32
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w19bsws:
+		visible:						{ wpn_cell_visible(18) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						32
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w19dmg:
+		visible:						{ wpn_cell_visible(18) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						32
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w19sr:
+		visible:						{ wpn_cell_visible(18) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						32
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w19i:
+		visible:						{ wpn_cell_visible(18) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						32
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w20type:
+		visible:						{ wpn_tn_visible(19) }
+		left:								35
+		width:							{ wpn_cell_height - 4 }
+		top:								{ wpn_cell_top(19) + 2 }
+		height:							{ wpn_cell_height - 4 }
+		z_index:						31
+		render_style:				image
+		choice images:
+			Ranged:	      /kt2-common.mse-include/resource/ranged.png
+			Ranged Ammo:      /kt2-common.mse-include/resource/ranged.png
+			Combat:       /kt2-common.mse-include/resource/combat1.png
+
+	w20name:
+		visible:						{ wpn_tn_visible(19) }
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						31
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w20a:
+		visible:						{ wpn_cell_visible(19) }
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						31
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w20bsws:
+		visible:						{ wpn_cell_visible(19) }
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						31
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w20dmg:
+		visible:						{ wpn_cell_visible(19) }
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						31
+		alignment:					center middle
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+
+	w20sr:
+		visible:						{ wpn_cell_visible(19) }
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						31
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	{ wpn_cell_font_size }
+		symbol_font:
+			name:	kt2
+
+	w20i:
+		visible:						{ wpn_cell_visible(19) }
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						31
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	{ bfont }
 			size:	{ wpn_cell_font_size }
 		symbol_font:
 			name:	kt2

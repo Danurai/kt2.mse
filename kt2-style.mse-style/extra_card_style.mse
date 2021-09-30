@@ -49,7 +49,7 @@ extra card style:
 		z_index:						10
 		alignment:					centre middle shrink if-overflow
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	18.0
 			weight:	bold
 			color:	rgb(240,240,240)
@@ -71,7 +71,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16.0
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -95,7 +95,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16.0
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -108,7 +108,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16.0
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -121,7 +121,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16.0
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -134,7 +134,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16.0
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -147,7 +147,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	16.0
 			weight:	bold
 			color:	{ styling.Secondary_Colour }
@@ -167,7 +167,7 @@ extra card style:
 		z_index:						10
 		alignment:					left middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	12.0
 			weight:	bold
 
@@ -179,7 +179,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	12.0
 			weight:	bold
 
@@ -191,7 +191,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	12.0
 			weight:	bold
 
@@ -203,7 +203,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	12.0
 			weight:	bold
 
@@ -215,7 +215,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	12.0
 			weight:	bold
 
@@ -227,7 +227,7 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:{ hfont }
+			name:	{ hfont }
 			size:	12.0
 			weight:	bold
 
@@ -235,7 +235,7 @@ extra card style:
 		visible:						{ wpn_stripe_visible(1) }
 		left:								30
 		width:							690
-		top:								{ wpn_cell_top(0) }
+		top:								{ wpn_stripe_top(0) }
 		height:							{ wpn_cell_height }
 		z_index:						3
 
@@ -243,7 +243,7 @@ extra card style:
 		visible:						{ wpn_stripe_visible(2) }
 		left:								30
 		width:							690
-		top:								{ wpn_cell_top(1) }
+		top:								{wpn_stripe_top(1) }
 		height:							{ wpn_cell_height }
 		z_index:						3
 
@@ -251,7 +251,7 @@ extra card style:
 		visible:						{ wpn_stripe_visible(3) }
 		left:								30
 		width:							690
-		top:								{ wpn_cell_top(2) }
+		top:								{wpn_stripe_top(2) }
 		height:							{ wpn_cell_height }
 		z_index:						3
 
@@ -259,7 +259,7 @@ extra card style:
 		visible:						{ wpn_stripe_visible(4) }
 		left:								30
 		width:							690
-		top:								{ wpn_cell_top(3) }
+		top:								{wpn_stripe_top(3) }
 		height:							{ wpn_cell_height }
 		z_index:						3
 
@@ -267,12 +267,12 @@ extra card style:
 		visible:						{ wpn_stripe_visible(5) }
 		left:								30
 		width:							690
-		top:								{ wpn_cell_top(4) }
+		top:								{wpn_stripe_top(4) }
 		height:							{ wpn_cell_height }
 		z_index:						3
 
 	w1info:
-		visible:						{ card.w1type == "Ranged Ammo" }
+		visible:						{ wpn_info_visible(0) }
 		left:								{ wpn_info_left(0) }
 		width:							{ wpn_info_width(0) }
 		top:								{ wpn_cell_top(0) }
@@ -280,13 +280,13 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	10.0
 			style:	italic
 			color:	{ styling.Secondary_Colour }
 
 	w2info:
-		visible:						{ card.w2type == "Ranged Ammo" }
+		visible:						{ wpn_info_visible(1) }
 		left:								{ wpn_info_left(1) }
 		width:							{ wpn_info_width(1) }
 		top:								{ wpn_cell_top(1) }
@@ -294,13 +294,13 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	10.0
 			style:	italic
 			color:	{ styling.Secondary_Colour }
 
 	w3info:
-		visible:						{ card.w3type == "Ranged Ammo" }
+		visible:						{ wpn_info_visible(2) }
 		left:								{ wpn_info_left(2) }
 		width:							{ wpn_info_width(2) }
 		top:								{ wpn_cell_top(2) }
@@ -308,13 +308,13 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	10.0
 			style:	italic
 			color:	{ styling.Secondary_Colour }
 
 	w4info:
-		visible:						{ card.w4type == "Ranged Ammo" }
+		visible:						{ wpn_info_visible(3) }
 		left:								{ wpn_info_left(3) }
 		width:							{ wpn_info_width(3) }
 		top:								{ wpn_cell_top(3) }
@@ -322,13 +322,13 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
 			size:	10.0
 			style:	italic
 			color:	{ styling.Secondary_Colour }
 
 	w5info:
-		visible:						{ card.w5type == "Ranged Ammo" }
+		visible:						{ wpn_info_visible(4) }
 		left:								{ wpn_info_left(4) }
 		width:							{ wpn_info_width(4) }
 		top:								{ wpn_cell_top(4) }
@@ -336,7 +336,217 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:{ bfont }
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w6info:
+		visible:						{ wpn_info_visible(5) }
+		left:								{ wpn_info_left(5) }
+		width:							{ wpn_info_width(5) }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w7info:
+		visible:						{ wpn_info_visible(6) }
+		left:								{ wpn_info_left(6) }
+		width:							{ wpn_info_width(6) }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w8info:
+		visible:						{ wpn_info_visible(7) }
+		left:								{ wpn_info_left(7) }
+		width:							{ wpn_info_width(7) }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w9info:
+		visible:						{ wpn_info_visible(8) }
+		left:								{ wpn_info_left(8) }
+		width:							{ wpn_info_width(8) }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w10info:
+		visible:						{ wpn_info_visible(9) }
+		left:								{ wpn_info_left(9) }
+		width:							{ wpn_info_width(9) }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w11info:
+		visible:						{ wpn_info_visible(10) }
+		left:								{ wpn_info_left(10) }
+		width:							{ wpn_info_width(10) }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w12info:
+		visible:						{ wpn_info_visible(11) }
+		left:								{ wpn_info_left(11) }
+		width:							{ wpn_info_width(11) }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w13info:
+		visible:						{ wpn_info_visible(12) }
+		left:								{ wpn_info_left(12) }
+		width:							{ wpn_info_width(12) }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w14info:
+		visible:						{ wpn_info_visible(13) }
+		left:								{ wpn_info_left(13) }
+		width:							{ wpn_info_width(13) }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w15info:
+		visible:						{ wpn_info_visible(14) }
+		left:								{ wpn_info_left(14) }
+		width:							{ wpn_info_width(14) }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w16info:
+		visible:						{ wpn_info_visible(15) }
+		left:								{ wpn_info_left(15) }
+		width:							{ wpn_info_width(15) }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w17info:
+		visible:						{ wpn_info_visible(16) }
+		left:								{ wpn_info_left(16) }
+		width:							{ wpn_info_width(16) }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w18info:
+		visible:						{ wpn_info_visible(17) }
+		left:								{ wpn_info_left(17) }
+		width:							{ wpn_info_width(17) }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w19info:
+		visible:						{ wpn_info_visible(18) }
+		left:								{ wpn_info_left(18) }
+		width:							{ wpn_info_width(18) }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w20info:
+		visible:						{ wpn_info_visible(19) }
+		left:								{ wpn_info_left(19) }
+		width:							{ wpn_info_width(19) }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	{ bfont }
 			size:	10.0
 			style:	italic
 			color:	{ styling.Secondary_Colour }
@@ -410,30 +620,46 @@ extra card style:
 		mask:								tri_mask.png
 
 	ab_header:
-		visible:						{ card.abilities != "" }
+		visible:						{ card.abilities != "" or card.actions != "" }
+		left:								30
+		width:							{ aua_width() }
+		top:								{ aua_header_top() }
+		height:							25
+		z_index:						10
+		alignment:					left middle
+		font:
+			name:	{ hfont }
+			size:	12.0
+			weight:	bold
+		padding_left:				5
+
+	ua_header:
+		visible:						{ card.abilities != "" or card.actions != "" }
+		left:								{ 15 + (w / 2) }
+		width:							{ aua_width() }
+		top:								{ aua_header_top() }
+		height:							25
+		z_index:						10
+		alignment:					left middle
+		font:
+			name:	{ hfont }
+			size:	12.0
+			weight:	bold
+		padding_left:				5
+
+	ab_header_bg:
+		visible:						{ card.abilities != "" or card.actions != "" }
 		left:								30
 		width:							{ aua_width() }
 		top:								{ aua_header_top() }
 		height:							25
 		z_index:						9
-		alignment:					left middle
-		font:
-			name:{ hfont }
-			size:	12.0
-			weight:	bold
-		background_color:		rgb(140,140,140)
 
-	ua_header:
-		visible:						{ card.actions != "" }
+	ua_header_bg:
+		visible:						{ card.abilities != "" or card.actions != "" }
 		left:								{ 15 + (w / 2) }
 		width:							{ aua_width() }
 		top:								{ aua_header_top() }
 		height:							25
 		z_index:						9
-		alignment:					left middle
-		font:
-			name:{ hfont }
-			size:	12.0
-			weight:	bold
-		background_color:		rgb(140,140,140)
 
