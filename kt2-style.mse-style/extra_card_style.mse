@@ -1,286 +1,439 @@
 extra card style:
 	border0:
-		left:         0
-		width:        { w }
-		top:          0
-		height:       { h }
-		left width:   1
-		right width:  1
-		top width:    1
-		bottom width: 1
-		z index:			99
+		left:								0
+		width:							{ w }
+		top:								0
+		height:							{ h }
+		z_index:						99
+		left_width:					1
+		right_width:				1
+		top_width:					1
+		bottom_width:				1
+
 	cardbg:
-		left:					17
-		width:				715
-		top:					56
-		height:				432
-		z index:			1
-		mask:					bg_mask.png
+		left:								17
+		width:							715
+		top:								56
+		height:							432
+		z_index:						1
+		mask:								bg_mask.png
+
 	border1:
-		left:					0
-		right:				{ w }
-		top:					0
-		bottom:				{ h }
-		z index:			2
-		mask:					mask.png
+		left:								0
+		width:							{ w }
+		top:								0
+		height:							{ h }
+		z_index:						2
+		mask:								mask.png
+
 	ftbg:
-		left:					30
-		top:					38
-		width:				407
-		height:				142
-		z index:			1
+		left:								30
+		width:							407
+		top:								38
+		height:							142
+		z_index:						1
+
 	artbg:
-		left:					350
-		top:					32
-		width:				173
-		height:				149
-		mask:					tri_mask.png
-		z index:			2
+		left:								350
+		width:							173
+		top:								32
+		height:							149
+		z_index:						2
+		mask:								tri_mask.png
+
 	ft_text:
-		left:					45
-		top:					45
-		width:				310
-		height:				30
-		z index:			10
-		alignment:		centre middle shrink if-overflow
+		left:								45
+		width:							310
+		top:								45
+		height:							30
+		z_index:						10
+		alignment:					centre middle shrink if-overflow
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		rgb(240,240,240)
-			size:			18
+			name:{ hfont }
+			size:	18.0
+			weight:	bold
+			color:	rgb(240,240,240)
 
 	watermark:
-		left:			155
-		width:		440
-		top:			185
-		height:		330
-		render style:	image
-		z index:	2
-		image:	{ set_alpha( alpha: 0.05, "/kt2-common.mse-include/resource/logo.png" ) }
+		left:								155
+		width:							440
+		top:								185
+		height:							330
+		z_index:						2
+		render_style:				image
+		image:							{ set_alpha( alpha: 0.05, "/kt2-common.mse-include/resource/logo.png" ) }
 
 	statlbl m:
-		left:			518
-		width:		30
-		top:			40
-		height:		30
-		z index:	10
-		alignment:	center middle
+		left:								518
+		width:							30
+		top:								40
+		height:							30
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		{ styling.Secondary_Colour }
-			size:			16
+			name:{ hfont }
+			size:	16.0
+			weight:	bold
+			color:	{ styling.Secondary_Colour }
+
 	moverng:
-		left:			533
-		top:			80
-		width:		20
-		height:		20
-		z index:	9
-		always symbol:	true
-		symbol font:
-			name:			kt2
-			size:			16
+		left:								533
+		width:							20
+		top:								80
+		height:							20
+		z_index:						9
+		always_symbol:			true
+		symbol_font:
+			name:	kt2
+			size:	16.0
 
 	statlbl apl:
-		left:			576
-		width:		60
-		top:			40
-		height:		30
-		z index:	10
-		alignment:	center middle
+		left:								576
+		width:							60
+		top:								40
+		height:							30
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		{ styling.Secondary_Colour }
-			size:			16
+			name:{ hfont }
+			size:	16.0
+			weight:	bold
+			color:	{ styling.Secondary_Colour }
+
 	statlbl ga:
-		left:			649
-		width:		60
-		top:			40
-		height:		30
-		z index:	10
-		alignment:	center middle
+		left:								649
+		width:							60
+		top:								40
+		height:							30
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		{ styling.Secondary_Colour }
-			size:			16
+			name:{ hfont }
+			size:	16.0
+			weight:	bold
+			color:	{ styling.Secondary_Colour }
+
 	statlbl df:
-		left:			478
-		width:		30
-		top:			110
-		height:		30
-		z index:	10
-		alignment:	center middle
+		left:								478
+		width:							30
+		top:								110
+		height:							30
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		{ styling.Secondary_Colour }
-			size:			16
+			name:{ hfont }
+			size:	16.0
+			weight:	bold
+			color:	{ styling.Secondary_Colour }
+
 	statlbl sv:
-		left:			536
-		width:		60
-		top:			110
-		height:		30
-		z index:	10
-		alignment:	center middle
+		left:								536
+		width:							60
+		top:								110
+		height:							30
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		{ styling.Secondary_Colour }
-			size:			16
+			name:{ hfont }
+			size:	16.0
+			weight:	bold
+			color:	{ styling.Secondary_Colour }
+
 	statlbl w:
-		left:			609
-		width:		60
-		top:			110
-		height:		30
-		z index:	10
-		alignment:	center middle
+		left:								609
+		width:							60
+		top:								110
+		height:							30
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			color:		{ styling.Secondary_Colour }
-			size:			16
+			name:{ hfont }
+			size:	16.0
+			weight:	bold
+			color:	{ styling.Secondary_Colour }
 
 	weaponheaderbg:
-		left:			30
-		width:		690
-		top:			190
-		height:		25
-		z index:	3
-	weapontblbgr2:
-		visible:	{ card.w2name != "" }
-		left:			30
-		width:		690
-		top:			{ wpn_cell_top(1) }
-		height:		25
-		z index:	3
-
+		left:								30
+		width:							690
+		top:								190
+		height:							25
+		z_index:						3
 
 	weaponheader name:
-		left:			{ wpn_cell_left(1) }
-		width:		{ wpn_cell_width[1] }
-		top:			189
-		height:		25
-		z index:	10
-		alignment: left middle
+		left:								{ wpn_cell_left(1) }
+		width:							{ wpn_cell_width[1] }
+		top:								189
+		height:							25
+		z_index:						10
+		alignment:					left middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			size:			12
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+
 	weaponheader a:
-		left:			{ wpn_cell_left(2) }
-		width:		{ wpn_cell_width[2] }
-		top:			189
-		height:		25
-		z index:	10
-		alignment: center middle
+		left:								{ wpn_cell_left(2) }
+		width:							{ wpn_cell_width[2] }
+		top:								189
+		height:							25
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			size:			12
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+
 	weaponheader bsws:
-		left:			{ wpn_cell_left(3) }
-		width:		{ wpn_cell_width[3] }
-		top:			189
-		height:		25
-		z index:	10
-		alignment: center middle
+		left:								{ wpn_cell_left(3) }
+		width:							{ wpn_cell_width[3] }
+		top:								189
+		height:							25
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			size:			12
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+
 	weaponheader d:
-		left:			{ wpn_cell_left(4) }
-		width:		{ wpn_cell_width[4] }
-		top:			189
-		height:		25
-		z index:	10
-		alignment: center middle
+		left:								{ wpn_cell_left(4) }
+		width:							{ wpn_cell_width[4] }
+		top:								189
+		height:							25
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			size:			12
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+
 	weaponheader sr:
-		left:			{ wpn_cell_left(5) }
-		width:		{ wpn_cell_width[5] }
-		top:			189
-		height:		25
-		z index:	10
-		alignment: center middle
+		left:								{ wpn_cell_left(5) }
+		width:							{ wpn_cell_width[5] }
+		top:								189
+		height:							25
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			size:			12
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+
 	weaponheader i:
-		left:			{ wpn_cell_left(6) }
-		width:		{ wpn_cell_width[6] }
-		top:			189
-		height:		25
-		z index:	10
-		alignment: center middle
+		left:								{ wpn_cell_left(6) }
+		width:							{ wpn_cell_width[6] }
+		top:								189
+		height:							25
+		z_index:						10
+		alignment:					center middle
 		font:
-			name:			{ hfont }
-			weight:		bold
-			size:			12
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+
+	wpntblstripe1:
+		visible:						{ wpn_stripe_visible(1) }
+		left:								30
+		width:							690
+		top:								{ wpn_cell_top(0) }
+		height:							{ wpn_cell_height }
+		z_index:						3
+
+	wpntblstripe2:
+		visible:						{ wpn_stripe_visible(2) }
+		left:								30
+		width:							690
+		top:								{ wpn_cell_top(1) }
+		height:							{ wpn_cell_height }
+		z_index:						3
+
+	wpntblstripe3:
+		visible:						{ wpn_stripe_visible(3) }
+		left:								30
+		width:							690
+		top:								{ wpn_cell_top(2) }
+		height:							{ wpn_cell_height }
+		z_index:						3
+
+	wpntblstripe4:
+		visible:						{ wpn_stripe_visible(4) }
+		left:								30
+		width:							690
+		top:								{ wpn_cell_top(3) }
+		height:							{ wpn_cell_height }
+		z_index:						3
+
+	wpntblstripe5:
+		visible:						{ wpn_stripe_visible(5) }
+		left:								30
+		width:							690
+		top:								{ wpn_cell_top(4) }
+		height:							{ wpn_cell_height }
+		z_index:						3
+
+	w1info:
+		visible:						{ card.w1type == "Ranged Ammo" }
+		left:								{ wpn_info_left(0) }
+		width:							{ wpn_info_width(0) }
+		top:								{ wpn_cell_top(0) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w2info:
+		visible:						{ card.w2type == "Ranged Ammo" }
+		left:								{ wpn_info_left(1) }
+		width:							{ wpn_info_width(1) }
+		top:								{ wpn_cell_top(1) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w3info:
+		visible:						{ card.w3type == "Ranged Ammo" }
+		left:								{ wpn_info_left(2) }
+		width:							{ wpn_info_width(2) }
+		top:								{ wpn_cell_top(2) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w4info:
+		visible:						{ card.w4type == "Ranged Ammo" }
+		left:								{ wpn_info_left(3) }
+		width:							{ wpn_info_width(3) }
+		top:								{ wpn_cell_top(3) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
+
+	w5info:
+		visible:						{ card.w5type == "Ranged Ammo" }
+		left:								{ wpn_info_left(4) }
+		width:							{ wpn_info_width(4) }
+		top:								{ wpn_cell_top(4) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		alignment:					left middle shrink if-overflow
+		font:
+			name:{ bfont }
+			size:	10.0
+			style:	italic
+			color:	{ styling.Secondary_Colour }
 
 	combat bg1:
-		left:			548
-		top:			460
-		width:		60
-		height:		55
-		z index:	8
-		mask:			{flip_vertical("tri_mask.png") }
+		left:								548
+		width:							60
+		top:								460
+		height:							55
+		z_index:						8
+		mask:								{flip_vertical("tri_mask.png") }
+
 	combat bg2:
-		visible:	{ card.skill_combat == "no" }
-		left:			552
-		top:			465
-		width:		52
-		height:		48
-		z index:	9
-		mask:			{flip_vertical("tri_mask.png") }
+		visible:						{ card.skill_combat == "no" }
+		left:								552
+		width:							52
+		top:								465
+		height:							48
+		z_index:						9
+		mask:								{flip_vertical("tri_mask.png") }
+
 	staunch bg1:
-		left:			586
-		top:			460
-		width:		60
-		height:		55
-		z index:	8
-		mask:			tri_mask.png
+		left:								586
+		width:							60
+		top:								460
+		height:							55
+		z_index:						8
+		mask:								tri_mask.png
+
 	staunch bg2:
-		visible:	{ card.skill_staunch == "no" }
-		left:			590
-		top:			463
-		width:		52
-		height:		48
-		z index:	9
-		mask:			tri_mask.png
+		visible:						{ card.skill_staunch == "no" }
+		left:								590
+		width:							52
+		top:								463
+		height:							48
+		z_index:						9
+		mask:								tri_mask.png
+
 	marksman bg1:
-		left:			624
-		top:			460
-		width:		60
-		height:		55
-		z index:	8
-		mask:			{flip_vertical("tri_mask.png") }
+		left:								624
+		width:							60
+		top:								460
+		height:							55
+		z_index:						8
+		mask:								{flip_vertical("tri_mask.png") }
+
 	marksman bg2:
-		visible:	{ card.skill_marksman == "no" }
-		left:			628
-		top:			465
-		width:		52
-		height:		48
-		z index:	9
-		mask:			{flip_vertical("tri_mask.png") }
+		visible:						{ card.skill_marksman == "no" }
+		left:								628
+		width:							52
+		top:								465
+		height:							48
+		z_index:						9
+		mask:								{flip_vertical("tri_mask.png") }
+
 	scout bg1:
-		left:			662
-		top:			460
-		width:		60
-		height:		55
-		z index:	9
-		mask:			tri_mask.png
+		left:								662
+		width:							60
+		top:								460
+		height:							55
+		z_index:						9
+		mask:								tri_mask.png
+
 	scout bg2:
-		visible:	{ card.skill_scout == "no" }
-		left:			666
-		top:			463
-		width:		52
-		height:		48
-		z index:	9
-		mask:			tri_mask.png
+		visible:						{ card.skill_scout == "no" }
+		left:								666
+		width:							52
+		top:								463
+		height:							48
+		z_index:						9
+		mask:								tri_mask.png
+
+	ab_header:
+		visible:						{ card.abilities != "" }
+		left:								30
+		width:							{ aua_width() }
+		top:								{ aua_header_top() }
+		height:							25
+		z_index:						9
+		alignment:					left middle
+		font:
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+		background_color:		rgb(140,140,140)
+
+	ua_header:
+		visible:						{ card.actions != "" }
+		left:								{ 15 + (w / 2) }
+		width:							{ aua_width() }
+		top:								{ aua_header_top() }
+		height:							25
+		z_index:						9
+		alignment:					left middle
+		font:
+			name:{ hfont }
+			size:	12.0
+			weight:	bold
+		background_color:		rgb(140,140,140)
+

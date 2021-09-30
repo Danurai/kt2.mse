@@ -54,6 +54,13 @@ styling field:
 	choice:		Yes
 	choice:		No
 
+styling field:
+	type:			multiple choice
+	name:			Operative Display
+	initial:	Flavour Text
+	choice:		Flavour Text
+	choice:		Weapon
+
 include file: card_style.mse
 include file:	extra_card_fields.mse
 include file:	extra_card_style.mse

@@ -1,0 +1,193 @@
+extra card style:
+	background:
+		left:								5
+		width:							{ w - 10 }
+		top:								8
+		height:							29
+		z_index:						1
+
+	type_caps:
+		left:								10
+		width:							{ w - 65 }
+		top:								10
+		height:							25
+		z_index:						1
+		alignment:					left middle
+		font:
+			name:	Oswald
+			size:	14.0
+			weight:	bold
+			color:	white
+
+	cost_caps:
+		left:								{ w - 75 }
+		width:							65
+		top:								10
+		height:							25
+		z_index:						1
+		alignment:					right middle
+		font:
+			name:	{ fontname(card.type) }
+			size:	14.0
+			weight:	bold
+			color:	white
+
+	action_header_bg:
+		visible:						{ card.effect == "Action" }
+		left:								5
+		width:							{ w - 10 }
+		top:								140
+		height:							25
+		z_index:						2
+
+	action_header:
+		visible:						{ card.effect == "Action" }
+		left:								10
+		width:							{ w - 85 }
+		top:								140
+		height:							25
+		z_index:						2
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	Oswald
+			size:	14.0
+			color:	white
+
+	action_cost_info:
+		visible:						{ card.effect == "Action" }
+		left:								{ w - 75 }
+		width:							65
+		top:								140
+		height:							25
+		z_index:						2
+		alignment:					right middle
+		font:
+			name:	Oswald
+			size:	14.0
+			color:	white
+
+	wpn_bg:
+		visible:						{ card.effect == "Attack" }
+		left:								10
+		width:							{ w - 20 }
+		top:								{ h - 185 }
+		height:							25
+		z_index:						2
+
+	wpn_hdr_name:
+		visible:						{ card.effect == "Attack" }
+		left:								15
+		width:							{ w - 115 }
+		top:								{ h - 185 }
+		height:							25
+		z_index:						3
+		alignment:					left middle
+		font:
+			name:	Oswald
+			size:	12.0
+			weight:	bold
+
+	wpn_name_info:
+		visible:						{ card.effect == "Attack" }
+		left:								10
+		width:							{ w - 115 }
+		top:								{ h - 160 }
+		height:							25
+		z_index:						10
+		alignment:					left middle shrink if-overflow
+		font:
+			name:	Arial
+			size:	12.0
+
+	wpn_hdr_a:
+		visible:						{ card.effect == "Attack" }
+		left:								{ w - 105 }
+		width:							25
+		top:								{ h - 185 }
+		height:							25
+		z_index:						3
+		alignment:					center middle
+		font:
+			name:	Oswald
+			size:	12.0
+			weight:	bold
+
+	wpn_hdr_bsws:
+		visible:						{ card.effect == "Attack" }
+		left:								{ w - 80 }
+		width:							35
+		top:								{ h - 185 }
+		height:							25
+		z_index:						3
+		alignment:					center middle shrink if-overflow
+		font:
+			name:	Oswald
+			size:	12.0
+			weight:	bold
+
+	wpn_hdr_d:
+		visible:						{ card.effect == "Attack" }
+		left:								{ w - 45 }
+		width:							35
+		top:								{ h - 185 }
+		height:							25
+		z_index:						3
+		alignment:					center middle
+		font:
+			name:	Oswald
+			size:	12.0
+			weight:	bold
+
+	wpn_sr_bg:
+		visible:						{ card.effect == "Attack" and card.wpn_sr != "" }
+		left:								10
+		width:							{ w - 20 }
+		top:								{ h - 135 }
+		height:							25
+		z_index:						3
+
+	wpn_hdr_sr:
+		visible:						{ card.effect == "Attack" and card.wpn_sr != "" }
+		left:								15
+		width:							{ w - 30 }
+		top:								{ h - 135 }
+		height:							25
+		z_index:						3
+		alignment:					left middle
+		font:
+			name:	Oswald
+			size:	12.0
+			weight:	bold
+
+	wpn_i_bg:
+		visible:						{ card.effect == "Attack" and card.wpn_i != "" }
+		left:								10
+		width:							{ w - 20 }
+		top:								{ h - 85 }
+		height:							25
+		z_index:						3
+
+	wpn_hdr_i:
+		visible:						{ card.effect == "Attack" and card.wpn_i != "" }
+		left:								15
+		width:							{ w - 30 }
+		top:								{ h - 85 }
+		height:							25
+		z_index:						3
+		alignment:					left middle
+		font:
+			name:	Oswald
+			size:	12.0
+			weight:	bold
+
+	border:
+		left:								0
+		width:							{ w }
+		top:								0
+		height:							{ h }
+		z_index:						99
+		left_width:					1
+		right_width:				1
+		top_width:					1
+		bottom_width:				1
+

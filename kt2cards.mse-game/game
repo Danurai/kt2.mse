@@ -1,53 +1,8 @@
 mse version:		2.1.2
 short name:			kt2cards
 full name:			Ploy and Equipment cards
-icon:						
+icon:						card_back.png
 position hint:	2
 version:				2021-09-01
 
 include file:	card_fields.mse
-
-#card field:
-#	type:					text
-#	name:					name
-#	description:	name
-#	identifying:	true
-#	card list visible: true
-#	show statistics: false
-#card field:
-#	type:					choice
-#	name:					type
-#	description:	Card Type
-#	card list visible: true
-#	initial:			Strategic Ploy
-#	choice:				Strategic Ploy
-#	choice:				Tactical Ploy
-#	choice:				Equipment
-#card field:
-#	type:					choice
-#	name:					cost
-#	description:	Cost
-#	card list visible:	true
-#	initial:			1
-#	choice:				1
-#	choice:				2
-#	choice:				3
-#	choice:				4
-#card field:
-#	type:					text
-#	name:					rule
-#	description:	Card rules
-#	multi line:		true
-#	show statistics: false
-#card field:
-#	type:					text
-#	name:					restriction
-#	description:	Kill Team and Operative restrictions
-#	card list visible:	true
-#card field:
-#	type:					choice
-#	name:					effect
-#	choice:				Ability
-#	choice:				Action
-#	choice:				Attack
-#	choice:				Effect

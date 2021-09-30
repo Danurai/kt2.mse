@@ -2,20 +2,21 @@ alert := "This is a test"
 
 faction_tags := [
   "Space Marines": "Space Marine, Imperium, Adeptus Astartes, \<chapter>"
-  "Asuryani": "Craftworld, Aeldari, Asuryani, \<craftworld>"
+  "Craftworlds": "Craftworld, Aeldari, Asuryani, \<craftworld>"
   "Harlequins": "Troupe, Aeldari, Harlequins, \<troupe>"
 ]
 
 get_tags := {
   ftags := to_upper(faction_tags[ card.killteam ])
+  add_leader := if card.leader == "yes" and not contains(card.fireteamop, match: "Leader") then ", LEADER, " else ", "
   if card.chapter != "" then ftags := replace( match: "\<CHAPTER>", replace: to_upper(card.chapter), ftags )
   replace( match: "^(.+?)\\," replace: "<color:rgb(222,86,39)>\\1</color><sym>S</sym>,", ftags )
-    + ", "
+    + add_leader
     + replace(match: "(.+)\\s\\((.+)\\)", replace: "\\1, \\2", to_upper(card.fireteamop) )
 }
 
 wpn_cell_width := [60, 190, 30, 50, 30, 180, 180]
-wpn_cell_height := 25
+wpn_cell_height := 20
 wpn_cell_left := {
   # input: column
   left := 0
@@ -26,6 +27,38 @@ wpn_cell_top := {
   215 + ( wpn_cell_height * input )
 }
 wpn_cell_font_size := 11
+wpn_info_visible := {
+  [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name,card.w6name,card.w7name,card.w8name,card.w9name][input-1] != ""
+}
 wpn_cell_visible := {
-  if row == 2 then card.w1name != "" else false
+  hasammo := [card.w1type,card.w2type,card.w3type,card.w4type,card.w5type,card.w6type,card.w7type,card.w8type,card.w9type,card.w10type][input] == "Ranged Ammo"
+  hasname := [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name,card.w6name,card.w7name,card.w8name,card.w9name,card.w10name][input] != ""
+  not hasammo and hasname
+}
+
+wpn_stripe_visible := {
+  [card.w1name,card.w2name,card.w3name,card.w4name,card.w5name][input-1] != "" and contains(card.wpntblstripes, match: input)
+}
+
+wpn_info_left := {
+  wpn_name_width:= [card_style.w1name.content_width, card_style.w2name.content_width, card_style.w3name.content_width, card_style.w4name.content_width, card_style.w5name.content_width][input]
+  wpn_cell_left(input+1) + wpn_name_width + 5
+}
+wpn_info_width := {
+  w - 50 - wpn_info_left(input)
+}
+
+# Abilities & unique actions
+aua_top := {
+  numw := length(filter_list([card.w1name,card.w2name,card.w3name,card.w4name,card.w5name], filter := { input != ""} ))
+  wpn_cell_top(numw) + 50
+}
+aua_header_top := { 
+  aua_top() - 25 
+}
+aua_height := {
+  h - aua_top() - 55
+}
+aua_width := {
+  (w/2) - 45
 }
