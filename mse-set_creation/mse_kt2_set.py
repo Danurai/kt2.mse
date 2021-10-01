@@ -20,8 +20,8 @@ def prettywrite(file, key, val):
 
 
 
-faction = "Harlequins" # Space marines, Craftworlds, Harlequins
-chapter = "" # White Scars, Something Spooky
+faction = "Craftworlds" # Space marines, Craftworlds, Harlequins
+chapter = "Iybraesil" # White Scars, Something Spooky
 filename = "../Saved Sets/set"
 zipfilename = f'../Saved Sets/kt2-{faction.lower()}-set.mse-set'
 jsonfile = "./mse-set_creation/kt2data.json"
@@ -72,7 +72,7 @@ def writeoperative( f, op, kt, ft, artno ):
 	# for w in weapons
 	for idx, w in enumerate(op['weapons']):
 		id = idx+1
-		wpn_count.append(str(id))
+		wpn_count.append( f'Slot {id:02d}' )
 		if w['type'] == "ranged":
 			type = "Ranged" if not 'ammo' in w else "Ranged Ammo"
 		elif w['type'] == "combat":
