@@ -193,27 +193,27 @@ card field:
 	description:				Select the weapons to display
 	show_statistics:		false
 	card_list_allow:		false
-	initial:						1,2,3,4,5
-	choice:	1
-	choice:	2
-	choice:	3
-	choice:	4
-	choice:	5
-	choice:	6
-	choice:	7
-	choice:	8
-	choice:	9
-	choice:	10
-	choice:	11
-	choice:	12
-	choice:	13
-	choice:	14
-	choice:	15
-	choice:	16
-	choice:	17
-	choice:	18
-	choice:	19
-	choice:	20
+	initial:						Slot 01, Slot 02
+	choice:	Slot 01
+	choice:	Slot 02
+	choice:	Slot 03
+	choice:	Slot 04
+	choice:	Slot 05
+	choice:	Slot 06
+	choice:	Slot 07
+	choice:	Slot 08
+	choice:	Slot 09
+	choice:	Slot 10
+	choice:	Slot 11
+	choice:	Slot 12
+	choice:	Slot 13
+	choice:	Slot 14
+	choice:	Slot 15
+	choice:	Slot 16
+	choice:	Slot 17
+	choice:	Slot 18
+	choice:	Slot 19
+	choice:	Slot 20
 
 card field:
 	type:								multiple choice
