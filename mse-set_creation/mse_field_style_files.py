@@ -2,7 +2,7 @@ import pandas as pd
 import numpy
 import re
 
-#msegame='kt2cards'
+msegame='kt2cards'
 msegame='kt2'
 sheets = ['card_fields', 'card_style', 'extra_card_fields', 'extra_card_style'] 
 

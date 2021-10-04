@@ -33,10 +33,10 @@ card style:
 	info:
 		left:								45
 		width:							310
-		top:								80
-		height:							90
+		top:								{ if length(card.fireteamop) > 32 then 110 else 80 }
+		height:							{ if length(card.fireteamop) > 32 then 60 else 90 }
 		z_index:						10
-		alignment:					left top shrink if-overflow
+		alignment:					left middle shrink if-overflow
 		font:
 			name:	{ bfont }
 			size:	10
@@ -144,6 +144,8 @@ card style:
 		top:								{ aua_top() }
 		height:							{ aua_height() }
 		z_index:						10
+		line_height_hard:		2
+		padding_left:				5
 		alignment:					left top shrink if-overflow
 		font:
 			name:	{ bfont }
@@ -158,6 +160,8 @@ card style:
 		top:								{ aua_top() }
 		height:							{ aua_height() }
 		z_index:						10
+		line_height_hard:		2
+		padding_left:				5
 		alignment:					left top shrink if-overflow
 		font:
 			name:	{ bfont }

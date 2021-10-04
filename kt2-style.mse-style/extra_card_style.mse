@@ -44,15 +44,16 @@ extra card style:
 	ft_text:
 		left:								45
 		width:							310
-		top:								45
-		height:							30
+		top:								40
+		height:							{ if length(card.fireteamop) > 32 then 80 else 40 }
 		z_index:						10
-		alignment:					centre middle shrink if-overflow
+		line_height_hard:		0.7
 		font:
 			name:	{ hfont }
 			size:	18.0
 			weight:	bold
 			color:	rgb(240,240,240)
+			scale_down_to:	12.0
 
 	watermark:
 		left:								155

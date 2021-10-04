@@ -20,8 +20,8 @@ def prettywrite(file, key, val):
 
 
 
-faction = "Craftworlds" # Space marines, Craftworlds, Harlequins
-chapter = "Iybraesil" # White Scars, Something Spooky
+faction = "Space Marines" # Space marines, Craftworlds, Harlequins
+chapter = "White Scars" # White Scars, Something Spooky
 filename = "../Saved Sets/set"
 zipfilename = f'../Saved Sets/kt2-{faction.lower()}-set.mse-set'
 jsonfile = "./mse-set_creation/kt2data.json"
@@ -132,4 +132,4 @@ f.close()
 zf.write(filename, 'set')
 
 zf.close()
-os.remove(filename)
+#os.remove(filename)

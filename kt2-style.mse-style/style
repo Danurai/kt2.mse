@@ -7,7 +7,7 @@ icon:         card_sample.png
 depends on:		kt2.mse-game 2021-09-01
 depends on:		kt2-common.mse-include 2021-09-01
 
-# Oversized card: 5" x 7" // 89mm x 129mm // 525px x 750px @150ppi
+# Oversized card: 3.5" x 5" // 89mm x 129mm // 525px x 750px @150ppi
 card width:		750
 card height:	525
 card dpi:			150

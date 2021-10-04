@@ -20,7 +20,7 @@ extra card field:
 	editable:						false
 	save_value:					false
 	show_statistics:		false
-	script:							if card.type == "Equipment" then "[{card.cost} EP]" else "{card.cost} AP"
+	script:							if card.type == "Equipment" then "[{card.cost} EP]" else "{card.cost} CP"
 
 extra card field:
 	type:								color

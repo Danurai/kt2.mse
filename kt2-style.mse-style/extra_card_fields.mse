@@ -50,7 +50,8 @@ extra card field:
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							to_upper(card.fireteamop)
+	script:							ft_text_wrap( to_upper(card.fireteamop) )
+	multi_line:					true
 
 extra card field:
 	type:								text

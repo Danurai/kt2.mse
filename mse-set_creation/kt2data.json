@@ -14,7 +14,337 @@
 			{
 				"name": "Tactical Marine",
 				"oplimit": 6,
-				"operatives": []
+				"operatives": [
+					{
+						"role": "Warrior",
+						"base": true,
+						"info": "Dependable and flexible, Space Marines assigned to Tactical Squads are called upon to fulfil a wide range of battlefield roles. When armed with the boltgun. they can hold ground, provide fire support and unload suppressive salvoes while rapidly advancing.",
+						"stats": {
+							"m": 3,
+							"apl": 3,
+							"ga": 1,
+							"df": 3,
+							"sv": 3,
+							"w": 1
+						},
+						"weapons": [
+							{
+								"type": "ranged",
+								"name": "Boltgun",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									3,
+									4
+								],
+								"sr": [],
+								"i": []
+							},
+							{
+								"type": "combat",
+								"name": "Fists",
+								"a": 3,
+								"bsws": 3,
+								"d": [
+									3,
+									4
+								],
+								"sr": [],
+								"i": []
+							}
+						],
+						"abilities": [],
+						"uniqueactions": [],
+						"skills": {
+							"combat": false,
+							"staunch": true,
+							"marksman": true,
+							"scout": false
+						}
+					},
+					{
+						"role": "Gunner",
+						"info": "Space Marines train with countless weapon types in support of their flexible role. Depending on the mission they weild thermal weapons to melt armour, infantry roasting flamers or ancient firearms that discharge dangerous energy.",
+						"stats": {
+							"m": 3,
+							"apl": 3,
+							"ga": 1,
+							"df": 3,
+							"sv": 3,
+							"w": 11
+						},
+						"weapons": [
+							{
+								"type": "ranged",
+								"name": "Flamer",
+								"a": 5,
+								"bsws": 2,
+								"d": [
+									2,
+									2
+								],
+								"sr": [
+									"Rng [6]",
+									"Torrent [2]"
+								],
+								"i": []
+							},
+							{
+								"type": "ranged",
+								"name": "Grav gun",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									4,
+									5
+								],
+								"sr": [
+									"AP1",
+									"Grav*"
+								],
+								"i": []
+							},
+							{
+								"type": "ranged",
+								"name": "Meltagun",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									6,
+									3
+								],
+								"sr": [
+									"Rng [6]",
+									"AP2"
+								],
+								"i": [
+									"MW4"
+								]
+							},
+							{
+								"type": "ranged",
+								"name": "Plasma gun",
+								"ammo": true
+							},
+							{
+								"type": "ammo",
+								"name": "Standard",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									5,
+									6
+								],
+								"sr": [
+									"AP1"
+								],
+								"i": []
+							},
+							{
+								"type": "ammo",
+								"name": "Supercharge",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									5,
+									6
+								],
+								"sr": [
+									"AP2",
+									"Hot"
+								],
+								"i": []
+							},
+							{
+								"type": "combat",
+								"name": "Fists",
+								"a": 3,
+								"bsws": 3,
+								"d": [
+									3,
+									4
+								],
+								"sr": [],
+								"i": []
+							}
+						],
+						"abilities": [
+							{
+								"name": "*Grav",
+								"text": "Each tim ethis operative makes a shooting attack with this weapon, if the target has an unmodified Save characteristic of 3+ or better, this weapon has the Lethal 4+ special rule for the attack."
+							}
+						],
+						"uniqueactions": [],
+						"skills": {
+							"combat": false,
+							"staunch": true,
+							"marksman": true,
+							"scout": false
+						}
+					},
+					{
+						"role": "Heavy Gunner",
+						"info": "Far too large to be wielded by any unaugmented Human, the heaviest weaponry can overturn a tank, demolish signal arrays and obliterate most enemies.",
+						"stats": {
+							"m": 3,
+							"apl": 3,
+							"ga": 1,
+							"df": 3,
+							"sv": 3,
+							"w": 11
+						},
+						"weapons": [
+							{
+								"type": "ranged",
+								"name": "Heavy Bolter",
+								"a": 5,
+								"bsws": 3,
+								"d": [
+									4,
+									5
+								],
+								"sr": ["Heavy","Fusillade"],
+								"i": ["P1"]
+							},
+							{
+								"type": "ranged",
+								"name": "Missile Launcher",
+								"ammo": true
+							},
+							{
+								"type": "ammo",
+								"name": "Frag",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									3,
+									5
+								],
+								"sr": ["Heavy", "Blast [2]"],
+								"i": []
+							},
+							{
+								"type": "ammo",
+								"name": "Krak",
+								"a": 4,
+								"bsws": 3,
+								"d": [
+									5,
+									7
+								],
+								"sr": ["Heavy", "AP1"],
+								"i": []
+							},
+							{
+								"type": "combat",
+								"name": "Fists",
+								"a": 3,
+								"bsws": 3,
+								"d": [
+									3,
+									4
+								],
+								"sr": [],
+								"i": []
+							}
+						],
+						"abilities": [],
+						"uniqueactions": [],
+						"skills": {
+							"combat": false,
+							"staunch": true,
+							"marksman": true,
+							"scout": false
+						}
+					},
+					{
+						"role": "Sergeant",
+						"leader": true,
+						"info": "These grizzled leaders have emerged victorious through countless battles. They are canny individuals, able to pick out the threats and opportunities of battle.",
+						"stats": {
+							"m": 3,
+							"apl": 3,
+							"ga": 1,
+							"df": 3,
+							"sv": 3,
+							"w": 12
+						},
+						"weapons": [
+							{
+								"type": "ranged",
+								"name": "Bolt Pistol",
+								"a": 4,
+								"bsws": 2,
+								"d": [
+									3,
+									4
+								],
+								"sr": ["Rng [6]"],
+								"i": []
+							},
+							{
+								"type": "ranged",
+								"name": "Boltgun",
+								"a": 4,
+								"bsws": 2,
+								"d": [
+									3,
+									4
+								],
+								"sr": [],
+								"i": []
+							},
+							{
+								"type": "combat",
+								"name": "Fists",
+								"a": 3,
+								"bsws": 3,
+								"d": [
+									3,
+									4
+								],
+								"sr": [],
+								"i": []
+							},
+							{
+								"type": "combat",
+								"name": "Power fist",
+								"a": 5,
+								"bsws": 3,
+								"d": [
+									5,
+									7
+								],
+								"sr": ["Brutal"],
+								"i": []
+							},
+							{
+								"type": "combat",
+								"name": "Power weapon",
+								"a": 5,
+								"bsws": 2,
+								"d": [
+									4,
+									6
+								],
+								"sr": ["Lethal 5+"],
+								"i": []
+							}
+						],
+						"abilities": [
+							{
+								"name": "*Grav",
+								"text": "Each tim ethis operative makes a shooting attack with this weapon, if the target has an unmodified Save characteristic of 3+ or better, this weapon has the Lethal 4+ special rule for the attack."
+							}],
+						"uniqueactions": [],
+						"skills": {
+							"combat": false,
+							"staunch": true,
+							"marksman": true,
+							"scout": false
+						}
+					}
+				]
 			}
 		],
 		"ploys": {
@@ -1347,7 +1677,7 @@
 	},
 	{
 		"id": "harlequins",
-		"name": "Harlequins", 	
+		"name": "Harlequins",
 		"killteamname": "Troupe",
 		"labels": [
 			"Troupe",
