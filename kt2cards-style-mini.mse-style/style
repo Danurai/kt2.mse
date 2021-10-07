@@ -1,21 +1,21 @@
 mse version:			2.1.2
-short name:				Standard
-full name:				Standard Size
-position_hint:		1
+short name:				Mini
+full name:				American Mini
+position_hint:		2
 version:					2021-09-01
 game:							kt2cards
 icon:							card_sample.png
 depends on:				kt2cards.mse-game 2021-09-01
 depends on:				kt2-common.mse-include 2021-09-01
 
-# Std 2.5" x 3.5" @150ppi 
-card width:				375
-card height:			525
+# 41mm x 63mm (1.6" x 2.48") @150ppi = 5.903ppmm
+card width:				242
+card height:			372
 card dpi:					150
 
 init script:
-	w := 375
-	h := 525
+	w := 242
+	h := 372
 	fontname := { if input == "Equipment" then "Courier New" else "Oswald" }
 	wpn_height := { if card.effect == "Attack" then 25 else 0 }
 
