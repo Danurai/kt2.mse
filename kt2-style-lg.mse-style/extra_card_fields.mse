@@ -8,59 +8,67 @@ extra card field:
 	initial:						rgb(0,0,0)
 
 extra card field:
-	type:								choice
-	name:								background
+	type:								color
+	name:								cardbg
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	initial:						None
-	choice:	None
+	initial:						rgb(225,227,226)
 
 extra card field:
 	type:								color
-	name:								stat_bg0
+	name:								border1
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	initial:						rgb(255,220,20)
-
-extra card field:
-	type:								color
-	name:								stat_bg1
-	editable:						false
-	save_value:					false
-	show_statistics:		false
-	card_list_allow:		false
+	default:						styling.Primary_Colour
 	script:							styling.Primary_Colour
 
 extra card field:
 	type:								color
-	name:								stat_bg2
-	editable:						false
+	name:								artbg
+	editable:						true
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							styling.Secondary_Colour
+	initial:						rgb(255,255,255)
 
 extra card field:
 	type:								color
-	name:								ft_bg
+	name:								ftbg
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	initial:						rgb(240,240,240)
 
 extra card field:
-	type:								color
-	name:								ft_bg1
+	type:								text
+	name:								ft_text
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	initial:						rgb(240,240,240)
+	script:							ft_text_wrap( to_upper(card.fireteamop) )
+	multi_line:					true
+
+extra card field:
+	type:								text
+	name:								ft_extratext
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+
+extra card field:
+	type:								choice
+	name:								watermark
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	choice:	watermark
 
 extra card field:
 	type:								text
@@ -70,6 +78,15 @@ extra card field:
 	show_statistics:		false
 	card_list_allow:		false
 	script:							"M"
+
+extra card field:
+	type:								text
+	name:								moverng
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"2"
 
 extra card field:
 	type:								text
@@ -115,33 +132,6 @@ extra card field:
 	show_statistics:		false
 	card_list_allow:		false
 	script:							"W"
-
-extra card field:
-	type:								text
-	name:								statlbl m rng
-	editable:						false
-	save_value:					false
-	show_statistics:		false
-	card_list_allow:		false
-	script:							"2"
-
-extra card field:
-	type:								text
-	name:								statlbl sv n
-	editable:						false
-	save_value:					false
-	show_statistics:		false
-	card_list_allow:		false
-	script:							substring(card.stat_sv,end:1)
-
-extra card field:
-	type:								text
-	name:								statllb sv plus
-	editable:						false
-	save_value:					false
-	show_statistics:		false
-	card_list_allow:		false
-	script:							"+"
 
 extra card field:
 	type:								color
@@ -240,7 +230,7 @@ extra card field:
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							"SR / !"
+	script:							"SR"
 
 extra card field:
 	type:								text
@@ -288,182 +278,254 @@ extra card field:
 	initial:						rgb(140,140,140)
 
 extra card field:
-	type:								text
-	name:								wpn_sr_i_1
+	type:								color
+	name:								combat bg1
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(1)
+	initial:						rgb(222,86,39)
+
+extra card field:
+	type:								color
+	name:								combat bg2
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(140,140,140)
+
+extra card field:
+	type:								color
+	name:								staunch bg1
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(222,86,39)
+
+extra card field:
+	type:								color
+	name:								staunch bg2
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(140,140,140)
+
+extra card field:
+	type:								color
+	name:								marksman bg1
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(222,86,39)
+
+extra card field:
+	type:								color
+	name:								marksman bg2
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(140,140,140)
+
+extra card field:
+	type:								color
+	name:								scout bg1
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(222,86,39)
+
+extra card field:
+	type:								color
+	name:								scout bg2
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	initial:						rgb(140,140,140)
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_2
+	name:								w1info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(2)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_3
+	name:								w2info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(3)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_4
+	name:								w3info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(4)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_5
+	name:								w4info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(5)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_6
+	name:								w5info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(6)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_7
+	name:								w6info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(7)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_8
+	name:								w7info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(8)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_9
+	name:								w8info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(9)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_10
+	name:								w9info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(10)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_11
+	name:								w10info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(11)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_12
+	name:								w11info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(12)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_13
+	name:								w12info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(13)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_14
+	name:								w13info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(14)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_15
+	name:								w14info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(15)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_16
+	name:								w15info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(16)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_17
+	name:								w16info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(17)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_18
+	name:								w17info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(18)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_19
+	name:								w18info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(19)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 
 extra card field:
 	type:								text
-	name:								wpn_sr_i_20
+	name:								w19info
 	editable:						false
 	save_value:					false
 	show_statistics:		false
 	card_list_allow:		false
-	script:							wpn_sr_i_text(20)
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
+
+extra card field:
+	type:								text
+	name:								w20info
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	script:							"Each time this weapon is selected to make a shooting attack with, select one of the profiles below to use:"
 

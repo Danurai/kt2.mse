@@ -1,0 +1,94 @@
+w := 375
+h := 525
+hfont := "Oswald"
+bfont := "Roboto"
+
+ft_bg_left := {
+  (w - ft_bg_width() ) / 2
+}
+ft_bg_width := {
+  min( w - 80, card_style.ft_text.content_width ) + 10
+}
+wpn_table_top := 250
+
+wpn_cell_width := [20 115 20 30 30 80 80]
+
+wpn_cell_left := {
+  for x from 0 to (input - 1) do wpn_cell_width[x]
+}
+wpn_cell_top := {
+  show_wpn_list := for each k:v in break_text(card.wpntblshow, match:"\\d\\d") do [ to_int(v)]
+  idx := position(of: (input + 1), in: show_wpn_list)
+  top := wpn_table_top + ( wpn_cell_height * idx )
+  top
+}
+# for "Ranged Ammo" weapons
+wpn_info_left := {
+  wpn_cell_left(1) + wpn_name_widths(input) + 5
+}
+wpn_info_width := {
+  w - 50 - wpn_info_left(input)
+}
+
+wpn_stripe_top := {
+  wpn_table_top + ( wpn_cell_height * input * 2 )
+}
+
+
+
+# Abilities & unique actions
+aua_visible := {
+  if input == "ab" then
+    contains(card.has_aua, match: "Abilities")
+  else
+    contains(card.has_aua, match: "Unique Actions")
+}
+aua_top := {
+  numw := length(break_text(card.wpntblshow, match:"\\d\\d"))
+  wpn_table_top + (wpn_cell_height * numw) + 35
+}
+aua_header_top := { 
+  aua_top() - 25 
+}
+aua_height := {
+
+  h - aua_top() - 45
+}
+aua_width := {
+  if count_chosen(card.has_aua) == 2 then
+    (w/2) - 5
+  else
+    w
+}
+ab_left := {
+  0
+}
+ua_left := {
+  if contains(card.has_aua, match: "Abilities") then
+    (w / 2) + 5
+  else
+    0
+}
+
+stat_bg_blend := { combine_blend(image1: "stat_mask.png", image2: crop("linear_blend.png", offset_x: 0, offset_y: 100, width: 375, height: 250), combine: "darken") }
+
+wNsr := {
+  [card.w1sr card.w2sr card.w3sr card.w4sr card.w5sr card.w6sr card.w7sr card.w8sr card.w9sr card.w10sr card.w11sr card.w12sr card.w13sr card.w14sr card.w15sr card.w16sr card.w17sr card.w18sr card.w19sr card.w20sr][input]
+}
+
+wNi := {
+  [card.w1i card.w2i card.w3i card.w4i card.w5i card.w6i card.w7i card.w8i card.w9i card.w10i card.w11i card.w12i card.w13i card.w14i card.w15i card.w16i card.w17i card.w18i card.w19i card.w20sr][input]
+}
+
+wpn_sr_i_text := {
+  sr := wNsr(input - 1)
+  i := wNi(input - 1)
+  sr + " / " + i
+}
+card_background := {
+  img := to_lower((styling.Background))
+  if img != "none" then
+    set_alpha(set_mask(image: "/kt2-common.mse-include/" + img + "_portrait.png" mask: rotate("/kt2-common.mse-include/linear_blend.png" angle: 180)) alpha: 0.3)
+  else
+    ""
+}

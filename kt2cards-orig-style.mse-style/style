@@ -1,12 +1,11 @@
 mse version:			2.1.2
-short name:				Default
-full name:				Default Style
-position_hint:		1
+short name:				Original
+full name:				Original Style
+position_hint:		2
 version:					2021-09-01
 game:							kt2cards
 icon:							card_sample.png
-depends on:				kt2cards.mse-game 2021-09-01
-depends on:				kt2-common.mse-include 2021-09-01
+depends on:				kt2cards.mse-game
 
 # 41mm x 63mm (1.6" x 2.48") @150ppi = 5.903ppmm
 card width:				242

@@ -12,6 +12,101 @@
 		],
 		"fireteams": [
 			{
+				"name": "Assault Intercessor",
+				"archetype": ["Seek and Destroy", "Security"],
+				"oplimit": 5,
+				"operatives": [
+					{
+						"role": "Warrior",
+						"base": true,
+						"info": "",
+						"stats": {"m": 3, "apl": 3, "ga": 1, "df": 3, "sv": 3, "w": 13},
+						"weapons": [{
+								"name": "Heavy bolt pistol",
+								"type": "ranged",
+								"a": 4, "bsws": 3, "d": [3,4], "sr": ["Rng [6]"], "i": ["P1"]
+							},{
+								"name": "Chainsword",
+								"type": "combat",
+								"a": 5, "bsws": 3, "d": [4,5], "sr": [], "i": []
+							}],
+							"abilities": [],
+							"uniqueactions": [],
+							"skills": {
+								"combat": true,
+								"staunch": true,
+								"marksman": false,
+								"scout": false
+							}
+					},
+					{
+						"role": "Sergeant",
+						"leader": true,
+						"info": "",
+						"stats": {"m": 3, "apl": 3, "ga": 1, "df": 3, "sv": 3, "w": 14},
+						"equipment": {
+							"options": [
+										[
+											"Hand flamer",
+											"Heavy bolt pistol",
+											"Plasma pistol"
+										],
+										[
+											"Chainsword",
+											"Power fist",
+											"Power weapon",
+											"Thunder hammer"
+										]
+									]},
+						"weapons": [{
+								"name": "Hand flamer",
+								"type": "ranged",
+								"a": 4, "bsws": 2, "d": [2,2], "sr": ["Rng [6]","Torrent [1]"], "i": []
+							},{
+								"name": "Heavy bolt pistol",
+								"type": "ranged",
+								"a": 4, "bsws": 3, "d": [3,4], "sr": ["Rng [6]"], "i": ["P1"]
+							},{
+								"name": "Plasma pistol",
+								"type": "ranged",
+								"ammo": true
+							},{
+								"name": "Standard",
+								"type": "ammo",
+								"a": 4, "bsws": 3, "d": [5,6], "sr": ["Rng [6]","AP1"], "i": []
+							},{
+								"name": "Supercharge",
+								"type": "ammo",
+								"a": 4, "bsws": 3, "d": [5,6], "sr": ["Rng [6]","AP2","Hot"], "i": []
+							},{
+								"name": "Chainsword",
+								"type": "combat",
+								"a": 5, "bsws": 2, "d": [4,5], "sr": [], "i": []
+							},{
+								"name": "Power fist",
+								"type": "combat",
+								"a": 5, "bsws": 2, "d": [5,7], "sr": ["Brutal"], "i": []
+							},{
+								"name": "Power weapon",
+								"type": "combat",
+								"a": 5, "bsws": 2, "d": [4,6], "sr": ["Lethal 5+"], "i": []
+							},{
+								"name": "Thunder hammer",
+								"type": "combat",
+								"a": 5, "bsws": 3, "d": [5,6], "sr": [], "i": ["Stun"]
+							}],
+						"abilities": [],
+						"uniqueactions": [],
+						"skills": {
+							"combat": true,
+							"staunch": true,
+							"marksman": false,
+							"scout": false
+						}
+						
+					}]
+			},
+			{
 				"name": "Tactical Marine",
 				"oplimit": 6,
 				"operatives": [
@@ -73,6 +168,7 @@
 							"sv": 3,
 							"w": 11
 						},
+						"ftlimit": 1,
 						"weapons": [
 							{
 								"type": "ranged",
@@ -193,6 +289,7 @@
 							"sv": 3,
 							"w": 11
 						},
+						"ftlimit": 1,
 						"weapons": [
 							{
 								"type": "ranged",

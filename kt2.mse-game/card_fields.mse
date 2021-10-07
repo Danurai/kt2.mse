@@ -22,6 +22,7 @@ card field:
 	name:								killteamtags
 	editable:						false
 	show_statistics:		false
+	multi_line:					true
 	script:							get_tags()
 
 card field:
@@ -77,6 +78,17 @@ card field:
 		choice: (Leader)
 
 card field:
+	type:								text
+	name:								ft_text
+	description:				Operative Fire Team and Role
+	editable:						false
+	save_value:					false
+	show_statistics:		false
+	card_list_allow:		false
+	card_list_visible:	false
+	script:							to_upper(card.fireteamop)
+
+card field:
 	type:								choice
 	name:								stat_m
 	description:				Movement Limit
@@ -90,28 +102,44 @@ card field:
 	choice:	4
 
 card field:
-	type:								text
+	type:								choice
 	name:								stat_ga
 	description:				Group Activation Number
 	card_list_visible:	true
 	card_list_name:			GA
 	card_list_column:		3
+	choice:	-
+	choice:	1
+	choice:	2
+	choice:	3
 
 card field:
-	type:								text
+	type:								choice
 	name:								stat_apl
 	description:				Action Point Limit
 	card_list_visible:	true
 	card_list_name:			APL
 	card_list_column:		4
+	choice:	-
+	choice:	1
+	choice:	2
+	choice:	3
+	choice:	4
 
 card field:
-	type:								text
+	type:								choice
 	name:								stat_df
 	description:				Defence
 	card_list_visible:	true
 	card_list_name:			DF
 	card_list_column:		5
+	choice:	-
+	choice:	1
+	choice:	2
+	choice:	3
+	choice:	4
+	choice:	5
+	choice:	6
 
 card field:
 	type:								choice
@@ -142,6 +170,14 @@ card field:
 	card_list_name:			Leader
 	card_list_column:		8
 	initial:						no
+
+card field:
+	type:								multiple choice
+	name:								has_aua
+	description:				Has Abilities and or Unique actions
+	initial:						Abilities,Unique Actions
+	choice:	Abilities
+	choice:	Unique Actions
 
 card field:
 	type:								text

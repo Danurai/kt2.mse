@@ -12,7 +12,7 @@ def convertmarkdown( md, faction ):
 	return rtn
 
 def writeploy( file, ploy, faction, type):
-	#print(ploy)
+	print("writing", type, "ploy:", ploy['name'])
 	file.write('card:\n')
 	file.write('\trestriction: <color:rgb(227,86,39)>' + faction.upper() + '</color><sym>S</sym>\n')
 	file.write('\tname: ' + ploy['name'] + '\n')
@@ -29,17 +29,14 @@ def writeploy( file, ploy, faction, type):
 	file.write('\n')
 
 def writeitem( file, item, faction):
-	factiontag = '<color:rgb(227,86,39)>' + faction.upper() + '</color><sym>S</sym>'
+	print("writing equipment:", item['name'])
 	oprestriction = ''
 	if 'restriction' in item:
 		item['restriction']=[x.upper() for x in item['restriction']]
 		oprestriction = '<b>' + ', '.join(item['restriction']) + '</b> only. '
-		item['restriction'].insert(0, factiontag)
-	else:
-		item['restriction']=[factiontag]
 	
 	file.write('card:\n')
-	file.write('\trestriction: ' + ', '.join(item['restriction']) + '\n')
+	file.write('\trestriction: <color:rgb(227,86,39)>' + faction.upper() + '</color><sym>S</sym>\n')
 	file.write('\tname: {}\n'.format(item['name']))
 	file.write('\ttype: Equipment\n')
 	file.write('\tcost: {}\n'.format(str(item['cost'])))
@@ -56,7 +53,6 @@ def writeitem( file, item, faction):
 		if 'sr' in item['weapon']: file.write('\twpn_sr: {}\n'.format(convertmarkdown(', '.join(item['weapon']['sr']), faction)))
 		if 'i' in item['weapon']: file.write('\twpn_i: {}\n'.format(convertmarkdown(', '.join(item['weapon']['i']), faction)))
 	elif 'action' in item:
-		print(item['name'])
 		file.write('\teffect:\tAction\n')
 		file.write('\trule: ' + convertmarkdown(item['text'], faction) + '\n')
 		file.write('\taction_cost:\t{}\n'.format(item['action']['cost']))

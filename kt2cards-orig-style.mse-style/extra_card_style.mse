@@ -1,45 +1,33 @@
 extra card style:
-	border:
-		left:								0
-		width:							{ w }
-		top:								0
-		height:							{ h }
-		z_index:						0
-		left_width:					1
-		right_width:				1
-		top_width:					1
-		bottom_width:				1
-
 	background:
-		left:								0
-		width:							{ w }
-		top:								0
-		height:							30
+		left:								5
+		width:							{ w - 10 }
+		top:								8
+		height:							29
 		z_index:						1
 
 	type_caps:
-		left:								0
-		width:							{ w - 60 }
-		top:								0
-		height:							30
+		left:								10
+		width:							{ w - 65 }
+		top:								10
+		height:							25
 		z_index:						1
-		alignment:					left middle shrink if-overflow
+		alignment:					left middle
 		font:
-			name:	Black Ops One
+			name:	Oswald
 			size:	14.0
 			weight:	bold
 			color:	white
-		padding_left:				5
 
 	cost_caps:
-		left:								{ w - 60 }
-		width:							60
-		top:								0
-		height:							30
+		left:								{ w - 75 }
+		width:							65
+		top:								10
+		height:							25
 		z_index:						1
 		alignment:					right middle
 		font:
-			name:	Black Ops One
+			name:	{ fontname(card.type) }
 			size:	14.0
 			weight:	bold
 			color:	white
@@ -82,7 +70,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" }
 		left:								10
 		width:							{ w - 20 }
-		top:								{ h - 180 }
+		top:								{ h - 185 }
 		height:							25
 		z_index:						2
 
@@ -90,7 +78,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" }
 		left:								15
 		width:							{ w - 115 }
-		top:								{ h - 180 }
+		top:								{ h - 185 }
 		height:							25
 		z_index:						3
 		alignment:					left middle
@@ -103,7 +91,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" }
 		left:								10
 		width:							{ w - 115 }
-		top:								{ h - 155 }
+		top:								{ h - 160 }
 		height:							25
 		z_index:						10
 		alignment:					left middle shrink if-overflow
@@ -115,7 +103,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" }
 		left:								{ w - 105 }
 		width:							25
-		top:								{ h - 180 }
+		top:								{ h - 185 }
 		height:							25
 		z_index:						3
 		alignment:					center middle
@@ -128,7 +116,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" }
 		left:								{ w - 80 }
 		width:							35
-		top:								{ h - 180 }
+		top:								{ h - 185 }
 		height:							25
 		z_index:						3
 		alignment:					center middle shrink if-overflow
@@ -141,7 +129,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" }
 		left:								{ w - 45 }
 		width:							35
-		top:								{ h - 180 }
+		top:								{ h - 185 }
 		height:							25
 		z_index:						3
 		alignment:					center middle
@@ -154,7 +142,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" and card.wpn_sr != "" }
 		left:								10
 		width:							{ w - 20 }
-		top:								{ h - 130 }
+		top:								{ h - 135 }
 		height:							25
 		z_index:						3
 
@@ -162,7 +150,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" and card.wpn_sr != "" }
 		left:								15
 		width:							{ w - 30 }
-		top:								{ h - 130 }
+		top:								{ h - 135 }
 		height:							25
 		z_index:						3
 		alignment:					left middle
@@ -175,7 +163,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" and card.wpn_i != "" }
 		left:								10
 		width:							{ w - 20 }
-		top:								{ h - 80 }
+		top:								{ h - 85 }
 		height:							25
 		z_index:						3
 
@@ -183,7 +171,7 @@ extra card style:
 		visible:						{ card.effect == "Attack" and card.wpn_i != "" }
 		left:								15
 		width:							{ w - 30 }
-		top:								{ h - 80 }
+		top:								{ h - 85 }
 		height:							25
 		z_index:						3
 		alignment:					left middle
@@ -191,4 +179,15 @@ extra card style:
 			name:	Oswald
 			size:	12.0
 			weight:	bold
+
+	border:
+		left:								0
+		width:							{ w }
+		top:								0
+		height:							{ h }
+		z_index:						99
+		left_width:					1
+		right_width:				1
+		top_width:					1
+		bottom_width:				1
 

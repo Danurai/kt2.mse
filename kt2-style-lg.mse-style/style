@@ -1,5 +1,5 @@
 mse version:	2.1.2
-short name:		Data Card
+short name:		Large Data Card
 full name:		Operative Data Card
 version:			2021-09-01
 game:					kt2
@@ -7,12 +7,13 @@ icon:         card_sample.png
 depends on:		kt2.mse-game 2021-09-01
 depends on:		kt2-common.mse-include 2021-09-01
 
-# Standard sized card: 2.5" x 3.5" // 375px x 525px @150ppi
-card width:		375
+# Oversized card: 3.5" x 5" // 89mm x 129mm // 525px x 750px @150ppi
+card width:		750
 card height:	525
 card dpi:			150
 
 init script: include file: script
+
 
 styling field:
 	type:		text
@@ -45,18 +46,17 @@ styling field:
 
 styling field:
 	type:			choice
-	name:			Title background under art
-	initial:	Yes
+	name:			Use Art Transparency
+	initial:	No
 	choice:		Yes
 	choice:		No
 
 styling field:
-	type:			choice
-	name:			Background
-	initial:	None
-	choice:   None
-	choice:		Diamonds
-	choice:		Geometric
+	type:			multiple choice
+	name:			Operative Display
+	initial:	Flavour Text
+	choice:		Flavour Text
+	choice:		Weapon
 
 include file: card_style.mse
 include file:	extra_card_fields.mse

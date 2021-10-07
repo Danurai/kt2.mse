@@ -2,19 +2,11 @@ import pandas as pd
 import numpy
 import re
 
-msegame='kt2cards'
+#msegame='kt2cards'
 msegame='kt2'
-sheets = ['card_fields', 'card_style', 'extra_card_fields', 'extra_card_style'] 
-
-output_files = {
-	'card_fields':				'.mse-game/card_fields.mse',
-	'card_style':					'-style.mse-style/card_style.mse',
-	'extra_card_fields':  '-style.mse-style/extra_card_fields.mse',
-	'extra_card_style':		'-style.mse-style/extra_card_style.mse',
-}
 
 def b(x): return str(x).lower() if isinstance(x, bool) else str(x)
-def is_style_sheet(s): return re.search('style',sheet) is not None
+def is_style_sheet(s): return re.search('style',s) is not None
 def get_choices( choices, gamefile, key ):
 	#print(key, choices)
 	if choices == 'choices' or choices == 'choice_images':
@@ -23,12 +15,12 @@ def get_choices( choices, gamefile, key ):
 	else:
 		return choices.split(',')
 
+def get_val_indent( key ):
+	return '\t' * int((20 - len(key)) / 2)
 
-for sheet in sheets:
-	sourcexlsx = f'./mse-set_creation/{msegame}.xlsx'
-	outfile=f'./{msegame}{output_files[sheet]}'
+def write_sheet(sourcexlsx, sheet, sheetname, outfile):
 	indent = '\t\t' if is_style_sheet(sheet) else '\t'
-	df = pd.read_excel(sourcexlsx, sheet)
+	df = pd.read_excel(sourcexlsx, sheetname)
 	f = open(outfile,'w')
 	if sheet == 'card_style': f.write('card style:\n')
 	if sheet == 'extra_card_style': f.write('extra card style:\n')
@@ -38,22 +30,23 @@ for sheet in sheets:
 		fieldname = row.name
 		for key in row._fields:
 			val=getattr(row,key)
-			valindent = '\t' * int((20 - len(key)) / 2)
+			valindent = get_val_indent(key)
 			if key != 'Index' and not pd.isnull(val):
 				if key == 'name' and is_style_sheet(sheet):
 					f.write(f'\t{val}:\n')
 				elif re.match('font',key) is not None:
 					if key == 'font_name':
-						f.write(f'{indent}font:\n\t\t\tname:\t{val}\n')
+						f.write(f'{indent}font:\n')
+						f.write(f'\t\t\tname:{get_val_indent("name")}{val}\n')
 					else:
 						attr = re.match('font_(.+)',key)[1]
-						f.write(f'{indent}\t{attr}:\t{val}\n')
+						f.write(f'{indent}\t{attr}:{get_val_indent(attr)}{val}\n')
 				elif re.match('symbol_font',key) is not None:
 					if key == 'symbol_font_name':
-						f.write(f'{indent}symbol_font:\n\t\t\tname:\t{val}\n')
+						f.write(f'{indent}symbol_font:\n\t\t\tname:{get_val_indent("name")}{val}\n')
 					else:
 						attr = re.match('symbol_font_(.+)',key)[1]
-						f.write(f'{indent}\t{attr}:\t{val}\n')
+						f.write(f'{indent}\t{attr}:{get_val_indent(attr)}{val}\n')
 				elif key == 'choices':
 					for ch in get_choices(val, sourcexlsx, fieldname):
 						if re.match('name:', ch):
@@ -72,4 +65,18 @@ for sheet in sheets:
 					f.write(f'{indent}{key}:{valindent}{val}\n')
 		f.write('\n')
 	print(f'{sheet} written')
+	del df
 	f.close()
+
+if __name__ == "__main__":
+	sourcexlsx = f'./mse-set_creation/{msegame}.xlsx'
+	write_sheet(sourcexlsx, 'card_fields', 'card_fields', f'{msegame}.mse-game/card_fields.mse')
+
+	struct = pd.read_excel(sourcexlsx, 'struct')
+	for style in struct.itertuples():
+		stylename = style.style_name
+		#sheets = ['card_style', 'extra_card_fields', 'extra_card_style']
+		write_sheet(sourcexlsx, 'card_style', style.card_style, f'{msegame}-{stylename}.mse-style/card_style.mse')
+		write_sheet(sourcexlsx, 'extra_card_fields', style.extra_card_fields, f'{msegame}-{stylename}.mse-style/extra_card_fields.mse')
+		write_sheet(sourcexlsx, 'extra_card_style', style.extra_card_style, f'{msegame}-{stylename}.mse-style/extra_card_style.mse')
+		
