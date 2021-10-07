@@ -31,7 +31,7 @@ wpn_info_width := {
 }
 
 wpn_stripe_top := {
-  wpn_table_top + ( wpn_cell_height * input * 2 )
+  wpn_table_top + ( wpn_cell_height * input )
 }
 
 
@@ -51,8 +51,10 @@ aua_header_top := {
   aua_top() - 25 
 }
 aua_height := {
-
-  h - aua_top() - 45
+  if aua_visible(input) then
+    h - aua_top() - 45
+  else 
+    0
 }
 aua_width := {
   if count_chosen(card.has_aua) == 2 then
