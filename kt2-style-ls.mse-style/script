@@ -1,0 +1,76 @@
+w := 525
+h := 375
+hfont := "Oswald"
+bfont := "Roboto"
+
+
+wpn_cell_width := [35, 145, 30, 50, 30, 110, 110]
+wpn_table_top := 135
+
+wpn_cell_left := {
+  left := 0
+  if input == 0 then
+    left := wpn_cell_width[0] - wpn_cell_height
+  else
+    for x from 0 to (input - 1) do left := left + wpn_cell_width[x]
+  left
+}
+wpn_cell_top := {
+  show_wpn_list := for each k:v in break_text(card.wpntblshow, match:"\\d\\d") do [ to_int(v)]
+  idx := position(of: (input + 1), in: show_wpn_list)
+  wpn_table_top + ( wpn_cell_height * idx )
+}
+
+wpn_header_top := {
+  wpn_table_top - 25
+}
+# for "Ranged Ammo" weapons
+wpn_info_left := {
+  wpn_cell_left(2) + 5
+}
+wpn_info_width := {
+  w - wpn_info_left(input) - 15
+}
+
+wpn_stripe_top := {
+  wpn_table_top + ( wpn_cell_height * input )
+}
+
+
+
+
+# Abilities & unique actions
+aua_visible := {
+  if input == "ab" then
+    contains(card.has_aua, match: "Abilities")
+  else
+    contains(card.has_aua, match: "Unique Actions")
+}
+aua_top := {
+  numw := length(break_text(card.wpntblshow, match:"\\d\\d"))
+  wpn_table_top + (wpn_cell_height * numw) + 35
+}
+aua_header_top := { 
+  aua_top() - 25 
+}
+aua_height := {
+  if aua_visible(input) then
+    h - aua_top() - 35
+  else 
+    0
+}
+aua_width := {
+  if count_chosen(card.has_aua) == 2 then
+    (w/2) - 20
+  else
+    w - 30
+}
+ab_left := {
+  15
+}
+ua_left := {
+  if contains(card.has_aua, match: "Abilities") then
+    (w / 2) + 5
+  else
+    ab_left()
+}
