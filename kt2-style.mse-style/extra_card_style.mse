@@ -60,6 +60,25 @@ extra card style:
 		z_index:						7
 		radius:							2
 
+	kt_tags_multi:
+		left:								0
+		width:							{ w }
+		top:								{ h - 45 }
+		height:							45
+		z_index:						9
+		line_height_soft:		0.7
+		padding_left:				5
+		padding_right:			5
+		padding_bottom:			5
+		alignment:					bottom shrink if-overflow
+		font:
+			name:								{ hfont }
+			size:								10
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
+		symbol_font:
+			name:								kt2
+
 	statlbl m:
 		left:								20
 		width:							50
@@ -241,41 +260,41 @@ extra card style:
 		visible:						{ wpn_stripe_visible(1) }
 		left:								0
 		width:							{ w }
-		top:								{ wpn_cell_top(0) }
+		top:								{ wpn_stripe_top(0) }
 		height:							{ wpn_cell_height }
-		z_index:						0
+		z_index:						9
 
 	wpntblstripe2:
 		visible:						{ wpn_stripe_visible(2) }
 		left:								0
 		width:							{ w }
-		top:								{ wpn_cell_top(1) }
+		top:								{ wpn_stripe_top(1) }
 		height:							{ wpn_cell_height }
-		z_index:						0
+		z_index:						9
 
 	wpntblstripe3:
 		visible:						{ wpn_stripe_visible(3) }
 		left:								0
 		width:							{ w }
-		top:								{ wpn_cell_top(2) }
+		top:								{ wpn_stripe_top(2) }
 		height:							{ wpn_cell_height }
-		z_index:						0
+		z_index:						9
 
 	wpntblstripe4:
 		visible:						{ wpn_stripe_visible(4) }
 		left:								0
 		width:							{ w }
-		top:								{ wpn_cell_top(3) }
+		top:								{ wpn_stripe_top(3) }
 		height:							{ wpn_cell_height }
-		z_index:						0
+		z_index:						9
 
 	wpntblstripe5:
 		visible:						{ wpn_stripe_visible(5) }
 		left:								0
 		width:							{ w }
-		top:								{ wpn_cell_top(4) }
+		top:								{ wpn_stripe_top(4) }
 		height:							{ wpn_cell_height }
-		z_index:						0
+		z_index:						9
 
 	wpn_sr_i_1:
 		visible:						{ wpn_cell_visible(0) }
@@ -284,13 +303,13 @@ extra card style:
 		top:								{ wpn_cell_top(0) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_2:
 		visible:						{ wpn_cell_visible(1) }
@@ -299,13 +318,13 @@ extra card style:
 		top:								{ wpn_cell_top(1) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_3:
 		visible:						{ wpn_cell_visible(2) }
@@ -314,13 +333,13 @@ extra card style:
 		top:								{ wpn_cell_top(2) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_4:
 		visible:						{ wpn_cell_visible(3) }
@@ -329,13 +348,13 @@ extra card style:
 		top:								{ wpn_cell_top(3) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_5:
 		visible:						{ wpn_cell_visible(4) }
@@ -344,13 +363,13 @@ extra card style:
 		top:								{ wpn_cell_top(4) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_6:
 		visible:						{ wpn_cell_visible(5) }
@@ -359,13 +378,13 @@ extra card style:
 		top:								{ wpn_cell_top(5) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_7:
 		visible:						{ wpn_cell_visible(6) }
@@ -374,13 +393,13 @@ extra card style:
 		top:								{ wpn_cell_top(6) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_8:
 		visible:						{ wpn_cell_visible(7) }
@@ -389,13 +408,13 @@ extra card style:
 		top:								{ wpn_cell_top(7) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_9:
 		visible:						{ wpn_cell_visible(8) }
@@ -404,13 +423,13 @@ extra card style:
 		top:								{ wpn_cell_top(8) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_10:
 		visible:						{ wpn_cell_visible(9) }
@@ -419,13 +438,13 @@ extra card style:
 		top:								{ wpn_cell_top(9) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_11:
 		visible:						{ wpn_cell_visible(10) }
@@ -434,13 +453,13 @@ extra card style:
 		top:								{ wpn_cell_top(10) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_12:
 		visible:						{ wpn_cell_visible(11) }
@@ -449,13 +468,13 @@ extra card style:
 		top:								{ wpn_cell_top(11) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_13:
 		visible:						{ wpn_cell_visible(12) }
@@ -464,13 +483,13 @@ extra card style:
 		top:								{ wpn_cell_top(12) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_14:
 		visible:						{ wpn_cell_visible(13) }
@@ -479,13 +498,13 @@ extra card style:
 		top:								{ wpn_cell_top(13) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_15:
 		visible:						{ wpn_cell_visible(14) }
@@ -494,13 +513,13 @@ extra card style:
 		top:								{ wpn_cell_top(14) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_16:
 		visible:						{ wpn_cell_visible(15) }
@@ -509,13 +528,13 @@ extra card style:
 		top:								{ wpn_cell_top(15) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_17:
 		visible:						{ wpn_cell_visible(16) }
@@ -524,13 +543,13 @@ extra card style:
 		top:								{ wpn_cell_top(16) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_18:
 		visible:						{ wpn_cell_visible(17) }
@@ -539,13 +558,13 @@ extra card style:
 		top:								{ wpn_cell_top(17) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_19:
 		visible:						{ wpn_cell_visible(18) }
@@ -554,13 +573,13 @@ extra card style:
 		top:								{ wpn_cell_top(18) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	wpn_sr_i_20:
 		visible:						{ wpn_cell_visible(19) }
@@ -569,13 +588,13 @@ extra card style:
 		top:								{ wpn_cell_top(19) }
 		height:							{ wpn_cell_height }
 		z_index:						10
+		padding_right:			5
 		alignment:					center middle shrink if-overflow
 		font:
 			name:								{ bfont }
 			size:								{ wpn_cell_font_size }
 		symbol_font:
 			name:								kt2
-		padding_right:			5
 
 	ab_header:
 		visible:						{ contains(card.has_aua, match: "Abilities") }
@@ -584,12 +603,12 @@ extra card style:
 		top:								{ aua_header_top() }
 		height:							25
 		z_index:						10
+		padding_left:				5
 		alignment:					left middle
 		font:
 			name:								{ hfont }
 			size:								{ wpn_cell_font_size }
 			weight:							bold
-		padding_left:				5
 
 	ua_header:
 		visible:						{ contains(card.has_aua, match: "Unique Actions") }
@@ -598,12 +617,12 @@ extra card style:
 		top:								{ aua_header_top() }
 		height:							25
 		z_index:						10
+		padding_left:				5
 		alignment:					left middle
 		font:
 			name:								{ hfont }
 			size:								{ wpn_cell_font_size }
 			weight:							bold
-		padding_left:				5
 
 	ab_header_bg:
 		visible:						{ contains(card.has_aua, match: "Abilities") }
@@ -620,4 +639,324 @@ extra card style:
 		top:								{ aua_header_top() }
 		height:							25
 		z_index:						9
+
+	w1info:
+		visible:						{ wpn_info_visible(0) }
+		left:								{ wpn_info_left(0) }
+		width:							{ wpn_info_width(0) }
+		top:								{ wpn_cell_top(0) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w2info:
+		visible:						{ wpn_info_visible(1) }
+		left:								{ wpn_info_left(1) }
+		width:							{ wpn_info_width(1) }
+		top:								{ wpn_cell_top(1) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w3info:
+		visible:						{ wpn_info_visible(2) }
+		left:								{ wpn_info_left(2) }
+		width:							{ wpn_info_width(2) }
+		top:								{ wpn_cell_top(2) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w4info:
+		visible:						{ wpn_info_visible(3) }
+		left:								{ wpn_info_left(3) }
+		width:							{ wpn_info_width(3) }
+		top:								{ wpn_cell_top(3) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w5info:
+		visible:						{ wpn_info_visible(4) }
+		left:								{ wpn_info_left(4) }
+		width:							{ wpn_info_width(4) }
+		top:								{ wpn_cell_top(4) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w6info:
+		visible:						{ wpn_info_visible(5) }
+		left:								{ wpn_info_left(5) }
+		width:							{ wpn_info_width(5) }
+		top:								{ wpn_cell_top(5) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w7info:
+		visible:						{ wpn_info_visible(6) }
+		left:								{ wpn_info_left(6) }
+		width:							{ wpn_info_width(6) }
+		top:								{ wpn_cell_top(6) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w8info:
+		visible:						{ wpn_info_visible(7) }
+		left:								{ wpn_info_left(7) }
+		width:							{ wpn_info_width(7) }
+		top:								{ wpn_cell_top(7) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w9info:
+		visible:						{ wpn_info_visible(8) }
+		left:								{ wpn_info_left(8) }
+		width:							{ wpn_info_width(8) }
+		top:								{ wpn_cell_top(8) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w10info:
+		visible:						{ wpn_info_visible(9) }
+		left:								{ wpn_info_left(9) }
+		width:							{ wpn_info_width(9) }
+		top:								{ wpn_cell_top(9) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w11info:
+		visible:						{ wpn_info_visible(10) }
+		left:								{ wpn_info_left(10) }
+		width:							{ wpn_info_width(10) }
+		top:								{ wpn_cell_top(10) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w12info:
+		visible:						{ wpn_info_visible(11) }
+		left:								{ wpn_info_left(11) }
+		width:							{ wpn_info_width(11) }
+		top:								{ wpn_cell_top(11) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w13info:
+		visible:						{ wpn_info_visible(12) }
+		left:								{ wpn_info_left(12) }
+		width:							{ wpn_info_width(12) }
+		top:								{ wpn_cell_top(12) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w14info:
+		visible:						{ wpn_info_visible(13) }
+		left:								{ wpn_info_left(13) }
+		width:							{ wpn_info_width(13) }
+		top:								{ wpn_cell_top(13) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w15info:
+		visible:						{ wpn_info_visible(14) }
+		left:								{ wpn_info_left(14) }
+		width:							{ wpn_info_width(14) }
+		top:								{ wpn_cell_top(14) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w16info:
+		visible:						{ wpn_info_visible(15) }
+		left:								{ wpn_info_left(15) }
+		width:							{ wpn_info_width(15) }
+		top:								{ wpn_cell_top(15) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w17info:
+		visible:						{ wpn_info_visible(16) }
+		left:								{ wpn_info_left(16) }
+		width:							{ wpn_info_width(16) }
+		top:								{ wpn_cell_top(16) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w18info:
+		visible:						{ wpn_info_visible(17) }
+		left:								{ wpn_info_left(17) }
+		width:							{ wpn_info_width(17) }
+		top:								{ wpn_cell_top(17) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w19info:
+		visible:						{ wpn_info_visible(18) }
+		left:								{ wpn_info_left(18) }
+		width:							{ wpn_info_width(18) }
+		top:								{ wpn_cell_top(18) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
+
+	w20info:
+		visible:						{ wpn_info_visible(19) }
+		left:								{ wpn_info_left(19) }
+		width:							{ wpn_info_width(19) }
+		top:								{ wpn_cell_top(19) }
+		height:							{ wpn_cell_height }
+		z_index:						9
+		padding_left:				5
+		padding_right:			5
+		alignment:					left middle shrink if-overflow
+		font:
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 

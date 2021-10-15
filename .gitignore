@@ -1,6 +1,4 @@
 /archive
 /dictionaries
 /en.mse-locale
-/magic*
-/zzz*
-*.mse
+/**/*.mse

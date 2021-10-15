@@ -22,7 +22,6 @@ card field:
 	name:								killteamtags
 	editable:						false
 	show_statistics:		false
-	multi_line:					true
 	script:							get_tags()
 
 card field:

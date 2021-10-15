@@ -49,11 +49,11 @@ extra card style:
 		z_index:						10
 		line_height_hard:		0.7
 		font:
-			name:	{ hfont }
-			size:	18.0
-			weight:	bold
-			color:	rgb(240,240,240)
-			scale_down_to:	12.0
+			name:								{ hfont }
+			size:								18.0
+			weight:							bold
+			color:							rgb(240,240,240)
+			scale_down_to:			12.0
 
 	watermark:
 		left:								155
@@ -72,10 +72,10 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16.0
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16.0
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	moverng:
 		left:								533
@@ -85,8 +85,8 @@ extra card style:
 		z_index:						9
 		always_symbol:			true
 		symbol_font:
-			name:	kt2
-			size:	16.0
+			name:								kt2
+			size:								16.0
 
 	statlbl apl:
 		left:								576
@@ -96,10 +96,10 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16.0
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16.0
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	statlbl ga:
 		left:								649
@@ -109,10 +109,10 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16.0
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16.0
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	statlbl df:
 		left:								478
@@ -122,10 +122,10 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16.0
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16.0
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	statlbl sv:
 		left:								536
@@ -135,10 +135,10 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16.0
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16.0
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	statlbl w:
 		left:								609
@@ -148,10 +148,10 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16.0
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16.0
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	weaponheaderbg:
 		left:								30
@@ -168,9 +168,9 @@ extra card style:
 		z_index:						10
 		alignment:					left middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 
 	weaponheader a:
 		left:								{ wpn_cell_left(2) }
@@ -180,9 +180,9 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 
 	weaponheader bsws:
 		left:								{ wpn_cell_left(3) }
@@ -192,9 +192,9 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 
 	weaponheader d:
 		left:								{ wpn_cell_left(4) }
@@ -204,9 +204,9 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 
 	weaponheader sr:
 		left:								{ wpn_cell_left(5) }
@@ -216,9 +216,9 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 
 	weaponheader i:
 		left:								{ wpn_cell_left(6) }
@@ -228,9 +228,9 @@ extra card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 
 	wpntblstripe1:
 		visible:						{ wpn_stripe_visible(1) }
@@ -281,10 +281,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w2info:
 		visible:						{ wpn_info_visible(1) }
@@ -295,10 +295,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w3info:
 		visible:						{ wpn_info_visible(2) }
@@ -309,10 +309,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w4info:
 		visible:						{ wpn_info_visible(3) }
@@ -323,10 +323,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w5info:
 		visible:						{ wpn_info_visible(4) }
@@ -337,10 +337,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w6info:
 		visible:						{ wpn_info_visible(5) }
@@ -351,10 +351,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w7info:
 		visible:						{ wpn_info_visible(6) }
@@ -365,10 +365,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w8info:
 		visible:						{ wpn_info_visible(7) }
@@ -379,10 +379,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w9info:
 		visible:						{ wpn_info_visible(8) }
@@ -393,10 +393,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w10info:
 		visible:						{ wpn_info_visible(9) }
@@ -407,10 +407,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w11info:
 		visible:						{ wpn_info_visible(10) }
@@ -421,10 +421,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w12info:
 		visible:						{ wpn_info_visible(11) }
@@ -435,10 +435,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w13info:
 		visible:						{ wpn_info_visible(12) }
@@ -449,10 +449,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w14info:
 		visible:						{ wpn_info_visible(13) }
@@ -463,10 +463,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w15info:
 		visible:						{ wpn_info_visible(14) }
@@ -477,10 +477,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w16info:
 		visible:						{ wpn_info_visible(15) }
@@ -491,10 +491,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w17info:
 		visible:						{ wpn_info_visible(16) }
@@ -505,10 +505,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w18info:
 		visible:						{ wpn_info_visible(17) }
@@ -519,10 +519,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w19info:
 		visible:						{ wpn_info_visible(18) }
@@ -533,10 +533,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	w20info:
 		visible:						{ wpn_info_visible(19) }
@@ -547,10 +547,10 @@ extra card style:
 		z_index:						9
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10.0
-			style:	italic
-			color:	{ styling.Secondary_Colour }
+			name:								{ bfont }
+			size:								10.0
+			style:							italic
+			color:							{ styling.Secondary_Colour }
 
 	combat bg1:
 		left:								548
@@ -629,9 +629,9 @@ extra card style:
 		z_index:						10
 		alignment:					left middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 		padding_left:				5
 
 	ua_header:
@@ -643,9 +643,9 @@ extra card style:
 		z_index:						10
 		alignment:					left middle
 		font:
-			name:	{ hfont }
-			size:	12.0
-			weight:	bold
+			name:								{ hfont }
+			size:								12.0
+			weight:							bold
 		padding_left:				5
 
 	ab_header_bg:

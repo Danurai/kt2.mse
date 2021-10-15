@@ -23,12 +23,12 @@ card style:
 		z_index:						9
 		alignment:					middle shrink if-overflow
 		font:
-			name:	{ hfont }
-			size:	10
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								10
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	info:
 		left:								45
@@ -38,11 +38,11 @@ card style:
 		z_index:						10
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	10
-			style:	italic
-			color:	white
-			scale_down_to:	8.0
+			name:								{ bfont }
+			size:								10
+			style:							italic
+			color:							white
+			scale_down_to:			8.0
 
 	leader:
 		left:								360
@@ -68,10 +68,10 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	stat apl:
 		left:								576
@@ -81,10 +81,10 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	stat ga:
 		left:								649
@@ -94,10 +94,10 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	stat df:
 		left:								478
@@ -107,10 +107,10 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	stat sv:
 		left:								536
@@ -120,10 +120,10 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	stat w:
 		left:								609
@@ -133,10 +133,10 @@ card style:
 		z_index:						10
 		alignment:					center middle
 		font:
-			name:	{ hfont }
-			size:	16
-			weight:	bold
-			color:	{ styling.Secondary_Colour }
+			name:								{ hfont }
+			size:								16
+			weight:							bold
+			color:							{ styling.Secondary_Colour }
 
 	abilities:
 		left:								30
@@ -148,11 +148,11 @@ card style:
 		padding_left:				5
 		alignment:					left top shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	12
-			scale_down_to:	8.0
+			name:								{ bfont }
+			size:								12
+			scale_down_to:			8.0
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	actions:
 		left:								{ 15 + (w / 2) }
@@ -164,11 +164,11 @@ card style:
 		padding_left:				5
 		alignment:					left top shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	12
-			scale_down_to:	8.0
+			name:								{ bfont }
+			size:								12
+			scale_down_to:			8.0
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	skill_combat:
 		left:								565
@@ -252,8 +252,8 @@ card style:
 		z_index:						50
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w1a:
 		visible:						{ wpn_cell_visible(0) }
@@ -264,8 +264,8 @@ card style:
 		z_index:						50
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w1bsws:
 		visible:						{ wpn_cell_visible(0) }
@@ -276,8 +276,8 @@ card style:
 		z_index:						50
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w1dmg:
 		visible:						{ wpn_cell_visible(0) }
@@ -288,8 +288,8 @@ card style:
 		z_index:						50
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w1sr:
 		visible:						{ wpn_cell_visible(0) }
@@ -300,10 +300,10 @@ card style:
 		z_index:						50
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w1i:
 		visible:						{ wpn_cell_visible(0) }
@@ -314,10 +314,10 @@ card style:
 		z_index:						50
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w2type:
 		visible:						{ wpn_tn_visible(1) }
@@ -341,8 +341,8 @@ card style:
 		z_index:						49
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w2a:
 		visible:						{ wpn_cell_visible(1) }
@@ -353,8 +353,8 @@ card style:
 		z_index:						49
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w2bsws:
 		visible:						{ wpn_cell_visible(1) }
@@ -365,8 +365,8 @@ card style:
 		z_index:						49
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w2dmg:
 		visible:						{ wpn_cell_visible(1) }
@@ -377,8 +377,8 @@ card style:
 		z_index:						49
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w2sr:
 		visible:						{ wpn_cell_visible(1) }
@@ -389,10 +389,10 @@ card style:
 		z_index:						49
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w2i:
 		visible:						{ wpn_cell_visible(1) }
@@ -403,10 +403,10 @@ card style:
 		z_index:						49
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w3type:
 		visible:						{ wpn_tn_visible(2) }
@@ -430,8 +430,8 @@ card style:
 		z_index:						48
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w3a:
 		visible:						{ wpn_cell_visible(2) }
@@ -442,8 +442,8 @@ card style:
 		z_index:						48
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w3bsws:
 		visible:						{ wpn_cell_visible(2) }
@@ -454,8 +454,8 @@ card style:
 		z_index:						48
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w3dmg:
 		visible:						{ wpn_cell_visible(2) }
@@ -466,8 +466,8 @@ card style:
 		z_index:						48
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w3sr:
 		visible:						{ wpn_cell_visible(2) }
@@ -478,10 +478,10 @@ card style:
 		z_index:						48
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w3i:
 		visible:						{ wpn_cell_visible(2) }
@@ -492,10 +492,10 @@ card style:
 		z_index:						48
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w4type:
 		visible:						{ wpn_tn_visible(3) }
@@ -519,8 +519,8 @@ card style:
 		z_index:						47
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w4a:
 		visible:						{ wpn_cell_visible(3) }
@@ -531,8 +531,8 @@ card style:
 		z_index:						47
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w4bsws:
 		visible:						{ wpn_cell_visible(3) }
@@ -543,8 +543,8 @@ card style:
 		z_index:						47
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w4dmg:
 		visible:						{ wpn_cell_visible(3) }
@@ -555,8 +555,8 @@ card style:
 		z_index:						47
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w4sr:
 		visible:						{ wpn_cell_visible(3) }
@@ -567,10 +567,10 @@ card style:
 		z_index:						47
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w4i:
 		visible:						{ wpn_cell_visible(3) }
@@ -581,10 +581,10 @@ card style:
 		z_index:						47
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w5type:
 		visible:						{ wpn_tn_visible(4) }
@@ -608,8 +608,8 @@ card style:
 		z_index:						46
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w5a:
 		visible:						{ wpn_cell_visible(4) }
@@ -620,8 +620,8 @@ card style:
 		z_index:						46
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w5bsws:
 		visible:						{ wpn_cell_visible(4) }
@@ -632,8 +632,8 @@ card style:
 		z_index:						46
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w5dmg:
 		visible:						{ wpn_cell_visible(4) }
@@ -644,8 +644,8 @@ card style:
 		z_index:						46
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w5sr:
 		visible:						{ wpn_cell_visible(4) }
@@ -656,10 +656,10 @@ card style:
 		z_index:						46
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w5i:
 		visible:						{ wpn_cell_visible(4) }
@@ -670,10 +670,10 @@ card style:
 		z_index:						46
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w6type:
 		visible:						{ wpn_tn_visible(5) }
@@ -697,8 +697,8 @@ card style:
 		z_index:						45
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w6a:
 		visible:						{ wpn_cell_visible(5) }
@@ -709,8 +709,8 @@ card style:
 		z_index:						45
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w6bsws:
 		visible:						{ wpn_cell_visible(5) }
@@ -721,8 +721,8 @@ card style:
 		z_index:						45
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w6dmg:
 		visible:						{ wpn_cell_visible(5) }
@@ -733,8 +733,8 @@ card style:
 		z_index:						45
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w6sr:
 		visible:						{ wpn_cell_visible(5) }
@@ -745,10 +745,10 @@ card style:
 		z_index:						45
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w6i:
 		visible:						{ wpn_cell_visible(5) }
@@ -759,10 +759,10 @@ card style:
 		z_index:						45
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w7type:
 		visible:						{ wpn_tn_visible(6) }
@@ -786,8 +786,8 @@ card style:
 		z_index:						44
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w7a:
 		visible:						{ wpn_cell_visible(6) }
@@ -798,8 +798,8 @@ card style:
 		z_index:						44
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w7bsws:
 		visible:						{ wpn_cell_visible(6) }
@@ -810,8 +810,8 @@ card style:
 		z_index:						44
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w7dmg:
 		visible:						{ wpn_cell_visible(6) }
@@ -822,8 +822,8 @@ card style:
 		z_index:						44
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w7sr:
 		visible:						{ wpn_cell_visible(6) }
@@ -834,10 +834,10 @@ card style:
 		z_index:						44
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w7i:
 		visible:						{ wpn_cell_visible(6) }
@@ -848,10 +848,10 @@ card style:
 		z_index:						44
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w8type:
 		visible:						{ wpn_tn_visible(7) }
@@ -875,8 +875,8 @@ card style:
 		z_index:						43
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w8a:
 		visible:						{ wpn_cell_visible(7) }
@@ -887,8 +887,8 @@ card style:
 		z_index:						43
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w8bsws:
 		visible:						{ wpn_cell_visible(7) }
@@ -899,8 +899,8 @@ card style:
 		z_index:						43
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w8dmg:
 		visible:						{ wpn_cell_visible(7) }
@@ -911,8 +911,8 @@ card style:
 		z_index:						43
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w8sr:
 		visible:						{ wpn_cell_visible(7) }
@@ -923,10 +923,10 @@ card style:
 		z_index:						43
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w8i:
 		visible:						{ wpn_cell_visible(7) }
@@ -937,10 +937,10 @@ card style:
 		z_index:						43
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w9type:
 		visible:						{ wpn_tn_visible(8) }
@@ -964,8 +964,8 @@ card style:
 		z_index:						42
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w9a:
 		visible:						{ wpn_cell_visible(8) }
@@ -976,8 +976,8 @@ card style:
 		z_index:						42
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w9bsws:
 		visible:						{ wpn_cell_visible(8) }
@@ -988,8 +988,8 @@ card style:
 		z_index:						42
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w9dmg:
 		visible:						{ wpn_cell_visible(8) }
@@ -1000,8 +1000,8 @@ card style:
 		z_index:						42
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w9sr:
 		visible:						{ wpn_cell_visible(8) }
@@ -1012,10 +1012,10 @@ card style:
 		z_index:						42
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w9i:
 		visible:						{ wpn_cell_visible(8) }
@@ -1026,10 +1026,10 @@ card style:
 		z_index:						42
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w10type:
 		visible:						{ wpn_tn_visible(9) }
@@ -1053,8 +1053,8 @@ card style:
 		z_index:						41
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w10a:
 		visible:						{ wpn_cell_visible(9) }
@@ -1065,8 +1065,8 @@ card style:
 		z_index:						41
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w10bsws:
 		visible:						{ wpn_cell_visible(9) }
@@ -1077,8 +1077,8 @@ card style:
 		z_index:						41
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w10dmg:
 		visible:						{ wpn_cell_visible(9) }
@@ -1089,8 +1089,8 @@ card style:
 		z_index:						41
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w10sr:
 		visible:						{ wpn_cell_visible(9) }
@@ -1101,10 +1101,10 @@ card style:
 		z_index:						41
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w10i:
 		visible:						{ wpn_cell_visible(9) }
@@ -1115,10 +1115,10 @@ card style:
 		z_index:						41
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w11type:
 		visible:						{ wpn_tn_visible(10) }
@@ -1142,8 +1142,8 @@ card style:
 		z_index:						40
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w11a:
 		visible:						{ wpn_cell_visible(10) }
@@ -1154,8 +1154,8 @@ card style:
 		z_index:						40
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w11bsws:
 		visible:						{ wpn_cell_visible(10) }
@@ -1166,8 +1166,8 @@ card style:
 		z_index:						40
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w11dmg:
 		visible:						{ wpn_cell_visible(10) }
@@ -1178,8 +1178,8 @@ card style:
 		z_index:						40
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w11sr:
 		visible:						{ wpn_cell_visible(10) }
@@ -1190,10 +1190,10 @@ card style:
 		z_index:						40
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w11i:
 		visible:						{ wpn_cell_visible(10) }
@@ -1204,10 +1204,10 @@ card style:
 		z_index:						40
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w12type:
 		visible:						{ wpn_tn_visible(11) }
@@ -1231,8 +1231,8 @@ card style:
 		z_index:						39
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w12a:
 		visible:						{ wpn_cell_visible(11) }
@@ -1243,8 +1243,8 @@ card style:
 		z_index:						39
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w12bsws:
 		visible:						{ wpn_cell_visible(11) }
@@ -1255,8 +1255,8 @@ card style:
 		z_index:						39
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w12dmg:
 		visible:						{ wpn_cell_visible(11) }
@@ -1267,8 +1267,8 @@ card style:
 		z_index:						39
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w12sr:
 		visible:						{ wpn_cell_visible(11) }
@@ -1279,10 +1279,10 @@ card style:
 		z_index:						39
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w12i:
 		visible:						{ wpn_cell_visible(11) }
@@ -1293,10 +1293,10 @@ card style:
 		z_index:						39
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w13type:
 		visible:						{ wpn_tn_visible(12) }
@@ -1320,8 +1320,8 @@ card style:
 		z_index:						38
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w13a:
 		visible:						{ wpn_cell_visible(12) }
@@ -1332,8 +1332,8 @@ card style:
 		z_index:						38
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w13bsws:
 		visible:						{ wpn_cell_visible(12) }
@@ -1344,8 +1344,8 @@ card style:
 		z_index:						38
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w13dmg:
 		visible:						{ wpn_cell_visible(12) }
@@ -1356,8 +1356,8 @@ card style:
 		z_index:						38
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w13sr:
 		visible:						{ wpn_cell_visible(12) }
@@ -1368,10 +1368,10 @@ card style:
 		z_index:						38
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w13i:
 		visible:						{ wpn_cell_visible(12) }
@@ -1382,10 +1382,10 @@ card style:
 		z_index:						38
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w14type:
 		visible:						{ wpn_tn_visible(13) }
@@ -1409,8 +1409,8 @@ card style:
 		z_index:						37
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w14a:
 		visible:						{ wpn_cell_visible(13) }
@@ -1421,8 +1421,8 @@ card style:
 		z_index:						37
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w14bsws:
 		visible:						{ wpn_cell_visible(13) }
@@ -1433,8 +1433,8 @@ card style:
 		z_index:						37
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w14dmg:
 		visible:						{ wpn_cell_visible(13) }
@@ -1445,8 +1445,8 @@ card style:
 		z_index:						37
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w14sr:
 		visible:						{ wpn_cell_visible(13) }
@@ -1457,10 +1457,10 @@ card style:
 		z_index:						37
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w14i:
 		visible:						{ wpn_cell_visible(13) }
@@ -1471,10 +1471,10 @@ card style:
 		z_index:						37
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w15type:
 		visible:						{ wpn_tn_visible(14) }
@@ -1498,8 +1498,8 @@ card style:
 		z_index:						36
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w15a:
 		visible:						{ wpn_cell_visible(14) }
@@ -1510,8 +1510,8 @@ card style:
 		z_index:						36
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w15bsws:
 		visible:						{ wpn_cell_visible(14) }
@@ -1522,8 +1522,8 @@ card style:
 		z_index:						36
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w15dmg:
 		visible:						{ wpn_cell_visible(14) }
@@ -1534,8 +1534,8 @@ card style:
 		z_index:						36
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w15sr:
 		visible:						{ wpn_cell_visible(14) }
@@ -1546,10 +1546,10 @@ card style:
 		z_index:						36
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w15i:
 		visible:						{ wpn_cell_visible(14) }
@@ -1560,10 +1560,10 @@ card style:
 		z_index:						36
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w16type:
 		visible:						{ wpn_tn_visible(15) }
@@ -1587,8 +1587,8 @@ card style:
 		z_index:						35
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w16a:
 		visible:						{ wpn_cell_visible(15) }
@@ -1599,8 +1599,8 @@ card style:
 		z_index:						35
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w16bsws:
 		visible:						{ wpn_cell_visible(15) }
@@ -1611,8 +1611,8 @@ card style:
 		z_index:						35
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w16dmg:
 		visible:						{ wpn_cell_visible(15) }
@@ -1623,8 +1623,8 @@ card style:
 		z_index:						35
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w16sr:
 		visible:						{ wpn_cell_visible(15) }
@@ -1635,10 +1635,10 @@ card style:
 		z_index:						35
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w16i:
 		visible:						{ wpn_cell_visible(15) }
@@ -1649,10 +1649,10 @@ card style:
 		z_index:						35
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w17type:
 		visible:						{ wpn_tn_visible(16) }
@@ -1676,8 +1676,8 @@ card style:
 		z_index:						34
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w17a:
 		visible:						{ wpn_cell_visible(16) }
@@ -1688,8 +1688,8 @@ card style:
 		z_index:						34
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w17bsws:
 		visible:						{ wpn_cell_visible(16) }
@@ -1700,8 +1700,8 @@ card style:
 		z_index:						34
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w17dmg:
 		visible:						{ wpn_cell_visible(16) }
@@ -1712,8 +1712,8 @@ card style:
 		z_index:						34
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w17sr:
 		visible:						{ wpn_cell_visible(16) }
@@ -1724,10 +1724,10 @@ card style:
 		z_index:						34
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w17i:
 		visible:						{ wpn_cell_visible(16) }
@@ -1738,10 +1738,10 @@ card style:
 		z_index:						34
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w18type:
 		visible:						{ wpn_tn_visible(17) }
@@ -1765,8 +1765,8 @@ card style:
 		z_index:						33
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w18a:
 		visible:						{ wpn_cell_visible(17) }
@@ -1777,8 +1777,8 @@ card style:
 		z_index:						33
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w18bsws:
 		visible:						{ wpn_cell_visible(17) }
@@ -1789,8 +1789,8 @@ card style:
 		z_index:						33
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w18dmg:
 		visible:						{ wpn_cell_visible(17) }
@@ -1801,8 +1801,8 @@ card style:
 		z_index:						33
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w18sr:
 		visible:						{ wpn_cell_visible(17) }
@@ -1813,10 +1813,10 @@ card style:
 		z_index:						33
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w18i:
 		visible:						{ wpn_cell_visible(17) }
@@ -1827,10 +1827,10 @@ card style:
 		z_index:						33
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w19type:
 		visible:						{ wpn_tn_visible(18) }
@@ -1854,8 +1854,8 @@ card style:
 		z_index:						32
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w19a:
 		visible:						{ wpn_cell_visible(18) }
@@ -1866,8 +1866,8 @@ card style:
 		z_index:						32
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w19bsws:
 		visible:						{ wpn_cell_visible(18) }
@@ -1878,8 +1878,8 @@ card style:
 		z_index:						32
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w19dmg:
 		visible:						{ wpn_cell_visible(18) }
@@ -1890,8 +1890,8 @@ card style:
 		z_index:						32
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w19sr:
 		visible:						{ wpn_cell_visible(18) }
@@ -1902,10 +1902,10 @@ card style:
 		z_index:						32
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w19i:
 		visible:						{ wpn_cell_visible(18) }
@@ -1916,10 +1916,10 @@ card style:
 		z_index:						32
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w20type:
 		visible:						{ wpn_tn_visible(19) }
@@ -1943,8 +1943,8 @@ card style:
 		z_index:						31
 		alignment:					left middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w20a:
 		visible:						{ wpn_cell_visible(19) }
@@ -1955,8 +1955,8 @@ card style:
 		z_index:						31
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w20bsws:
 		visible:						{ wpn_cell_visible(19) }
@@ -1967,8 +1967,8 @@ card style:
 		z_index:						31
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w20dmg:
 		visible:						{ wpn_cell_visible(19) }
@@ -1979,8 +1979,8 @@ card style:
 		z_index:						31
 		alignment:					center middle
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 
 	w20sr:
 		visible:						{ wpn_cell_visible(19) }
@@ -1991,10 +1991,10 @@ card style:
 		z_index:						31
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 
 	w20i:
 		visible:						{ wpn_cell_visible(19) }
@@ -2005,8 +2005,8 @@ card style:
 		z_index:						31
 		alignment:					center middle shrink if-overflow
 		font:
-			name:	{ bfont }
-			size:	{ wpn_cell_font_size }
+			name:								{ bfont }
+			size:								{ wpn_cell_font_size }
 		symbol_font:
-			name:	kt2
+			name:								kt2
 

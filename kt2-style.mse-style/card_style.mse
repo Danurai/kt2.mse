@@ -27,25 +27,6 @@ card style:
 		z_index:						10
 		render_style:				hidden
 
-	killteamtags:
-		left:								0
-		width:							{ w }
-		top:								{ h - 45 }
-		height:							45
-		z_index:						9
-		line_height_soft:		0.7
-		padding_left:				5
-		padding_right:			5
-		padding_bottom:			5
-		alignment:					bottom shrink if-overflow
-		font:
-			name:								{ hfont }
-			size:								10
-			weight:							bold
-			color:							{ styling.Secondary_Colour }
-		symbol_font:
-			name:								kt2
-
 	leader:
 		left:								{ w - 30 }
 		width:							30
@@ -158,8 +139,8 @@ card style:
 		z_index:						10
 		line_height_hard:		1.5
 		padding_left:				5
-		padding_bottom:			5
 		padding_top:				5
+		padding_bottom:			5
 		alignment:					left top shrink if-overflow
 		font:
 			name:								{ bfont }
@@ -177,8 +158,8 @@ card style:
 		z_index:						10
 		line_height_hard:		1.5
 		padding_left:				5
-		padding_bottom:			5
 		padding_top:				5
+		padding_bottom:			5
 		alignment:					left top shrink if-overflow
 		font:
 			name:								{ bfont }
