@@ -4,7 +4,7 @@ hfont := "Oswald"
 bfont := "Roboto"
 
 
-wpn_cell_width := [35, 145, 30, 50, 30, 110, 110]
+wpn_cell_width := [35, 145, 30, 50, 30, 140, 80]
 wpn_table_top := 135
 
 wpn_cell_left := {
@@ -73,4 +73,13 @@ ua_left := {
     (w / 2) + 5
   else
     ab_left()
+}
+
+
+card_background := {
+  img := to_lower((styling.Background))
+  if img != "none" then
+    set_alpha(set_mask(image: "/kt2-common.mse-include/" + img + "_landscape.png" mask: rotate("/kt2-common.mse-include/linear_blend.png" angle: 180)) alpha: 0.3)
+  else
+    ""
 }

@@ -1,6 +1,6 @@
 mse version:			2.1.2
-short name:				KT2 Alt
-full name:				Landscape data cards
+short name:				Alt Data Card
+full name:				Operative Data Card
 position_hint:		2
 version:					2021-10-01
 game:							kt2
@@ -53,11 +53,12 @@ styling field:
 	choice:		No
 
 styling field:
-	type:			multiple choice
-	name:			Operative Display
-	initial:	Flavour Text
-	choice:		Flavour Text
-	choice:		Weapon
+	type:			choice
+	name:			Background
+	initial:	None
+	choice:   None
+	choice:		Diamonds
+	choice:		Geometric
 	
 include file:		card_style.mse
 include file:		extra_card_fields.mse
