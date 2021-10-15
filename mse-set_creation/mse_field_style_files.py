@@ -2,13 +2,12 @@ import pandas as pd
 import numpy
 import re
 
-#msegame='kt2cards'
+msegame='kt2cards'
 msegame='kt2'
 
 def b(x): return str(x).lower() if isinstance(x, bool) else str(x)
 def is_style_sheet(s): return re.search('style',s) is not None
 def get_choices( choices, gamefile, key ):
-	#print(key, choices)
 	if choices == 'choices' or choices == 'choice_images':
 		dfch = pd.read_excel(gamefile, choices)
 		return list( filter ( lambda x: not pd.isna(x), dfch[key] ))
@@ -64,7 +63,7 @@ def write_sheet(sourcexlsx, sheet, sheetname, outfile):
 					val = re.sub('^(\d{1,2})\.0',r'\1',b(val))
 					f.write(f'{indent}{key}:{valindent}{val}\n')
 		f.write('\n')
-	print(f'{sheet} written')
+	print(f'{sheetname} written')
 	del df
 	f.close()
 
