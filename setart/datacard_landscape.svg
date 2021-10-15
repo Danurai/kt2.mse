@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="datacard_landscape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="153.61895"
+     inkscape:cy="102.70726"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.268607"
+       id="rect846"
+       width="138.90625"
+       height="99.21875"
+       x="0"
+       y="0"
+       inkscape:export-filename="C:\Data\projects\M15-Magic-Pack-main\data\kt2-style-ls.mse-style\mask.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Stats"
+     style="display:none">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.197866px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1.3229167,1.3229167 24.209375,41.010416 47.095833,1.3229167 Z"
+       id="path1371"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.192229"
+       id="rect1801"
+       width="116.38353"
+       height="7.9375691"
+       x="22.56138"
+       y="9.2604971"
+       transform="matrix(1,0,-0.00417472,0.99999129,0,0)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.748355;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 22.489583,25.509594 H 138.90625"
+       id="path1934"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.412825;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2254"
+       width="138.90625"
+       height="13.229167"
+       x="0"
+       y="29.104166" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.197866px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 161.79271,39.687497 138.90625,0 116.0198,39.687497 Z"
+       id="path1371-6"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.744442;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1198"
+       width="133.61458"
+       height="82.020836"
+       x="2.6458333"
+       y="13.229167" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.75647;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1801-1"
+       width="130.93147"
+       height="6.6146884"
+       x="4.520483"
+       y="91.2827"
+       transform="matrix(1,0,-0.00563583,0.99998412,0,0)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="art_mask"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.353522;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2254-5-1"
+       width="46.302082"
+       height="29.104166"
+       x="0"
+       y="0"
+       inkscape:export-filename="C:\Data\projects\M15-Magic-Pack-main\data\kt2-style-ls.mse-style\art_mask.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.183749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 2.9104167,2.2489583 24.209376,39.026041 45.508333,2.2489583 Z"
+       id="path1371-62"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
