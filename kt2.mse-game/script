@@ -51,3 +51,21 @@ wpn_info_visible := {
 wpn_stripe_visible := {
   contains(card.wpntblstripes, match: input) and length(split_text(match: ", ", card.wpntblshow)) >= input
 }
+
+
+xp_image := {
+  if      input == "-" then ""
+  else if input == "51+" then "/kt2-common.mse-include/revered.png"
+  else if input < 6  then "/kt2-common.mse-include/adept.png"
+  else if input < 16 then "/kt2-common.mse-include/veteran.png"
+  else if input < 31 then "/kt2-common.mse-include/ace.png"
+  else if input < 51 then "/kt2-common.mse-include/grizzled.png"
+  else                    ""
+}
+speciality_image := {
+  if input != "(none)" then "/kt2-common.mse-include/resource/" + input + "1.png" else ""
+}
+
+speciality_script := {
+  ""
+}
