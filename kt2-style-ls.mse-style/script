@@ -36,7 +36,10 @@ wpn_stripe_top := {
   wpn_table_top + ( wpn_cell_height * input )
 }
 
-
+wpn_table_height := {
+  numw := length(break_text(card.wpntblshow, match:"\\d\\d"))
+  numw * wpn_cell_height
+}
 
 
 # Abilities & unique actions
