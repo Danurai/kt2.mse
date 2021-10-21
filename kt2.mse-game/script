@@ -63,7 +63,7 @@ xp_image := {
   else                    ""
 }
 speciality_image := {
-  if input != "(none)" then "/kt2-common.mse-include/resource/" + input + "1.png" else ""
+  if input != "(none)" then "/kt2-common.mse-include/resource/" + input + ".png" else ""
 }
 
 speciality_script := {
