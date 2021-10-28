@@ -48,13 +48,14 @@ def write_sheet(sourcexlsx, sheet, sheetname, outfile):
 						f.write(f'{indent}\t{attr}:{get_val_indent(attr)}{val}\n')
 				elif key == 'choices':
 					for ch in get_choices(val, sourcexlsx, fieldname):
-						if re.match('name:', ch):
-							chname = re.search('name:\s(.+)',ch)[1]
-							f.write(f'{indent}choice:\n{indent}\tname: {chname}\n')
-						elif re.match('group choice:',ch) or re.match('choice:',ch):
-							f.write(f'{indent}\t{ch}\n')
+						m = re.match("(.+):\s(.+)", ch)
+						if m == None:
+							f.write(f'{indent}choice:{valindent}{ch}\n')
 						else:
-							f.write(f'{indent}choice:\t{ch}\n')
+							if re.match('name:', ch):
+								f.write(f'{indent}choice:\n')
+							valindent = get_val_indent(m[1])
+							f.write(f'{indent}\t{m[1]}:{valindent}{m[2]}\n')
 				elif key == 'choice_images':
 					f.write(f'{indent}choice images:\n')
 					for ch in get_choices(val, sourcexlsx, fieldname):
@@ -73,9 +74,9 @@ if __name__ == "__main__":
 
 	struct = pd.read_excel(sourcexlsx, 'struct')
 	for style in struct.itertuples():
-		stylename = style.style_name
-		#sheets = ['card_style', 'extra_card_fields', 'extra_card_style']
-		write_sheet(sourcexlsx, 'card_style', style.card_style, f'{msegame}-{stylename}.mse-style/card_style.mse')
-		write_sheet(sourcexlsx, 'extra_card_fields', style.extra_card_fields, f'{msegame}-{stylename}.mse-style/extra_card_fields.mse')
-		write_sheet(sourcexlsx, 'extra_card_style', style.extra_card_style, f'{msegame}-{stylename}.mse-style/extra_card_style.mse')
+		if style.create == True:
+			stylename = style.style_name
+			write_sheet(sourcexlsx, 'card_style', style.card_style, f'{msegame}-{stylename}.mse-style/card_style.mse')
+			write_sheet(sourcexlsx, 'extra_card_fields', style.extra_card_fields, f'{msegame}-{stylename}.mse-style/extra_card_fields.mse')
+			write_sheet(sourcexlsx, 'extra_card_style', style.extra_card_style, f'{msegame}-{stylename}.mse-style/extra_card_style.mse')
 		
