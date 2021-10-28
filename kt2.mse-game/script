@@ -14,6 +14,16 @@ get_tags := {
     + replace(match: "(.+)\\s\\((.+)\\)", replace: "\\1, \\2", to_upper(card.fireteamop) )
 }
 
+card_number := {
+  fireteam := replace(card.fireteamop match: "\\s\\(.+?\\)" replace: "")
+  op_abbr := filter_text(match: "[A-Z]" fireteam) 
+  pos := if card.leader == "yes" then 0 else ( position(of: card in: filter_list(set filter: { contains(input.fireteamop match: fireteam) })) + 1)
+  "#" + op_abbr + pos
+}
+card_count := {
+  length(set)
+}
+
 # Weapon table arrangement
 
 wpn_cell_font_size := 11
