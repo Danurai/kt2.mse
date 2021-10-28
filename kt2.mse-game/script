@@ -52,6 +52,15 @@ wpn_stripe_visible := {
   contains(card.wpntblstripes, match: input) and length(split_text(match: ", ", card.wpntblshow)) >= input
 }
 
+rank_name := {
+  if      input == "-" then ""
+  else if input == "51+" then "revered"
+  else if input < 6  then "adept"
+  else if input < 16 then "veteran"
+  else if input < 31 then "ace"
+  else if input < 51 then "grizzled"
+  else                    ""
+}
 
 xp_image := {
   if      input == "-" then ""
@@ -62,10 +71,12 @@ xp_image := {
   else if input < 51 then "/kt2-common.mse-include/grizzled.png"
   else                    ""
 }
-speciality_image := {
-  if input != "(none)" then "/kt2-common.mse-include/resource/" + input + ".png" else ""
-}
-
-speciality_script := {
-  ""
+specialism_image := {
+  path := "/kt2-common.mse-include/resource/"
+  mask := path + input + "_mask.png"
+  
+  if card["skill_" + input ] == "no"                    then clr := path + "white.png"
+  else if match(card.specialism, match: "(?i)" + input) then clr := path + "orange.png" 
+  else                                                       clr := path + "black.png"
+  set_mask(image: clr mask: mask)
 }
