@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="273.29677"
-     inkscape:cy="211.07138"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="-133.64318"
+     inkscape:cy="519.72347"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
+     inkscape:current-layer="layer5" />
   <defs
      id="defs2" />
   <g
@@ -54,7 +54,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Stats"
-     style="display:none">
+     style="display:inline">
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.197866px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 6.6145833,1.3229167 29.501042,41.010416 52.3875,1.3229167 Z"
@@ -103,9 +103,83 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="dataslate"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.268607"
+       id="rect846-8"
+       width="138.90625"
+       height="99.21875"
+       x="0"
+       y="132.29167"
+       inkscape:export-filename="C:\Data\projects\M15-Magic-Pack-main\data\kt2-style-ndc.mse-style\ndc_mask.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.519685;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2026"
+       width="74.083336"
+       height="7.9375"
+       x="5.2916665"
+       y="136.26042"
+       ry="0.018771417" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3.96875,144.19792 h 62.177083 l 8.73125,-8.73125 H 134.9375 v 92.075 H 14.552083 L 3.96875,216.95833 Z"
+       id="path1034"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.262428px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 6.6145833,185.20833 H 132.29167 v 19.84375 H 14.552083 l -7.9374997,-7.9375 z"
+       id="path3290"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\Data\projects\M15-Magic-Pack-main\data\kt2-style-ndc.mse-style\notes_mask.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.752421;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4582"
+       width="26.458334"
+       height="23.018749"
+       x="0"
+       y="264.53043"
+       ry="0.022423025"
+       inkscape:export-filename="C:\Data\projects\M15-Magic-Pack-main\data\kt2-style-ndc.mse-style\xp_mask.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.519984;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.44936053,264.84332 H 26.008973 l -12.779806,22.22989 z"
+       id="path4805"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="dataslate bg"
+     style="display:none">
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.268607"
+       id="rect846-8-4"
+       width="138.90625"
+       height="99.21875"
+       x="1.4210855e-14"
+       y="132.29167"
+       inkscape:export-filename="C:\Data\projects\M15-Magic-Pack-main\data\kt2-style-ndc.mse-style\ndcbg_mask.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3.96875,144.19792 h 62.177083 l 8.73125,-8.73125 H 134.9375 v 92.075 H 14.552083 L 3.96875,216.95833 Z"
+       id="path1034-6"
+       sodipodi:nodetypes="cccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="art_mask"
-     style="display:inline">
+     style="display:none">
     <rect
        style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.353522;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2254-5-1"
