@@ -17,7 +17,7 @@ get_tags := {
 card_number := {
   fireteam := replace(card.fireteamop match: "\\s\\(.+?\\)" replace: "")
   op_abbr := filter_text(match: "[A-Z]" fireteam) 
-  pos := if card.leader == "yes" then 0 else ( position(of: card in: filter_list(set filter: { contains(input.fireteamop match: fireteam) })) + 1)
+  pos := if card.leader == "yes" then 0 else ( position(of: card in: filter_list(set filter: { contains(input.fireteamop match: fireteam) })) )
   "#" + op_abbr + pos
 }
 card_count := {
