@@ -12,7 +12,8 @@ symbol:
 	image:	skull.png
 symbol:
 	code:		S
-	image:	{ set_mask(image: "orange.png" mask: "skull_mask.png") }
+	image:	{ recolor_image("skull_recolor.png" color: styling.Primary_Colour ) }
+	#{ set_mask(image: "orange.png" mask: "skull_mask.png") }
 symbol:
 	code:		1
 	image:	rng1.png
