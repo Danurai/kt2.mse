@@ -9,15 +9,16 @@ get_tags := {
   ftags := to_upper(faction_tags[ card.killteam ])
   add_leader := if card.leader == "yes" and not contains(card.fireteamop, match: "Leader") then ", LEADER, " else ", "
   if card.chapter != "" then ftags := replace( match: "\<\\w+>", replace: to_upper(card.chapter), ftags )
-  replace( match: "^(.+?)\\," replace: "<color:rgb(222,86,39)>\\1</color><sym>S</sym>,", ftags )
+  faction := replace( match: "^(.+?)\\," replace: "<color:__color__>\\1</color><sym>S</sym>,", ftags )
+  replace(faction match: "__color__" replace: to_string(styling.Primary_Colour) )
     + add_leader
     + replace(match: "(.+)\\s\\((.+)\\)", replace: "\\1, \\2", to_upper(card.fireteamop) )
 }
 
 card_number := {
   fireteam := replace(card.fireteamop match: "\\s\\(.+?\\)" replace: "")
-  op_abbr := filter_text(match: "[A-Z]" fireteam) 
-  pos := if card.leader == "yes" then 0 else ( position(of: card in: filter_list(set filter: { contains(input.fireteamop match: fireteam) and input.leader == "no" })) + 1 )
+  op_abbr := filter_text(card.fireteamop match: "[A-Z]") 
+  pos := position(of: card in: filter_list(set filter: { contains(input.fireteamop match: card.fireteamop) })) + 1
   "#" + op_abbr + pos
 }
 card_count := {
