@@ -46,11 +46,8 @@ styling field:
 		color:	rgb(222,86,39)
 
 styling field:
-	type:			choice
+	type:			boolean
 	name:			Use Art Transparency
-	initial:	No
-	choice:		Yes
-	choice:		No
 
 styling field:
 	type:			choice
@@ -59,6 +56,15 @@ styling field:
 	choice:   None
 	choice:		Diamonds
 	choice:		Geometric
+
+styling field:
+	type:			choice
+	name:			Fillable
+	initial:  Part
+	choice:		Full
+	choice:		Part
+	choice:		None
+	description: User fillable data slate
 	
 include file:		card_style.mse
 include file:		extra_card_fields.mse

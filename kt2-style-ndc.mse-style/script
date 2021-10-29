@@ -86,3 +86,9 @@ card_background := {
   else
     ""
 }
+
+fillable_font_colour := {
+  if      styling.Fillable == "Part"  then rgb(200,200,200) 
+  else if styling.Fillable == "None"  then styling.Secondary_Colour
+  else                                rgb(255,255,255)
+}
