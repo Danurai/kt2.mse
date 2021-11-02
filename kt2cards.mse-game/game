@@ -6,3 +6,5 @@ position hint:	2
 version:				2021-09-01
 
 include file:	card_fields.mse
+
+init script: include file: script

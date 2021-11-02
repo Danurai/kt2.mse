@@ -1,0 +1,6 @@
+card_type_background := {
+	if 			card.type == "Equipment" 				then  rgb(0,0,100) 
+	else if card.type == "Strategic Ploy" 	then  rgb(120,120,120) 
+	else if card.type == "Strategic Asset" 	then  styling.Primary_Colour 
+	else 																					rgb(0,0,0)
+}
