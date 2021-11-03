@@ -25,8 +25,10 @@ wpn_header_top := {
   wpn_table_top - 25
 }
 # for "Ranged Ammo" weapons
+
 wpn_info_left := {
-  wpn_cell_left(2) + 5
+  wname_width := card_style["w" + (input + 1) + "name"].content_width
+  min(wname_width + wpn_cell_left(1), wpn_cell_left(2)) + 5
 }
 wpn_info_width := {
   w - wpn_info_left(input) - 15
