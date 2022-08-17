@@ -3,7 +3,7 @@ import numpy
 import re
 
 msegame='kt2cards'
-msegame='kt2'
+#msegame='kt2'
 
 def b(x): return str(x).lower() if isinstance(x, bool) else str(x)
 def is_style_sheet(s): return re.search('style',s) is not None

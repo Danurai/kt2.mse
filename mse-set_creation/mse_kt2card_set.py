@@ -15,7 +15,7 @@ def writeploy( file, ploy, faction, type):
 	print("writing", type, "ploy:", ploy['name'])
 	file.write('card:\n')
 	file.write('\trestriction: <color:rgb(227,86,39)>' + faction.upper() + '</color><sym>S</sym>\n')
-	file.write('\tname: ' + ploy['name'] + '\n')
+	file.write('\tname: ' + ploy['name'].upper() + '\n')
 	file.write('\ttype: ' + type + ' Ploy' + '\n')
 	file.write('\tcost: ' + str(ploy['cp']) + '\n')
 	if 'action' in ploy:
@@ -36,8 +36,8 @@ def writeitem( file, item, faction):
 		oprestriction = '<b>' + ', '.join(item['restriction']) + '</b> only. '
 	
 	file.write('card:\n')
-	file.write('\trestriction: <color:rgb(227,86,39)>' + faction.upper() + '</color><sym>S</sym>\n')
-	file.write('\tname: {}\n'.format(item['name']))
+	file.write(f'\trestriction: <color:rgb(227,86,39)>{faction.upper()}</color><sym>S</sym>\n')
+	file.write(f'\tname: {item["name"].upper()}\n')
 	file.write('\ttype: Equipment\n')
 	file.write('\tcost: {}\n'.format(str(item['cost'])))
 	if 'unique' in item: file.write('\tunique: {}\n'.format("yes" if item['unique'] else "no"))

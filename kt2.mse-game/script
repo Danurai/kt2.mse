@@ -2,6 +2,7 @@ faction_tags := [
   "Space Marines": "Space Marine, Imperium, Adeptus Astartes, \<chapter>"
   "Craftworlds": "Craftworld, Aeldari, Asuryani, \<craftworld>"
   "Harlequins": "Troupe, Aeldari, Harlequins, \<troupe>"
+  "Corsair Voidscarred": "Corsair Voidscarred, Aeldari, Anhrathe"
 ]
 
 get_tags := {
